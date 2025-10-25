@@ -1,0 +1,34 @@
+Date,Team Member,Task ID,Task Name,Phase,Hours Spent,Status,Notes
+2025-01-06,Member 1,1.1,Constitution de l'équipe,Phase 1,2,In Progress,Initial team meeting
+2025-01-06,Member 2,1.1,Constitution de l'équipe,Phase 1,2,In Progress,Defined roles and RACI
+2025-01-07,Member 1,1.2,Analyse du besoin client,Phase 1,4,In Progress,Reviewed Tech4Value documents
+2025-01-08,Member 2,1.3,Benchmark & Veille technologique,Phase 1,3,In Progress,Researched PMO tools
+2025-01-09,Member 3,1.3,Benchmark & Veille technologique,Phase 1,5,In Progress,Created comparison matrix
+2025-01-10,Member 1,1.2,Analyse du besoin client,Phase 1,4,In Progress,Interviewed stakeholders
+
+Instructions:
+1. Fill in this timesheet DAILY
+2. Use actual hours spent (be honest for planning accuracy)
+3. Update Status: Not Started, In Progress, Completed, Blocked
+4. Add notes for context (useful for retrospective)
+5. Import into Excel for pivot tables and charts
+
+CSV Format:
+- Date: YYYY-MM-DD
+- Team Member: First name or ID
+- Task ID: From tasks.md (e.g., 1.1, 2.3a, 3.2b)
+- Task Name: Short description
+- Phase: Phase 1-6
+- Hours Spent: Decimal (e.g., 2.5 for 2h30min)
+- Status: Not Started | In Progress | Completed | Blocked
+- Notes: Free text
+
+Weekly Summary Template:
+Week X (Start Date - End Date)
+- Total Hours: [Sum]
+- Completed Tasks: [Count]
+- In Progress: [Count]
+- Blocked: [Count]
+- Key Achievements: [Bullet points]
+- Issues/Blockers: [Bullet points]
+- Next Week Plan: [Bullet points]

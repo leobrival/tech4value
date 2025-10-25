@@ -1,0 +1,43 @@
+Task ID,Task Name,Phase,Start Date,End Date,Duration (days),Assigned To,Dependencies,Status,Progress (%),Priority,Notes
+1.1,Constitution de l'équipe,Phase 1,2025-01-06,2025-01-10,5,Team Lead,,In Progress,80,High,Define roles and responsibilities
+1.2,Analyse du besoin client,Phase 1,2025-01-11,2025-01-24,14,Business Analyst,1.1,Not Started,0,High,Identify pain points and map 185 users
+1.3,Benchmark & Veille technologique,Phase 1,2025-01-11,2025-01-24,14,Tech Lead,1.1,Not Started,0,High,Study PMO tools and integration solutions
+1.4,Définition du périmètre MVP,Phase 1,2025-01-25,2025-01-26,2,Product Owner,"1.2,1.3",Not Started,0,Critical,Arbitrate scope - must-have vs nice-to-have
+2.1a,Backend Architecture,Phase 2,2025-01-27,2025-02-07,12,Backend Dev,1.4,Not Started,0,High,Design API and data model
+2.1b,Frontend Architecture,Phase 2,2025-01-27,2025-02-07,12,Frontend Dev,1.4,Not Started,0,High,Choose framework and design system
+2.1c,Schémas d'intégration,Phase 2,2025-01-27,2025-02-07,12,Integration Architect,1.4,Not Started,0,High,Odoo/HubSpot/SharePoint/Power BI/Azure AD
+2.2,Planification détaillée (Gantt/RACI),Phase 2,2025-01-27,2025-02-14,19,Project Manager,1.4,Not Started,0,High,Complete Gantt and RACI matrix
+2.3,Budget & Gestion des coûts,Phase 2,2025-01-27,2025-02-14,19,Financial Analyst,1.4,Not Started,0,High,Infrastructure + HR + External costs + ROI
+2.4,Gestion des risques,Phase 2,2025-01-27,2025-02-14,19,Risk Manager,1.4,Not Started,0,Medium,Risk matrix and mitigation strategies
+2.5,Maquettes & UX Design,Phase 2,2025-02-03,2025-02-21,19,UX Designer,2.1b,Not Started,0,High,Wireframes + Mockups + Interactive prototypes
+3.1,Setup environnement développement,Phase 3,2025-02-24,2025-03-07,12,DevOps Engineer,"2.1a,2.1b",Not Started,0,Critical,Git + CI/CD + Environments + Azure AD
+3.2a,Dashboard de pilotage,Phase 3,2025-03-10,2025-04-04,26,Frontend Dev,3.1,Not Started,0,High,Multi-project view with KPIs
+3.2b,Intégration API Odoo,Phase 3,2025-03-10,2025-04-04,26,Backend Dev,3.1,Not Started,0,High,Import projects/timesheets/resources
+3.2c,Intégration SharePoint,Phase 3,2025-03-10,2025-04-04,26,Backend Dev,3.1,Not Started,0,High,Document library access + upload/download
+3.2d,Export Power BI,Phase 3,2025-03-10,2025-04-04,26,BI Developer,3.1,Not Started,0,Medium,Generate structured CSV + template dashboard
+3.2e,Gestion multi-projets,Phase 3,2025-03-10,2025-04-11,33,Full-stack Dev,3.1,Not Started,0,Critical,CRUD + Portfolio view + Timeline
+3.2f,Système de reporting automatisé,Phase 3,2025-03-10,2025-04-04,26,Backend Dev,3.1,Not Started,0,Medium,Automated PDF/Excel reports
+3.3,Tests & QA,Phase 3,2025-04-07,2025-04-25,19,"3.2a,3.2b,3.2c,3.2d,3.2e,3.2f",Not Started,0,Critical,Unit + Integration + E2E + UAT
+3.4,Documentation technique,Phase 3,2025-03-10,2025-04-25,47,Tech Writer,3.2,Not Started,0,Medium,API docs + Installation guide + ADR
+4.1a,RGPD,Phase 4,2025-03-10,2025-04-18,40,GDPR Officer,3.1,Not Started,0,High,Data mapping + Registry + Privacy policy
+4.1b,Sécurité,Phase 4,2025-03-10,2025-04-18,40,Security Engineer,3.1,Not Started,0,High,OWASP audit + API security
+4.1c,Accessibilité,Phase 4,2025-03-10,2025-04-11,33,Accessibility Expert,3.1,Not Started,0,Medium,WCAG 2.1 AA compliance
+4.2,Green IT,Phase 4,2025-03-10,2025-04-25,47,Green IT Specialist,3.1,Not Started,0,Medium,Code optimization + Carbon metrics
+4.3,Conduite du changement,Phase 4,2025-02-24,2025-04-25,61,Change Manager,2.5,Not Started,0,High,Impact analysis + Communication plan + Training
+5.1a,Écriture du script vidéo,Phase 5,2025-04-28,2025-05-09,12,Content Writer,"3.2,3.3",Not Started,0,Critical,Structure + Key messages + Timing
+5.1b,Préparation des démos,Phase 5,2025-05-12,2025-05-16,5,Product Owner,5.1a,Not Started,0,Critical,Test data + Scenarios + Slides
+5.1c,Enregistrement,Phase 5,2025-05-19,2025-05-30,12,All Team Members,5.1b,Not Started,0,Critical,Record all members speaking + Screencasts
+5.1d,Montage vidéo,Phase 5,2025-06-02,2025-06-09,8,Video Editor,5.1c,Not Started,0,Critical,Assembly + Subtitles + Music + Export MP4
+5.1e,Review & corrections vidéo,Phase 5,2025-06-10,2025-06-11,2,All Team Members,5.1d,Not Started,0,Critical,Final validation before submission
+5.2a,Présentation entreprise et équipe,Phase 5,2025-04-28,2025-05-02,5,Writer 1,All previous,Not Started,0,High,5-10 pages - Tech4Value context + Team
+5.2b,Analyse problématique et solution,Phase 5,2025-04-28,2025-05-05,8,Writer 2,All previous,Not Started,0,High,10-15 pages - Pain points + MVP solution
+5.2c,Gestion des coûts (M2),Phase 5,2025-04-28,2025-05-05,8,Financial Writer,2.3,Not Started,0,High,10 pages - Budget + ROI (10 points)
+5.2d,Organisation planification méthodologies,Phase 5,2025-04-28,2025-05-09,12,PM Writer,2.2,Not Started,0,Critical,15-20 pages - Gantt + RACI + Risks (40 points)
+5.2e,Présentation solution technique,Phase 5,2025-04-28,2025-05-16,19,Tech Writer,"2.1,3.2",Not Started,0,Critical,25-30 pages - Architecture + Tests (73 points)
+5.2f,Conduite du changement,Phase 5,2025-04-28,2025-05-05,8,Change Writer,4.3,Not Started,0,High,10-15 pages - Communication + Training (10 points)
+5.2g,Intégration aspects transverses,Phase 5,2025-04-28,2025-05-02,5,Compliance Writer,"4.1a,4.1b,4.1c,4.2",Not Started,0,Medium,8-12 pages - GreenIT + RGPD + A11y (11 points)
+5.3,Rédaction dossiers individuels,Phase 5,2025-05-12,2025-05-23,12,Each Team Member,5.2,Not Started,0,Critical,Individual analysis + Documentation (8 points)
+5.4,Finalisation & Relecture,Phase 5,2025-06-02,2025-06-11,10,All Team Members,"5.1,5.2,5.3",Not Started,0,Critical,Quality control + Validation (15 points)
+6.1,Packaging des livrables,Phase 6,2025-06-12,2025-06-13,2,Project Manager,5.4,Not Started,0,Critical,Create ZIP archives with correct naming
+6.2,Soumission officielle,Phase 6,2025-06-13,2025-06-13,1,Project Manager,6.1,Not Started,0,Critical,Upload to school platform
+6.3,Célébration & Retrospective,Phase 6,2025-06-16,2025-06-20,5,All Team Members,6.2,Not Started,0,Low,Team celebration + Lessons learned

@@ -1,0 +1,28 @@
+{
+  "name": "tech4value",
+  "version": "1.0.0",
+  "description": "Validation script to ensure all documents conform to expectations in .doc folder using Claude AI",
+  "type": "module",
+  "main": "scripts/validate-docs.js",
+  "scripts": {
+    "validate": "node scripts/validate-docs.js",
+    "validate:verbose": "node scripts/validate-docs.js --verbose",
+    "check-conformance": "node scripts/validate-docs.js --strict"
+  },
+  "keywords": [
+    "validation",
+    "documentation",
+    "conformance",
+    "claude",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

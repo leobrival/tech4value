@@ -1,0 +1,48 @@
+Task,Project Manager,Tech Lead,Business Analyst,Backend Dev,Frontend Dev,UX Designer,DevOps,Financial Analyst,Change Manager,All Team
+Constitution de l'équipe,A,R,C,I,I,I,I,I,I,C
+Analyse du besoin client,A,C,R,I,I,C,I,I,C,I
+Benchmark & Veille technologique,C,R,C,C,C,I,C,I,I,I
+Définition du périmètre MVP,A,R,R,C,C,C,I,I,I,I
+Backend Architecture,C,A,I,R,I,I,C,I,I,I
+Frontend Architecture,C,A,I,I,R,C,C,I,I,I
+Schémas d'intégration,C,R,C,C,C,I,C,I,I,I
+Planification détaillée (Gantt/RACI),R,C,C,I,I,I,I,C,C,C
+Budget & Gestion des coûts,C,C,I,I,I,I,I,R,I,I
+Gestion des risques,R,C,C,C,C,C,C,C,C,I
+Maquettes & UX Design,C,C,C,I,C,R,I,I,I,I
+Setup environnement développement,C,C,I,C,C,I,R,I,I,I
+Dashboard de pilotage,C,C,I,C,R,C,I,I,I,I
+Intégration API Odoo,C,C,C,R,I,I,C,I,I,I
+Intégration SharePoint,C,C,I,R,I,I,C,I,I,I
+Export Power BI,C,C,C,R,I,I,I,C,I,I
+Gestion multi-projets,C,C,C,C,R,C,I,I,I,I
+Système de reporting automatisé,C,C,C,R,I,I,I,C,I,I
+Tests & QA,C,R,C,C,C,I,C,I,I,C
+Documentation technique,C,C,I,C,C,I,C,I,I,I
+RGPD,C,C,I,I,I,I,I,I,R,I
+Sécurité,C,R,I,C,C,I,C,I,I,I
+Accessibilité,C,C,I,C,C,R,I,I,I,I
+Green IT,C,R,I,C,C,C,C,I,I,I
+Conduite du changement,C,I,C,I,I,I,I,I,R,C
+Écriture du script vidéo,A,C,C,C,C,C,I,I,C,R
+Préparation des démos,A,C,I,C,C,I,I,I,I,R
+Enregistrement,A,I,I,I,I,I,I,I,I,R
+Montage vidéo,A,I,I,I,I,C,I,I,I,R
+Review & corrections vidéo,C,C,C,C,C,C,C,C,C,R
+Présentation entreprise et équipe,A,C,C,I,I,I,I,I,C,R
+Analyse problématique et solution,A,C,R,C,C,C,I,I,C,R
+Gestion des coûts (M2),A,C,C,I,I,I,I,R,I,C
+Organisation planification méthodologies,R,C,C,C,C,C,C,C,C,C
+Présentation solution technique,C,R,I,C,C,C,C,I,I,C
+Conduite du changement (doc),C,I,C,I,I,I,I,I,R,C
+Intégration aspects transverses,C,R,I,C,C,I,C,I,C,C
+Rédaction dossiers individuels,I,I,I,I,I,I,I,I,I,R
+Finalisation & Relecture,A,C,C,C,C,C,C,C,C,R
+Packaging des livrables,R,C,I,I,I,I,C,I,I,C
+Soumission officielle,R,I,I,I,I,I,I,I,I,C
+
+Legend:
+R = Responsible (Réalisateur - celui qui fait le travail)
+A = Accountable (Approbateur - celui qui valide et est responsable du résultat)
+C = Consulted (Consulté - celui dont on demande l'avis)
+I = Informed (Informé - celui qui est tenu au courant)

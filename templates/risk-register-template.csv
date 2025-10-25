@@ -1,0 +1,43 @@
+Risk ID,Risk Category,Risk Description,Probability (1-5),Impact (1-5),Score (P×I),Risk Level,Mitigation Strategy,Contingency Plan,Owner,Status,Last Updated
+R001,Technical,Integration complexity with Odoo API higher than expected,4,4,16,High,Start with mock data and simple endpoints; progressive integration,Use mock service if API unavailable; document limitations in deliverable,Tech Lead,Open,2025-01-01
+R002,Technical,SharePoint/Microsoft Graph API authentication issues,3,4,12,High,Test authentication early in Phase 3; use sandbox environment,Fallback to manual file upload; demonstrate concept with mockups,Backend Dev,Open,2025-01-01
+R003,Technical,Performance issues with large datasets (185 users),3,3,9,Medium,Implement pagination and lazy loading; optimize database queries,Reduce dataset scope for MVP; demonstrate scalability in documentation,Backend Dev,Open,2025-01-01
+R004,Technical,Power BI integration format incompatibility,2,3,6,Medium,Research Power BI CSV format early; validate with sample data,Provide Excel export alternative; include conversion guide in docs,BI Developer,Open,2025-01-01
+R005,Technical,Azure AD SSO simulation complexity,3,2,6,Medium,Use mock authentication for MVP; document real SSO requirements,Implement basic username/password auth with role-based access,DevOps,Open,2025-01-01
+R006,Technical,Browser compatibility issues (accessibility),2,3,6,Medium,Test on Chrome/Firefox/Safari; use standard web components,Focus on one primary browser; document known limitations,Frontend Dev,Open,2025-01-01
+R007,Schedule,Underestimation of development time,4,5,20,Critical,Add 20% buffer to all estimates; track time weekly,Reduce MVP scope; focus on core features only (dashboard + 2 integrations),PM,Open,2025-01-01
+R008,Schedule,Delays in Phase 3 impacting Phase 5 deliverables,3,5,15,High,Start video script and document structure early (Week 16),Extend working hours in final weeks; parallel work on video and docs,PM,Open,2025-01-01
+R009,Schedule,Team member unavailability (illness/personal issues),3,4,12,High,Document all work; ensure knowledge sharing in weekly meetings,Redistribute tasks; reduce individual workload; extend timeline if needed,PM,Open,2025-01-01
+R010,Schedule,Video production takes longer than expected,4,4,16,High,Start script writing early; rehearse demos multiple times,Use simpler editing; accept shorter video (15min minimum is OK),PM,Open,2025-01-01
+R011,Organizational,Team misalignment on project vision/scope,3,4,12,High,Weekly sync meetings; shared Notion workspace with clear documentation,Emergency alignment meeting; escalate to faculty advisor if needed,PM,Open,2025-01-01
+R012,Organizational,Unequal workload distribution among team members,3,3,9,Medium,Use RACI matrix; track individual contributions in Gantt,Rebalance tasks mid-project; ensure fair evaluation in individual docs,PM,Open,2025-01-01
+R013,Organizational,Communication breakdown (remote team),2,3,6,Medium,Daily async updates; weekly video calls; use Slack/Discord,Increase meeting frequency; use pair programming for complex tasks,PM,Open,2025-01-01
+R014,Quality,Insufficient test coverage (<80%),3,4,12,High,Implement CI/CD with automated tests from day 1; track coverage,Manual testing for critical paths; document known bugs,QA/Dev,Open,2025-01-01
+R015,Quality,Security vulnerabilities (OWASP Top 10),3,5,15,High,Use security scanning tools (Snyk/SonarQube); follow secure coding guidelines,Document vulnerabilities; provide mitigation roadmap in deliverable,Security Lead,Open,2025-01-01
+R016,Quality,WCAG 2.1 accessibility non-compliance,2,3,6,Medium,Use accessibility testing tools (axe/Lighthouse) during development,Focus on keyboard navigation and screen reader basics; document gaps,A11y Expert,Open,2025-01-01
+R017,Quality,GDPR compliance gaps,2,4,8,Medium,Work with legal expert; use CNIL templates; document all data processing,Minimize data collection; provide clear privacy policy and consent forms,GDPR Officer,Open,2025-01-01
+R018,Financial,Budget overrun (infrastructure costs),2,3,6,Medium,Use free tiers (Vercel/Netlify/Supabase); monitor spending weekly,Downgrade services; use local development instead of cloud,Financial Analyst,Open,2025-01-01
+R019,Financial,Software license costs higher than expected,2,2,4,Low,Use open-source alternatives; leverage student discounts,Request school licenses; use free trials strategically,Financial Analyst,Open,2025-01-01
+R020,Stakeholder,Client (Tech4Value) expectations misalignment,3,4,12,High,Regular demos to faculty; validate assumptions early,Pivot based on feedback; document rationale for all decisions,PM,Open,2025-01-01
+R021,Stakeholder,Evaluation criteria misunderstanding,2,5,10,High,Study grading rubrics thoroughly; align all deliverables to criteria,Request faculty review of draft documents before final submission,PM,Open,2025-01-01
+R022,External,Third-party API downtime (Odoo/HubSpot/SharePoint),2,3,6,Medium,Implement error handling and retry logic; use caching,Switch to mock data for demo; explain limitation in video,Backend Dev,Open,2025-01-01
+R023,External,Technology changes during project (framework updates),2,2,4,Low,Pin dependency versions; avoid major version upgrades mid-project,Document upgrade path; focus on stable versions (React 18/Node 18 LTS),Tech Lead,Open,2025-01-01
+R024,Scope,Feature creep (scope expansion),4,4,16,High,Maintain strict MVP definition; use backlog for future features,Conduct mid-project scope review; remove nice-to-have features,PM,Open,2025-01-01
+R025,Scope,Missing requirements discovered late,3,4,12,High,Validate requirements with stakeholders early; review weekly,Use agile approach to adapt; document changes and rationale,Business Analyst,Open,2025-01-01
+
+Summary:
+Total Risks: 25
+Critical: 1 (Score 20-25)
+High: 8 (Score 12-19)
+Medium: 13 (Score 6-11)
+Low: 3 (Score 1-5)
+
+Risk Levels:
+1-5: Low (Accept)
+6-11: Medium (Monitor)
+12-19: High (Mitigate)
+20-25: Critical (Escalate immediately)
+
+Risk Score = Probability (1-5) × Impact (1-5)
+Probability: 1=Very Unlikely, 2=Unlikely, 3=Possible, 4=Likely, 5=Very Likely
+Impact: 1=Negligible, 2=Minor, 3=Moderate, 4=Major, 5=Severe
