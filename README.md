@@ -56,6 +56,8 @@ tech4value/
 ├── livrables/                 # Livrables finaux
 │   ├── video/                 # Vidéo MVP (MP4 ou lien YouTube)
 │   ├── dossier-groupe/        # Dossier technique groupe (PDF)
+│   │   ├── matrice-raci-preliminaire.csv  # Matrice RACI (format CSV)
+│   │   └── matrice-raci-preliminaire.md   # Matrice RACI (format Markdown)
 │   └── dossiers-individuels/  # Dossiers individuels (1 PDF par membre)
 │
 ├── src/                       # Code source de l'application
@@ -132,7 +134,8 @@ npm run check-conformance
 - **[Cahier des Charges](templates/cahier-des-charges-template.md)** - Template complet (14 sections)
 - **[Architecture Technique](docs/architecture/architecture-technique.md)** - Template d'architecture (10 sections)
 - **[Gantt](templates/gantt-template.csv)** - Planning détaillé avec dépendances
-- **[RACI](templates/raci-template.csv)** - Matrice de responsabilités
+- **[RACI](templates/raci-template.csv)** - Matrice de responsabilités (template générique)
+- **[RACI Préliminaire](livrables/dossier-groupe/matrice-raci-preliminaire.md)** - Matrice RACI du projet (Jules & Léo)
 - **[Budget](templates/budget-template.csv)** - Budget détaillé avec ROI
 - **[Risques](templates/risk-register-template.csv)** - 25 risques identifiés avec mitigations
 
@@ -248,13 +251,10 @@ npm run check-conformance
 
 | Rôle | Nom | Responsabilités |
 |------|-----|-----------------|
-| **Project Manager** | [À compléter] | Coordination, planning, risques |
-| **Tech Lead** | [À compléter] | Architecture, choix techniques |
-| **Business Analyst** | [À compléter] | Requirements, user stories |
-| **Backend Developer** | [À compléter] | API, intégrations |
-| **Frontend Developer** | [À compléter] | Interface, UX |
-| **UX Designer** | [À compléter] | Maquettes, design system |
-| **DevOps Engineer** | [À compléter] | Infrastructure, CI/CD |
+| **Project Manager** | **Jules Courtin** | Coordination, planning, risques, budget, conduite du changement, RGPD |
+| **Tech Lead & Developer** | **Léo Brival** | Architecture technique, développement full-stack, intégrations, tests, sécurité, Green IT |
+
+**Note** : Équipe de 2 personnes en mode polyvalent. Chaque membre cumule plusieurs rôles pour couvrir l'ensemble des compétences requises. Voir la [Matrice RACI Préliminaire](livrables/dossier-groupe/matrice-raci-preliminaire.md) pour la répartition détaillée des responsabilités.
 
 ---
 

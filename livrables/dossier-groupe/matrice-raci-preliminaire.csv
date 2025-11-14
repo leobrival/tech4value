@@ -1,0 +1,50 @@
+Task,Jules Courtin (PM),Léo Brival (Tech Lead)
+Constitution de l'équipe,A/R,C
+Analyse du besoin client,A/R,C
+Benchmark & Veille technologique,C,R
+Définition du périmètre MVP,A,R
+Backend Architecture,C,A/R
+Frontend Architecture,C,A/R
+Schémas d'intégration,C,R
+Planification détaillée (Gantt/RACI),A/R,C
+Budget & Gestion des coûts,A/R,C
+Gestion des risques,A/R,C
+Maquettes & UX Design,C,R
+Setup environnement développement,C,A/R
+Dashboard de pilotage,C,A/R
+Intégration API Odoo,C,A/R
+Intégration SharePoint,C,A/R
+Export Power BI,C,A/R
+Gestion multi-projets,C,A/R
+Système de reporting automatisé,C,A/R
+Tests & QA,C,A/R
+Documentation technique,C,A/R
+RGPD,A/R,C
+Sécurité,C,A/R
+Accessibilité,C,A/R
+Green IT,C,A/R
+Conduite du changement,A/R,C
+Écriture du script vidéo,A/R,R
+Préparation des démos,A/R,R
+Enregistrement,R,R
+Montage vidéo,A/R,R
+Review & corrections vidéo,R,R
+Présentation entreprise et équipe,A/R,C
+Analyse problématique et solution,A/R,R
+Gestion des coûts (M2),A/R,C
+Organisation planification méthodologies,A/R,C
+Présentation solution technique,C,A/R
+Conduite du changement (doc),A/R,C
+Intégration aspects transverses,C,A/R
+Rédaction dossiers individuels,R,R
+Finalisation & Relecture,R,R
+Packaging des livrables,A/R,C
+Soumission officielle,A/R,C
+
+Legend:
+R = Responsible (Réalisateur - celui qui fait le travail)
+A = Accountable (Approbateur - celui qui valide et est responsable du résultat)
+C = Consulted (Consulté - celui dont on demande l'avis)
+I = Informed (Informé - celui qui est tenu au courant)
+
+Note: Pour une équipe de 2 personnes certains membres cumulent les rôles A et R (notation A/R)

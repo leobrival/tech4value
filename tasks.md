@@ -17,8 +17,9 @@
 - **Parallélisation** : ❌ Non (prérequis)
 - **Dépendances** : Aucune
 - **Livrables** :
-  - Liste des membres avec rôles
-  - Matrice RACI préliminaire
+  - ✅ Liste des membres avec rôles (Jules Courtin - PM, Léo Brival - Tech Lead)
+  - ✅ Matrice RACI préliminaire ([CSV](livrables/dossier-groupe/matrice-raci-preliminaire.csv) | [Markdown](livrables/dossier-groupe/matrice-raci-preliminaire.md))
+- **Statut** : ✅ Complété (Janvier 2025)
 
 ### Task 1.2 - Analyse du besoin client
 - **Description** : Approfondir la compréhension du contexte Tech4Value

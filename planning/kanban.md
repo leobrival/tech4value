@@ -7,10 +7,9 @@
 ## 📋 TODO (Backlog)
 
 ### Phase 1 - Cadrage
-- [ ] **Task 1.1** - Constitution de l'équipe (5j) - @TeamLead
-- [ ] **Task 1.2** - Analyse du besoin client (14j) - @BusinessAnalyst
-- [ ] **Task 1.3** - Benchmark & Veille technologique (14j) - @TechLead
-- [ ] **Task 1.4** - Définition du périmètre MVP (2j) - @ProductOwner
+- [ ] **Task 1.2** - Analyse du besoin client (14j) - @Jules
+- [ ] **Task 1.3** - Benchmark & Veille technologique (14j) - @Léo
+- [ ] **Task 1.4** - Définition du périmètre MVP (2j) - @Jules&Léo
 
 ### Phase 2 - Conception
 - [ ] **Task 2.1a** - Backend Architecture (12j) - @BackendDev
@@ -53,7 +52,10 @@
 
 ### Completed Tasks
 
-*No tasks completed yet*
+- [x] **Task 1.1** - Constitution de l'équipe (5j) - @Jules&Léo - Complété le: Janvier 2025
+  - ✅ Équipe définie: Jules Courtin (PM) & Léo Brival (Tech Lead)
+  - ✅ Matrice RACI préliminaire créée (CSV + Markdown)
+  - 📄 Livrables: [matrice-raci-preliminaire.md](../livrables/dossier-groupe/matrice-raci-preliminaire.md)
 
 **Instructions**:
 - Move tasks here when fully complete and validated
@@ -82,10 +84,10 @@
 
 ### Sprint Metrics
 - **Total Tasks**: 4
-- **Completed**: 0
+- **Completed**: 1 (Task 1.1 - Constitution de l'équipe)
 - **In Progress**: 0
-- **Remaining**: 4
-- **Completion**: 0%
+- **Remaining**: 3
+- **Completion**: 25%
 
 ---
 
@@ -123,12 +125,12 @@
 
 ## 🤝 Team Capacity
 
-| Member | Role | Availability | Current Load |
-|--------|------|--------------|--------------|
-| Member 1 | PM | 20% FTE | 0/2 tasks |
-| Member 2 | Tech Lead | 30% FTE | 0/3 tasks |
-| Member 3 | Developer | 40% FTE | 0/4 tasks |
-| Member 4 | Designer | 20% FTE | 0/2 tasks |
+| Member | Role | Availability | Current Load | Completed |
+|--------|------|--------------|--------------|-----------|
+| **Jules Courtin** | Project Manager | 50% du projet | 0 tasks actives | 1 task (Task 1.1) |
+| **Léo Brival** | Tech Lead & Developer | 50% du projet | 0 tasks actives | 1 task (Task 1.1) |
+
+**Note**: Équipe de 2 personnes en mode polyvalent. Charge de travail totale: ~700h sur 24 semaines (~350h par membre).
 
 ---
 
