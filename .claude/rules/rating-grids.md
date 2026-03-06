@@ -61,7 +61,7 @@ Deux grilles, **220 points au total** = Vidéo & MVP (64 pts) + Dossier Techniqu
 | # | Critère | Pts | Portée | Description |
 | --- | --- | ---: | --- | --- |
 | D-01 | Gestion des coûts | 10 | Section | Cohérence avec les objectifs et contraintes de l'entreprise |
-| D-02 | Justification de la méthodologie | 5 | Section | Méthodologie de réalisation et d'organisation équipe (cohérence avec le projet) |
+| D-02 | Justification de la méthodologie | 5 | Transverse | Méthodologie de réalisation et d'organisation équipe (cohérence avec le projet) |
 | D-03 | Programme de conduite du changement | 10 | Section | Cohérence et argumentation |
 | | **Total Section 1** | **25** | | |
 
@@ -69,13 +69,13 @@ Deux grilles, **220 points au total** = Vidéo & MVP (64 pts) + Dossier Techniqu
 
 | # | Critère | Pts | Portée | Description |
 | --- | --- | ---: | --- | --- |
-| D-04 | Cohérence de la planification globale | 5 | Section | Adéquation des étapes aux objectifs |
+| D-04 | Cohérence de la planification globale | 5 | Transverse | Adéquation des étapes aux objectifs |
 | D-05 | Décomposition des tâches | 5 | Section | Sous-tâches détaillées (conception, développement, tests, déploiement) |
 | D-06 | Clarté et précision du calendrier | 5 | Section | Dates de début, fin, durée des tâches |
 | D-07 | Gestion des dépendances | 5 | Section | Identification et gestion des relations entre les tâches |
-| D-08 | Gestion des risques | 5 | Section | Identification, évaluation et stratégies de mitigation |
+| D-08 | Gestion des risques | 5 | Transverse | Identification, évaluation et stratégies de mitigation |
 | D-09 | Utilisation d'outils de planification | 5 | Section | Diagramme de Gantt ou autre outil pertinent |
-| D-10 | Inclusion de jalons clés (milestones) | 5 | Section | Pour valider les étapes importantes du projet |
+| D-10 | Inclusion de jalons clés (milestones) | 5 | Transverse | Pour valider les étapes importantes du projet |
 | | **Total Section 2** | **35** | | |
 
 ### Section 3 : Solution Technique (73 pts) — Groupe
@@ -87,7 +87,7 @@ Deux grilles, **220 points au total** = Vidéo & MVP (64 pts) + Dossier Techniqu
 | D-13 | Mise en place d'une politique de veille | 2 | Section | Veille technologique |
 | D-14 | Innovation de la solution | 2 | Transverse | Caractère innovant de la solution |
 | D-15 | Politique de veille (CPIT) | 5 | Section | Spécifique au Mastère CPIT |
-| D-16 | Rigueur des tests | 5 | Section | Exhaustivité et qualité des résultats présentés |
+| D-16 | Rigueur des tests | 5 | Transverse | Exhaustivité et qualité des résultats présentés |
 | D-17 | Intégration de notions GreenIT | 2 | Transverse | Prise en compte des enjeux environnementaux |
 | D-18 | Normes et obligations réglementaires | 5 | Transverse | Prise en compte de la conformité |
 | D-19 | Accessibilité | 2 | Transverse | Prise en compte des personnes en situation de handicap |
