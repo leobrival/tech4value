@@ -1,7 +1,22 @@
+---
+name: constitution
+description: Principes non-négociables du projet Tech4Value (10 principes)
+scope: project
+priority: critical
+tags: [constitution, principes, architecture, conformite, budget]
+---
+
 # Constitution — Tech4Value
 
 > Principes non-négociables pour le projet Tech4Value (Mastère CPIT 2025).
 > Tout développement, toute décision architecturale et tout livrable DOIVENT respecter ces principes.
+
+## Contraintes projet
+
+- **Enveloppe budgétaire** : 350 000 € (budget total, toutes phases confondues)
+- **Durée vidéo** : 20 minutes exactes (ni moins, ni significativement plus)
+- **Équipe** : 2 membres (Jules Courtin PM + Léo Brival Tech Lead)
+- **Durée projet** : 24 semaines (6 mois)
 
 ---
 
@@ -27,7 +42,9 @@
 
 **Énoncé** : Tout choix d'infrastructure, d'outil ou de service DOIT inclure une analyse de coûts cohérente avec les contraintes de l'entreprise (D-01 : 10 pts). Les offres gratuites et les solutions open-source sont privilégiées. Tout service payant nécessite une justification ROI explicite.
 
-**Justification** : La gestion des coûts vaut 10 points. Le contexte de l'entreprise fictive (185 collaborateurs, 5 projets stratégiques, 78 ETP) définit les contraintes budgétaires. Les choix doivent être réalistes pour une ETI.
+**Enveloppe budgétaire** : 350 000 € (budget total alloué au projet).
+
+**Justification** : La gestion des coûts vaut 10 points. Le contexte de l'entreprise fictive (185 collaborateurs, 5 projets stratégiques, 78 ETP) définit les contraintes budgétaires. Les choix doivent être réalistes pour une ETI et rester dans l'enveloppe de 350 000 €.
 
 **Exemple de violation** : Sélectionner un outil enterprise (ex. Jira, Confluence) sans comparer les coûts avec des alternatives gratuites. Ou ignorer les coûts opérationnels (hébergement, maintenance, licences) dans le dossier technique.
 

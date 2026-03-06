@@ -1,3 +1,11 @@
+---
+name: rating-grids
+description: Grilles de notation officielles du projet Tech4Value (220 pts)
+scope: project
+priority: critical
+tags: [notation, evaluation, pareto, criteres]
+---
+
 # Grilles de Notation
 
 Grilles de notation du projet d'étude Tech4Value (Mastère CPIT 2025).
@@ -185,9 +193,3 @@ Les critères à 2 pts ne représentent que 30 pts (14 %) — appréciables mais
 | 27 | D-25 | Identification forces et faiblesses | 2 | Section | P2 | 152 | 97% |
 | 28 | D-26 | Analyse des compétences développées | 2 | Section | P2 | 154 | 99% |
 | 29 | D-27 | Axes d'amélioration | 2 | Section | P2 | 156 | 100% |
-
-## Sources
-
-- `grille-notation-video-2025.pdf` — Grille officielle de notation vidéo (CPIT 2025)
-- `grille-notation-dossier-technique-2025.pdf` — Grille officielle de notation du dossier technique (CPIT 2025)
-- `.doc/grilles-notation.md` — Version markdown consolidée
