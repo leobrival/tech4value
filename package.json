@@ -19,7 +19,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "fs-extra": "^11.2.0"
+    "fs-extra": "^11.2.0",
+    "spec-kit": "github/spec-kit"
   },
   "devDependencies": {},
   "engines": {
