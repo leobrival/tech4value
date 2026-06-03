@@ -30,6 +30,7 @@ interface VideoConfig {
 	file: string;
 	words_per_minute: number;
 	min_minutes: number;
+	target_minutes?: number;
 	max_minutes: number;
 	required_speakers: string[];
 	sections: VideoSectionConfig[];
@@ -97,6 +98,12 @@ function parseYaml(content: string): VideoConfig {
 			} else if (stripped.startsWith("min_minutes:")) {
 				config.min_minutes = Number.parseInt(
 					extractValue(stripped, "min_minutes"),
+					10,
+				);
+				state = "ROOT";
+			} else if (stripped.startsWith("target_minutes:")) {
+				config.target_minutes = Number.parseInt(
+					extractValue(stripped, "target_minutes"),
 					10,
 				);
 				state = "ROOT";
@@ -216,7 +223,8 @@ function countWords(lines: string[]): number {
 
 		const cleaned = trimmed
 			.replace(/\*\*Intervenant\s*:\*\*.*$/gi, " ")
-			.replace(/\*\*Visuel\s*:\*\*.*$/gi, " ")
+			.replace(/\*\*Visuel(?:\s+Odoo)?\s*:\*\*.*$/gi, " ")
+			.replace(/\*\*Action\s+Odoo\s*:\*\*.*$/gi, " ")
 			.replace(/\*\*Durée.*?:\*\*.*$/gi, " ")
 			.replace(/\[[^\]]*\]/g, " ")
 			.replace(/\([^)]*\)/g, " ")
@@ -389,6 +397,14 @@ function printSummary(
 		`  Fenêtre attendue : ${config.min_minutes}-${config.max_minutes} min  ` +
 			(durationOk ? `${GREEN}✅${RESET}` : `${RED}❌${RESET}`),
 	);
+	if (config.target_minutes) {
+		const delta = Math.abs(totalMinutes - config.target_minutes);
+		const deltaText = formatMinutes(delta);
+		console.log(
+			`  Cible montage : ${BOLD}${config.target_minutes} min${RESET} ` +
+				`${DIM}(écart estimé : ${deltaText})${RESET}`,
+		);
+	}
 	console.log(
 		`  Critères vidéo couverts : ${BOLD}${pointsCovered}/${totalPoints} pts${RESET}  ${progressBar(pointsCovered, totalPoints)}`,
 	);

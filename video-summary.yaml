@@ -1,14 +1,17 @@
 # video-summary.yaml
 # Validation plan for the Tech4Value MVP video script.
-# Official constraints from .claude/.doc/.backup/grille-notation-video-2025.pdf:
+# Official video criteria from .claude/.doc/.backup/grille-notation-video-2025.pdf:
 # - Group video + MVP evaluation: 64 points
-# - Expected duration from pedagogical framework: 15-20 minutes
+# User production target for the final edit:
+# - Expected duration: 20-30 minutes
+# - Target duration: 25 minutes
 # - All members must speak in the video
 
 file: deliverables/video/script.md
 words_per_minute: 145
-min_minutes: 15
-max_minutes: 20
+min_minutes: 20
+target_minutes: 25
+max_minutes: 30
 
 required_speakers:
   - "Jules"
@@ -16,20 +19,20 @@ required_speakers:
 
 sections:
   - heading: "1. Introduction et Structure de la Vidéo"
-    min_words: 180
-    max_words: 320
+    min_words: 300
+    max_words: 520
     criteria: "V-01"
     points: 5
     priority: "P1"
     description: "Annonce du plan, répartition des prises de parole et promesse de la vidéo."
     keywords:
       - "Tech4Value"
-      - "15 à 20 minutes"
+      - "20 à 30 minutes"
       - "MVP"
 
   - heading: "2. Contexte et Objectifs du Projet"
-    min_words: 380
-    max_words: 620
+    min_words: 550
+    max_words: 850
     criteria: "V-02"
     points: 10
     priority: "P0"
@@ -41,8 +44,8 @@ sections:
       - "30 %"
 
   - heading: "3. Problématique et Axes Choisis"
-    min_words: 260
-    max_words: 450
+    min_words: 420
+    max_words: 680
     criteria: "V-02, V-09"
     points: 5
     priority: "P0"
@@ -54,8 +57,8 @@ sections:
       - "décision"
 
   - heading: "4. Démonstration du MVP"
-    min_words: 620
-    max_words: 950
+    min_words: 940
+    max_words: 1400
     criteria: "V-03"
     points: 10
     priority: "P0"
@@ -69,8 +72,8 @@ sections:
       - "risques"
 
   - heading: "5. Qualité Visuelle et Technique"
-    min_words: 220
-    max_words: 380
+    min_words: 280
+    max_words: 560
     criteria: "V-04"
     points: 5
     priority: "P1"
@@ -81,8 +84,8 @@ sections:
       - "lisibilité"
 
   - heading: "6. Originalité et Dépassement des Attentes"
-    min_words: 260
-    max_words: 450
+    min_words: 330
+    max_words: 650
     criteria: "V-05, V-07"
     points: 4
     priority: "P2"
@@ -94,8 +97,8 @@ sections:
       - "accessibilité"
 
   - heading: "7. Impact Potentiel du MVP"
-    min_words: 320
-    max_words: 520
+    min_words: 360
+    max_words: 760
     criteria: "V-06"
     points: 10
     priority: "P0"
@@ -107,8 +110,8 @@ sections:
       - "adoption"
 
   - heading: "8. Conclusion Convaincante"
-    min_words: 220
-    max_words: 380
+    min_words: 250
+    max_words: 560
     criteria: "V-08, V-09, V-10, V-11"
     points: 15
     priority: "P0"
