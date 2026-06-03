@@ -1,0 +1,626 @@
+# summary.yaml
+# Word count targets for the technical folder deliverable.
+# Each section heading must match exactly (case-insensitive, whitespace-normalized).
+# min_words is enforced (warning if under). max_words is advisory only.
+# criteria: evaluation criteria codes from the rating grid (D-XX = dossier)
+# priority: P0 (indispensable), P1 (important), P2 (appreciable)
+# source_files: documents to draw content from when writing this section
+# keywords: terms that MUST appear in the section (checked by the script)
+
+file: deliverables/group-file/annexe/dossier-technique-draft.md
+
+sections:
+  - heading: "1. Présentation de l'Entreprise et de l'Équipe Projet"
+    min_words: 800
+    max_words: 1600
+    description: "Contexte de l'entreprise fictive (185 collaborateurs, 5 projets stratégiques, 78 ETP) et présentation de l'équipe projet."
+    subsections:
+      - heading: "1.1 Tech4Value en Chiffres"
+        min_words: 200
+        max_words: 500
+        description: "Données chiffrées clés de l'entreprise : effectifs, CA, secteur, maturité digitale."
+        criteria: "D-11, D-12"
+        priority: "P0"
+        keywords:
+          - "185 collaborateurs"
+          - "78 ETP"
+          - "5 projets"
+        source_files:
+          - ".claude/.doc/cadre-pedagogique.md"
+          - ".claude/.doc/etat-des-lieux-si.md"
+      - heading: "1.2 Portefeuille de Projets Stratégiques"
+        min_words: 200
+        max_words: 500
+        description: "Présentation des 5 projets stratégiques en cours, leurs enjeux et leur impact sur le SI."
+        criteria: "D-11"
+        priority: "P0"
+        keywords:
+          - "projet stratégique"
+          - "portefeuille"
+          - "SI"
+        source_files:
+          - ".claude/.doc/cadre-pedagogique.md"
+          - ".claude/.doc/etat-des-lieux-si.md"
+      - heading: "1.3 Équipe Projet"
+        min_words: 160
+        max_words: 400
+        description: "Composition et rôles de l'équipe (PM Jules Courtin + Tech Lead Léo Brival), responsabilités et complémentarité."
+        criteria: "D-02"
+        priority: "P1"
+        keywords:
+          - "Jules Courtin"
+          - "Léo Brival"
+          - "Tech Lead"
+        source_files:
+          - ".claude/.doc/cadre-pedagogique.md"
+
+  - heading: "2. Analyse de la Problématique"
+    min_words: 1000
+    max_words: 1800
+    description: "Diagnostic de l'existant, identification des besoins et formulation des objectifs stratégiques du projet."
+    subsections:
+      - heading: "2.1 Diagnostic de l'Existant"
+        min_words: 300
+        max_words: 700
+        description: "Cartographie du SI existant, identification des silos, outils actuels et leurs limites. Appuyer sur l'état des lieux SI."
+        criteria: "D-11, D-12"
+        priority: "P0"
+        keywords:
+          - "silo"
+          - "cartographie"
+          - "existant"
+        source_files:
+          - ".claude/.doc/etat-des-lieux-si.md"
+          - ".claude/.doc/cartographie-entreprise.md"
+          - ".claude/.doc/schema-directeur-outils.md"
+      - heading: "2.2 Formulation du Besoin"
+        min_words: 200
+        max_words: 500
+        description: "Expression claire du besoin métier : unifier le pilotage des projets, réduire les angles morts décisionnels."
+        criteria: "D-11"
+        priority: "P0"
+        keywords:
+          - "besoin"
+          - "pilotage"
+          - "décisionnel"
+        source_files:
+          - ".claude/.doc/etat-des-lieux-si.md"
+          - ".claude/.doc/cadre-pedagogique.md"
+      - heading: "2.3 Objectifs Stratégiques"
+        min_words: 200
+        max_words: 400
+        description: "Objectifs SMART du projet alignés sur la stratégie de l'entreprise. KPI de succès attendus."
+        criteria: "D-01, D-11"
+        priority: "P0"
+        keywords:
+          - "SMART"
+          - "KPI"
+          - "350 000"
+        source_files:
+          - ".claude/.doc/cadre-pedagogique.md"
+          - "deliverables/group-file/annexe/tableau-objectifs-kpi-actions.md"
+
+  - heading: "3. Management de Projet"
+    min_words: 1200
+    max_words: 2400
+    description: "Gestion des coûts, justification de la méthodologie et programme de conduite du changement."
+    subsections:
+      - heading: "3.1 Gestion des Coûts (10 points)"
+        min_words: 300
+        max_words: 700
+        description: "Budget détaillé sur 24 semaines : coûts RH (52 % IA + 48 % équipe), infrastructure, licences, formation. Enveloppe totale 350 000 €. ROI argumenté."
+        criteria: "D-01"
+        priority: "P0"
+        keywords:
+          - "350 000"
+          - "ROI"
+          - "24 semaines"
+          - "52 %"
+        source_files:
+          - "deliverables/group-file/annexe/business-model-canvas.md"
+          - "deliverables/group-file/annexe/tableau-objectifs-kpi-actions.md"
+      - heading: "3.2 Justification de la Méthodologie (5 points)"
+        min_words: 300
+        max_words: 700
+        description: "Choix et justification de la méthode projet (Agile Scrum, sprints 2 semaines). Organisation de l'équipe, outils de collaboration, rôles PM / Tech Lead."
+        criteria: "D-02"
+        priority: "P1"
+        keywords:
+          - "Scrum"
+          - "sprint"
+          - "RACI"
+        source_files:
+          - ".claude/.doc/cadre-pedagogique.md"
+          - "deliverables/group-file/matrice-raci-preliminaire.md"
+      - heading: "3.3 Programme de Conduite du Changement (10 points)"
+        min_words: 160
+        max_words: 400
+        description: "Introduction au plan de conduite du changement. Renvoie vers Section 6 pour le détail. Enjeux humains de l'adoption de la nouvelle solution."
+        criteria: "D-03"
+        priority: "P0"
+        keywords:
+          - "conduite du changement"
+          - "adoption"
+          - "parties prenantes"
+        source_files:
+          - ".claude/.doc/cartographie-entreprise.md"
+
+  - heading: "4. Planification Détaillée"
+    min_words: 1600
+    max_words: 3600
+    description: "Planning complet du projet sur 24 semaines : tâches, dépendances, risques, outils et jalons clés."
+    subsections:
+      - heading: "4.1 Cohérence de la Planification Globale (5 points)"
+        min_words: 200
+        max_words: 500
+        description: "Vue macro du projet sur 24 semaines (6 phases). Adéquation entre les étapes, les ressources disponibles et les objectifs fixés."
+        criteria: "D-04"
+        priority: "P1"
+        keywords:
+          - "phase"
+          - "24 semaines"
+          - "jalons"
+        source_files:
+          - "deliverables/group-file/annexe/now-next-later-roadmap.md"
+      - heading: "4.2 Décomposition des Tâches (5 points)"
+        min_words: 400
+        max_words: 1000
+        description: "WBS complet : tâches découpées en sous-tâches pour chaque phase (conception, développement, tests, déploiement). Durations et responsables."
+        criteria: "D-05"
+        priority: "P1"
+        keywords:
+          - "WBS"
+          - "sous-tâche"
+          - "responsable"
+        source_files:
+          - "deliverables/group-file/matrice-raci-preliminaire.md"
+      - heading: "4.3 Calendrier Projet (5 points)"
+        min_words: 160
+        max_words: 400
+        description: "Calendrier précis avec dates de début/fin de chaque tâche. Référence au diagramme de Gantt (Annexe A)."
+        criteria: "D-06"
+        priority: "P1"
+        keywords:
+          - "Gantt"
+          - "date de début"
+          - "date de fin"
+        source_files:
+          - "deliverables/group-file/annexe/now-next-later-roadmap.md"
+      - heading: "4.4 Gestion des Dépendances (5 points)"
+        min_words: 160
+        max_words: 400
+        description: "Identification des relations entre tâches (prédécesseurs, successeurs, chemin critique). Visualisation des blocages potentiels."
+        criteria: "D-07"
+        priority: "P1"
+        keywords:
+          - "chemin critique"
+          - "dépendance"
+          - "prédécesseur"
+        source_files:
+          - "deliverables/group-file/annexe/now-next-later-roadmap.md"
+      - heading: "4.5 Gestion des Risques (5 points)"
+        min_words: 200
+        max_words: 500
+        description: "Registre des risques : identification, probabilité × impact, stratégies de mitigation, responsable et plan de contingence pour chaque risque majeur."
+        criteria: "D-08"
+        priority: "P1"
+        keywords:
+          - "risque"
+          - "probabilité"
+          - "mitigation"
+          - "contingence"
+        source_files:
+          - ".claude/.doc/etat-des-lieux-si.md"
+      - heading: "4.6 Outils de Planification (5 points)"
+        min_words: 160
+        max_words: 300
+        description: "Outils utilisés pour la planification (GitHub Projects, Notion, Jira) avec justification du choix. Cohérence avec la méthodologie Scrum."
+        criteria: "D-09"
+        priority: "P1"
+        keywords:
+          - "GitHub Projects"
+          - "Scrum"
+        source_files:
+          - ".claude/.doc/schema-directeur-outils.md"
+      - heading: "4.7 Jalons Clés - Milestones (5 points)"
+        min_words: 160
+        max_words: 400
+        description: "Liste des jalons majeurs du projet : fin de chaque sprint, livrables intermédiaires, recettes utilisateurs, déploiement production."
+        criteria: "D-10"
+        priority: "P1"
+        keywords:
+          - "jalon"
+          - "milestone"
+          - "recette"
+          - "déploiement"
+        source_files:
+          - "deliverables/group-file/annexe/now-next-later-roadmap.md"
+
+  - heading: "5. Solution Technique"
+    min_words: 3000
+    max_words: 7000
+    description: "Architecture, stack technologique, tests, conformité, accessibilité et vision d'évolution de la solution."
+    subsections:
+      - heading: "5.1 Cohérence de la Solution Proposée (10 points)"
+        min_words: 300
+        max_words: 800
+        description: "Architecture trois-tiers React / Express / PostgreSQL. Pertinence des choix techniques par rapport aux objectifs et contraintes de Tech4Value."
+        criteria: "D-11"
+        priority: "P0"
+        keywords:
+          - "trois-tiers"
+          - "React"
+          - "PostgreSQL"
+          - "Express"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+          - "deliverables/group-file/annexe/schema-directeur.md"
+      - heading: "5.2 Qualité de la Justification Technique (10 points)"
+        min_words: 400
+        max_words: 1000
+        description: "Justification argumentée de chaque choix de stack (TypeScript, Prisma, Bun, Railway). Comparaison avec alternatives, critères de décision objectifs."
+        criteria: "D-12"
+        priority: "P0"
+        keywords:
+          - "TypeScript"
+          - "Prisma"
+          - "Railway"
+          - "alternative"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+          - ".claude/.doc/schema-directeur-outils.md"
+      - heading: "5.3 Veille Technologique (2 points)"
+        min_words: 160
+        max_words: 400
+        description: "Sources de veille utilisées (GitHub Trending, CNCF, newsletters), outils de curation, fréquence. Technologies surveillées en lien avec le projet."
+        criteria: "D-13"
+        priority: "P2"
+        keywords:
+          - "veille"
+          - "CNCF"
+        source_files:
+          - "deliverables/group-file/annexe/schema-directeur.md"
+      - heading: "5.4 Innovation de la Solution (2 points)"
+        min_words: 160
+        max_words: 400
+        description: "Caractère innovant de la solution : IA intégrée (Claude API), architecture serverless, intégration Odoo/SharePoint. Ce qui dépasse les standards du marché."
+        criteria: "D-14"
+        priority: "P2"
+        keywords:
+          - "Claude API"
+          - "Odoo"
+          - "innovant"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "5.5 Politique de Veille CPIT (5 points)"
+        min_words: 200
+        max_words: 500
+        description: "Politique de veille spécifique Mastère CPIT : sources académiques, conférences (DevOps Days, KubeCon), publications sectorielles. Processus de diffusion en équipe."
+        criteria: "D-15"
+        priority: "P1"
+        keywords:
+          - "DevOps Days"
+          - "KubeCon"
+          - "diffusion"
+        source_files:
+          - "deliverables/group-file/annexe/schema-directeur.md"
+      - heading: "5.6 Rigueur des Tests (5 points)"
+        min_words: 200
+        max_words: 600
+        description: "Stratégie de tests complète : unitaires (Vitest), intégration (Supertest), E2E (Playwright). Couverture de code cible, résultats obtenus, rapport de tests."
+        criteria: "D-16"
+        priority: "P1"
+        keywords:
+          - "Vitest"
+          - "Playwright"
+          - "couverture"
+          - "E2E"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "5.7 Intégration GreenIT (2 points)"
+        min_words: 160
+        max_words: 400
+        description: "Mesures d'éco-conception : lazy loading, compression images, pagination, hébergement vert (Railway). Métriques de consommation énergétique estimées."
+        criteria: "D-17"
+        priority: "P2"
+        keywords:
+          - "GreenIT"
+          - "lazy loading"
+          - "éco-conception"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "5.8 Normes et Obligations Réglementaires (5 points)"
+        min_words: 200
+        max_words: 600
+        description: "Conformité RGPD : registre des traitements, politique de confidentialité, droit à l'effacement. Sécurité : HTTPS, headers CSP, validation des entrées, chiffrement données."
+        criteria: "D-18"
+        priority: "P1"
+        keywords:
+          - "RGPD"
+          - "CNIL"
+          - "CSP"
+          - "chiffrement"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "5.9 Accessibilité (2 points)"
+        min_words: 160
+        max_words: 400
+        description: "Conformité WCAG 2.1 AA : navigation clavier, contrastes, textes alternatifs, lecteurs d'écran. Outils utilisés (axe-core, Lighthouse). Score d'accessibilité atteint."
+        criteria: "D-19"
+        priority: "P2"
+        keywords:
+          - "WCAG"
+          - "axe-core"
+          - "accessibilité"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "5.10 Qualité des Schémas Techniques (5 points)"
+        min_words: 160
+        max_words: 400
+        description: "Inventaire et description des diagrammes inclus : architecture réseau, modèle de données, diagrammes de séquence, wireframes. Référence aux Annexes B-E."
+        criteria: "D-20"
+        priority: "P1"
+        keywords:
+          - "diagramme"
+          - "schéma"
+          - "Annexe"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+          - "deliverables/group-file/annexe/synthese-figjam.md"
+      - heading: "5.11 Analyse Critique des Limites (5 points)"
+        min_words: 200
+        max_words: 600
+        description: "Limites techniques honnêtes de la solution : périmètre du MVP, mocks d'intégration, scalabilité non testée en charge réelle, dette technique identifiée."
+        criteria: "D-21"
+        priority: "P1"
+        keywords:
+          - "limite"
+          - "MVP"
+          - "dette technique"
+          - "scalabilité"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "5.12 Documentation Utilisateur (10 points)"
+        min_words: 300
+        max_words: 800
+        description: "Guide utilisateur complet : installation, prise en main, fonctionnalités par profil (PM, DG, chef de projet). FAQ, dépannage courant. Clarté et exhaustivité."
+        criteria: "D-22"
+        priority: "P0"
+        keywords:
+          - "guide utilisateur"
+          - "FAQ"
+          - "prise en main"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+          - ".claude/.doc/cadre-pedagogique.md"
+      - heading: "5.13 Gouvernance et Vision d'Évolution (10 points)"
+        min_words: 300
+        max_words: 800
+        description: "Roadmap d'évolution post-MVP (Now/Next/Later). Gouvernance SI : responsabilités, SLA, processus de mise à jour. Vision à 3 ans de l'infrastructure."
+        criteria: "D-23"
+        priority: "P0"
+        keywords:
+          - "gouvernance"
+          - "SLA"
+          - "roadmap"
+          - "évolution"
+        source_files:
+          - "deliverables/group-file/annexe/now-next-later-roadmap.md"
+          - "deliverables/group-file/annexe/schema-directeur.md"
+
+  - heading: "6. Conduite du Changement"
+    min_words: 800
+    max_words: 1800
+    description: "Plan complet de conduite du changement : stratégie, communication, formation, early adopters et KPI d'adoption."
+    subsections:
+      - heading: "6.1 Stratégie Globale"
+        min_words: 200
+        max_words: 400
+        description: "Approche de conduite du changement (modèle ADKAR ou Kotter). Analyse des parties prenantes, résistances anticipées, leviers d'adoption."
+        criteria: "D-03"
+        priority: "P0"
+        keywords:
+          - "ADKAR"
+          - "parties prenantes"
+          - "résistance"
+        source_files:
+          - ".claude/.doc/cartographie-entreprise.md"
+          - "deliverables/group-file/annexe/matrice-7s-mckinsey.md"
+      - heading: "6.2 Plan de Communication"
+        min_words: 160
+        max_words: 400
+        description: "Plan de communication par cible (DG, PM, chefs de projet) : messages clés, canaux, fréquence, responsables. Calendrier de communication."
+        criteria: "D-03"
+        priority: "P0"
+        keywords:
+          - "communication"
+          - "canal"
+          - "fréquence"
+          - "message clé"
+        source_files:
+          - ".claude/.doc/cartographie-entreprise.md"
+      - heading: "6.3 Programme de Formation"
+        min_words: 160
+        max_words: 400
+        description: "Programme de formation par profil utilisateur : contenu, durée, format (présentiel/distanciel), évaluation des acquis. Budget formation inclus."
+        criteria: "D-03"
+        priority: "P0"
+        keywords:
+          - "formation"
+          - "profil"
+          - "distanciel"
+        source_files:
+          - ".claude/.doc/cadre-pedagogique.md"
+          - ".claude/.doc/cartographie-entreprise.md"
+      - heading: "6.4 Programme Early Adopters"
+        min_words: 160
+        max_words: 300
+        description: "Identification et animation des early adopters : critères de sélection, bénéfices, rôle d'ambassadeurs, feedback loop pour amélioration continue."
+        criteria: "D-03"
+        priority: "P0"
+        keywords:
+          - "early adopter"
+          - "ambassadeur"
+          - "feedback"
+        source_files:
+          - ".claude/.doc/cartographie-entreprise.md"
+      - heading: "6.5 KPI de la Conduite du Changement"
+        min_words: 120
+        max_words: 300
+        description: "Indicateurs de suivi de l'adoption : taux d'utilisation à J+30/J+90, NPS utilisateurs, tickets support, taux de complétion des formations."
+        criteria: "D-03"
+        priority: "P0"
+        keywords:
+          - "NPS"
+          - "J+30"
+          - "taux d'utilisation"
+        source_files:
+          - "deliverables/group-file/annexe/tableau-objectifs-kpi-actions.md"
+
+  - heading: "7. Respect du Cadre & Bonus"
+    min_words: 400
+    max_words: 1200
+    description: "Professionnalisme du livrable final et dépassement des attentes du cadre pédagogique."
+    subsections:
+      - heading: "7.1 Professionnalisme du Livrable (10 points)"
+        min_words: 160
+        max_words: 400
+        description: "Qualité rédactionnelle, cohérence de la mise en page, table des matières, numérotation, annexes référencées. Respect des conventions du dossier technique CPIT."
+        criteria: "D-28"
+        priority: "P0"
+        keywords:
+          - "table des matières"
+          - "annexe"
+          - "numérotation"
+        source_files:
+          - ".claude/.doc/cadre-pedagogique.md"
+      - heading: "7.2 Aller au-delà des Attentes (5 points)"
+        min_words: 160
+        max_words: 400
+        description: "Éléments bonus intégrés : tableau de bord analytique, API publique documentée, intégration IA (Claude API), déploiement CI/CD automatisé."
+        criteria: "D-29"
+        priority: "P1"
+        keywords:
+          - "CI/CD"
+          - "Claude API"
+          - "bonus"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+          - "deliverables/group-file/annexe/schema-directeur.md"
+
+  - heading: "8. Annexes"
+    min_words: 200
+    max_words: 1600
+    description: "Documents techniques de référence : Gantt, schémas, matrices et modèles de données."
+    subsections:
+      - heading: "Annexe A : Diagramme de Gantt Détaillé"
+        min_words: 40
+        max_words: 400
+        description: "Diagramme de Gantt complet sur 24 semaines avec toutes les tâches, dépendances et jalons."
+        criteria: "D-09, D-10"
+        priority: "P1"
+        keywords:
+          - "Gantt"
+          - "24 semaines"
+        source_files:
+          - "deliverables/group-file/annexe/now-next-later-roadmap.md"
+      - heading: "Annexe B : Modèle de Données (Prisma Schéma)"
+        min_words: 40
+        max_words: 400
+        description: "Schéma Prisma complet avec toutes les entités, relations et types. Commenté en anglais."
+        criteria: "D-20"
+        priority: "P1"
+        keywords:
+          - "Prisma"
+          - "schéma"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "Annexe C : Diagramme de Séquence - Intégration Odoo"
+        min_words: 40
+        max_words: 400
+        description: "Diagramme de séquence montrant les échanges entre le frontend, l'API Express et le mock Odoo."
+        criteria: "D-20"
+        priority: "P1"
+        keywords:
+          - "Odoo"
+          - "séquence"
+          - "API"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "Annexe D : Architecture Réseau / Déploiement"
+        min_words: 40
+        max_words: 400
+        description: "Schéma d'infrastructure : Railway (backend + BDD), Vercel (frontend), CDN, flux réseau et sécurité."
+        criteria: "D-20"
+        priority: "P1"
+        keywords:
+          - "Railway"
+          - "Vercel"
+          - "CDN"
+        source_files:
+          - "deliverables/group-file/annexe/architecture/architecture-technique.md"
+      - heading: "Annexe E : Wireframes / User Flows"
+        min_words: 40
+        max_words: 400
+        description: "Wireframes des écrans principaux et user flows des parcours critiques (PM, DG, chef de projet)."
+        criteria: "D-20"
+        priority: "P1"
+        keywords:
+          - "wireframe"
+          - "user flow"
+        source_files:
+          - "deliverables/group-file/annexe/synthese-figjam.md"
+      - heading: "Annexe F : Matrice RACI Complète"
+        min_words: 40
+        max_words: 400
+        description: "Matrice RACI de toutes les activités projet avec responsabilités assignées aux deux membres de l'équipe."
+        criteria: "D-05"
+        priority: "P1"
+        keywords:
+          - "RACI"
+          - "responsable"
+        source_files:
+          - "deliverables/group-file/matrice-raci-preliminaire.md"
+      - heading: "Annexe G : Business Model Canvas"
+        min_words: 40
+        max_words: 400
+        description: "Business Model Canvas de la solution Tech4Value avec les 9 blocs complétés pour l'entreprise fictive."
+        criteria: "D-01, D-23"
+        priority: "P0"
+        keywords:
+          - "Business Model Canvas"
+          - "proposition de valeur"
+        source_files:
+          - "deliverables/group-file/annexe/business-model-canvas.md"
+          - ".claude/.doc/business-model-canvas.md"
+      - heading: "Annexe H : Matrice McKinsey 7S"
+        min_words: 40
+        max_words: 400
+        description: "Analyse McKinsey 7S (Strategy, Structure, Systems, Shared Values, Skills, Style, Staff) appliquée à Tech4Value."
+        criteria: "D-03, D-11"
+        priority: "P0"
+        keywords:
+          - "McKinsey 7S"
+          - "Strategy"
+          - "Structure"
+        source_files:
+          - "deliverables/group-file/annexe/matrice-7s-mckinsey.md"
+          - ".claude/.doc/cartographie-entreprise.md"
+
+  - heading: "Section Individuelle : Analyse Dynamique Projet"
+    min_words: 600
+    max_words: 1600
+    description: "Analyse individuelle obligatoire (8 points) — note séparée par membre."
+    subsections:
+      - heading: "Template - Analyse Individuelle (à remplir par chaque membré)"
+        min_words: 200
+        max_words: 800
+        description: "Réflexion personnelle sur les défis (D-24), forces/faiblesses (D-25), compétences développées (D-26) et axes d'amélioration (D-27)."
+        criteria: "D-24, D-25, D-26, D-27"
+        priority: "P2"
+        keywords:
+          - "défi"
+          - "compétence"
+          - "amélioration"
+        source_files:
+          - ".claude/.doc/cadre-pedagogique.md"
