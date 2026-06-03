@@ -1,0 +1,120 @@
+# video-summary.yaml
+# Validation plan for the Tech4Value MVP video script.
+# Official constraints from .claude/.doc/.backup/grille-notation-video-2025.pdf:
+# - Group video + MVP evaluation: 64 points
+# - Expected duration from pedagogical framework: 15-20 minutes
+# - All members must speak in the video
+
+file: deliverables/video/script.md
+words_per_minute: 145
+min_minutes: 15
+max_minutes: 20
+
+required_speakers:
+  - "Jules"
+  - "Léo"
+
+sections:
+  - heading: "1. Introduction et Structure de la Vidéo"
+    min_words: 180
+    max_words: 320
+    criteria: "V-01"
+    points: 5
+    priority: "P1"
+    description: "Annonce du plan, répartition des prises de parole et promesse de la vidéo."
+    keywords:
+      - "Tech4Value"
+      - "15 à 20 minutes"
+      - "MVP"
+
+  - heading: "2. Contexte et Objectifs du Projet"
+    min_words: 380
+    max_words: 620
+    criteria: "V-02"
+    points: 10
+    priority: "P0"
+    description: "Compréhension globale du contexte, des enjeux et des objectifs choisis."
+    keywords:
+      - "185 collaborateurs"
+      - "5 projets stratégiques"
+      - "78 ETP"
+      - "30 %"
+
+  - heading: "3. Problématique et Axes Choisis"
+    min_words: 260
+    max_words: 450
+    criteria: "V-02, V-09"
+    points: 5
+    priority: "P0"
+    description: "Explication des irritants, du besoin métier et du périmètre retenu."
+    keywords:
+      - "reporting"
+      - "silos"
+      - "pilotage"
+      - "décision"
+
+  - heading: "4. Démonstration du MVP"
+    min_words: 620
+    max_words: 950
+    criteria: "V-03"
+    points: 10
+    priority: "P0"
+    description: "Démonstration des fonctionnalités opérationnelles et adéquation aux attentes."
+    keywords:
+      - "dashboard"
+      - "Odoo"
+      - "SharePoint"
+      - "Power BI"
+      - "Azure AD"
+      - "risques"
+
+  - heading: "5. Qualité Visuelle et Technique"
+    min_words: 220
+    max_words: 380
+    criteria: "V-04"
+    points: 5
+    priority: "P1"
+    description: "Intentions de réalisation vidéo, lisibilité visuelle et cohérence du discours."
+    keywords:
+      - "captures"
+      - "schéma"
+      - "lisibilité"
+
+  - heading: "6. Originalité et Dépassement des Attentes"
+    min_words: 260
+    max_words: 450
+    criteria: "V-05, V-07"
+    points: 4
+    priority: "P2"
+    description: "Innovation du MVP et éléments allant au-delà du minimum attendu."
+    keywords:
+      - "Claude API"
+      - "CI/CD"
+      - "Green IT"
+      - "accessibilité"
+
+  - heading: "7. Impact Potentiel du MVP"
+    min_words: 320
+    max_words: 520
+    criteria: "V-06"
+    points: 10
+    priority: "P0"
+    description: "Valeur utilisateur, gains attendus et capacité à convaincre les utilisateurs finaux."
+    keywords:
+      - "utilisateurs finaux"
+      - "ROI"
+      - "COPIL"
+      - "adoption"
+
+  - heading: "8. Conclusion Convaincante"
+    min_words: 220
+    max_words: 380
+    criteria: "V-08, V-09, V-10, V-11"
+    points: 15
+    priority: "P0"
+    description: "Conclusion fluide, pertinente, engageante et convaincante."
+    keywords:
+      - "convaincre"
+      - "pertinence"
+      - "prochaine étape"
+      - "merci"

@@ -8,7 +8,8 @@
     "validate": "node scripts/validate-docs.js",
     "validate:verbose": "node scripts/validate-docs.js --verbose",
     "check-conformance": "node scripts/validate-docs.js --strict",
-    "check-words": "bun scripts/check-word-count.ts"
+    "check-words": "bun scripts/check-word-count.ts",
+    "check-video": "bun scripts/check-video-script.ts"
   },
   "keywords": [
     "validation",
