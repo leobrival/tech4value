@@ -255,7 +255,7 @@ Nous avons retenu une approche **Agile Hybride** combinant :
 | Reporting Copil | R | C | I | A |
 | Livrables académiques | R | R | I | I |
 
-> R = Responsible, A = Accountable, C = Consulted, I = Informed
+> R = Réalisateur (Responsible), A = Approbateur (Accountable), C = Consulté (Consulted), I = Informé (Informed)
 
 #### 3.2.3 Cérémonies Agile
 
