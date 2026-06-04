@@ -98,7 +98,7 @@ Prenons un cas d'usage. Le COPIL ouvre la plateforme et voit immédiatement que 
 **Intervenant : Léo**
 **Slides à afficher : Slide 10 : Stack technique retenue**
 
-Techniquement, nous avons retenu une stack TypeScript full-stack : React 18, TypeScript, Tailwind et Zustand côté frontend ; Node.js, Express, TypeScript, Prisma et PostgreSQL côté backend ; GitHub Actions pour la CI/CD ; Vercel, Railway et Supabase pour le déploiement. Cette stack convient à une équipe réduite : elle utilise le même langage sur toute la chaîne, réduit les frictions et maintient une base de code lisible.
+Techniquement, nous avons retenu une stack TypeScript full-stack : React 18, TypeScript, Tailwind et Zustand côté frontend ; Node.js, Express, TypeScript, Prisma et PostgreSQL côté backend ; GitHub Actions pour la CI/CD ; Vercel, Railway et Néon pour le déploiement. Cette stack convient à une équipe réduite : elle utilise le même langage sur toute la chaîne, réduit les frictions et maintient une base de code lisible.
 
 Les alternatives comme Java Spring, Python Django ou une architecture microservices complète ont été étudiées, mais elles auraient ajouté de la complexité pour un MVP de 24 semaines. Notre choix privilégie la cohérence, la rapidité de développement, la maintenabilité et la capacité à déployer rapidement une preuve de valeur.
 

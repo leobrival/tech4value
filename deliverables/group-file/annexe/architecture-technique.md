@@ -39,7 +39,7 @@ Odoo · SharePoint · Power BI · Azure AD
 | ORM | Prisma | Accès typé à la base de données |
 | Base | PostgreSQL | Source consolidée du MVP |
 | Authentification | Azure AD / OAuth 2.0 | SSO et gestion des identités |
-| Déploiement | Vercel, Railway, Supabase/Néon | Hébergement cloud MVP |
+| Déploiement | Vercel, Railway, Néon | Hébergement cloud MVP |
 | Qualité | Vitest, Supertest, Playwright | Tests unitaires, API et E2E |
 
 ## Rôle de Next.js

@@ -201,7 +201,7 @@ Le management de projet est la discipline qui détermine si une solution techniq
 - **Indicateurs suivis** : Budget réel vs prévisionnel, burn rate, ETC (Estimate to Complete)
 - **Gouvernance** : Tout dépassement > 15% nécessite validation Comex
 
-L'enveloppe budgétaire totale du programme est fixée à **350 000 €**, répartie sur **24 semaines** de réalisation. Ce cadrage financier a été respecté grâce à une stratégie de sobriété technologique délibérée : utilisation systématique des offres gratuites (Vercel, Railway, Supabase free tier) pour la phase MVP, et recours massif à l'assistance par l'intelligence artificielle, **52 % des heures de développement** ont bénéficié de l'accélération apportée par Claude Code (Anthropic), réduisant mécaniquement le coût en jours-homme. Cette approche a permis de livrer un MVP fonctionnel avec seulement **2 500 €** de dépenses directes d'infrastructure et de licences sur la phase initiale, en complément de l'effort interne valorisé de Jules et Léo. Elle démontre la faisabilité économique d'un tel programme pour une ETI. Le budget prévisionnel de déploiement production (1 235 k€ en année 1) intègre les coûts RH réels, les licences et la mise à l'échelle de l'infrastructure, en restant dans des ordres de grandeur cohérents avec le secteur.
+L'enveloppe budgétaire totale du programme est fixée à **350 000 €**, répartie sur **24 semaines** de réalisation. Ce cadrage financier a été respecté grâce à une stratégie de sobriété technologique délibérée : utilisation systématique des offres gratuites (Vercel, Railway, Néon free tier) pour la phase MVP, et recours massif à l'assistance par l'intelligence artificielle, **52 % des heures de développement** ont bénéficié de l'accélération apportée par Claude Code (Anthropic), réduisant mécaniquement le coût en jours-homme. Cette approche a permis de livrer un MVP fonctionnel avec seulement **2 500 €** de dépenses directes d'infrastructure et de licences sur la phase initiale, en complément de l'effort interne valorisé de Jules et Léo. Elle démontre la faisabilité économique d'un tel programme pour une ETI. Le budget prévisionnel de déploiement production (1 235 k€ en année 1) intègre les coûts RH réels, les licences et la mise à l'échelle de l'infrastructure, en restant dans des ordres de grandeur cohérents avec le secteur.
 
 ### 3.2 Justification de la méthodologie
 
@@ -319,7 +319,7 @@ La décomposition du projet suit une structure **WBS (Work Breakdown Structure)*
 | T1.3 | Cahier des charges      | Rédaction, validation Comex                                                           | Jules       | 1 semaine  |
 | T1.4 | Atelier co-design MVP   | 2 jours de workshops, wireframes, priorisation features                               | Jules + Léo | 3 jours    |
 | T1.5 | Architecture technique  | Stack décisions, schémas, modèle de données                                           | Léo         | 2 semaines |
-| T1.6 | Setup infrastructure    | Railway (backend) + Vercel (frontend) + Supabase (DB)                                 | Léo         | 1 semaine  |
+| T1.6 | Setup infrastructure    | Railway (backend) + Vercel (frontend) + Néon (DB)                                 | Léo         | 1 semaine  |
 | T1.7 | Matrice RACI            | Atelier inter-pôles, validation 9 pôles                                               | Jules       | 1 semaine  |
 
 #### Phase 2 : développement MVP (S5-S12)
@@ -629,7 +629,7 @@ La solution repose sur une architecture **trois-tiers** (Présentation / Applica
                           │ SQL (Prisma)
                           ▼
 ┌──────────────────────────────────────────────────────────────┐
-│              COUCHE DONNÉES (Supabase)                       │
+│              COUCHE DONNÉES (Néon)                       │
 │  PostgreSQL 15 · Row Level Security · Backups automatiques   │
 │  [Users] [Projects] [Timesheets] [Milestones] [Documents]    │
 └──────────────────────────────────────────────────────────────┘
@@ -669,7 +669,7 @@ La cohérence de la solution proposée repose sur trois piliers : l'adéquation 
 | **Backend**            | Node.js + Express | 18 LTS         | Async I/Ô, même langage front/back, écosystème NPM       |
 | **ORM**                | Prisma            | 5.x            | Type-safe queries, migrations automatiques, schema-first |
 | **Database**           | PostgreSQL        | 15             | Robustesse, ACID, JSON support, Row Level Security       |
-| **Hosting DB**         | Supabase          | Managed        | Free tier généreux, backups, API REST auto-générée       |
+| **Hosting DB**         | Néon              | Managed        | PostgreSQL serverless, backups, branching                |
 | **Frontend Hosting**   | Vercel            | Non applicable | Deploy instantané, CDN global, preview branches          |
 | **Backend Hosting**    | Railway           | Non applicable | Docker natif, scaling auto, free tier                    |
 | **CI/CD**              | GitHub Actions    | Non applicable | Intégré au repo, workflows YAML, gratuit open source     |
@@ -931,7 +931,7 @@ Chaque schéma respecte les conventions de modélisation standard : les diagramm
 4. **Machine Learning** : Prédiction de retards projets basée sur les données historiques
 5. **Mobile native** : Application React Native pour les managers en déplacement
 
-Ces limites sont assumées et documentées avec transparence. La **dette technique** accumulée pendant la phase MVP, notamment l'absence de WebSocket, le mock Azure AD et la couverture de tests E2E partielle, est consignée dans un registre dédié et sera résorbée lors des itérations V1.1 et V1.2. La question de la **scalabilité** a fait l'objet d'une décision explicite : le free tier des plateformes choisies (Vercel, Railway, Supabase) supporte jusqu'à 500 utilisateurs simultanés, ce qui est amplement suffisant pour les 185 collaborateurs de Tech4Value. La migration vers des offres payantes est prévue et budgétée dès que le taux d'adoption dépasse 80 % des effectifs. Cette approche de scalabilité progressive est cohérente avec la philosophie de sobriété budgétaire retenue (P3 de la constitution projet).
+Ces limites sont assumées et documentées avec transparence. La **dette technique** accumulée pendant la phase MVP, notamment l'absence de WebSocket, le mock Azure AD et la couverture de tests E2E partielle, est consignée dans un registre dédié et sera résorbée lors des itérations V1.1 et V1.2. La question de la **scalabilité** a fait l'objet d'une décision explicite : le free tier des plateformes choisies (Vercel, Railway, Néon) supporte jusqu'à 500 utilisateurs simultanés, ce qui est amplement suffisant pour les 185 collaborateurs de Tech4Value. La migration vers des offres payantes est prévue et budgétée dès que le taux d'adoption dépasse 80 % des effectifs. Cette approche de scalabilité progressive est cohérente avec la philosophie de sobriété budgétaire retenue (P3 de la constitution projet).
 
 ### 5.12 Documentation utilisateur
 
@@ -1017,7 +1017,7 @@ Les engagements de niveau de service (**SLA**) de la plateforme Tech4Value sont 
 | -------------------- | ------------------------- | ----------------------------- | ------------------------- |
 | **Application web**  | 99,5 % uptime/mois        | Monitoring Vercel             | Incident Comop immédiat   |
 | **API Backend**      | 99,5 % uptime/mois        | Monitoring Railway            | Alerte Tech Lead < 15 min |
-| **Base de données**  | 99,9 % (Supabase managed) | Dashboard Supabase            | Escalade DSI si > 1h      |
+| **Base de données**  | 99,9 % (Néon managed) | Console Néon            | Escalade DSI si > 1h      |
 | **Intégration Odoo** | 95 % (best-effort)        | Health check toutes les 5 min | Fallback mode dégradé     |
 
 Le **SLA** de 99,5 % autorise moins de 3,6 heures d'indisponibilité par mois, cohérent avec une infrastructure cloud managée en free tier. La roadmap prévoit de migrer vers des offres pro (Vercel Pro, Railway Pro) lorsque le taux d'adoption dépassera 80 %, permettant d'élever le **SLA** à 99,9 % avec des garanties contractuelles. La gouvernance des incidents suit un processus ITIL simplifié : détection automatique → notification Slack → diagnostic → résolution → post-mortem dans les 48h.
@@ -1119,7 +1119,7 @@ Le diagramme de séquence documente les échanges entre les composants lors d'un
 
 ### Annexe D : architecture réseau / déploiement
 
-L'infrastructure de déploiement de Tech4Value repose sur trois plateformes cloud en free tier pour la phase MVP. Le frontend React est déployé sur **Vercel** (CDN global, edge functions, déploiement automatique sur push main). Le backend Node.js/Express est déployé sur **Railway** (conteneur Docker, scaling automatique, PostgreSQL managé via add-on Railway). La base de données PostgreSQL 15 est hébergée sur **Supabase** (backups automatiques quotidiens, Row Level Security activé, API REST auto-générée). Le flux réseau suit le chemin HTTPS : utilisateur → **CDN** Vercel (edge) → API Railway (TLS 1.3) → PostgreSQL Supabase (connexion chiffrée). Azure AD assure l'authentification SSO via le protocole OAuth 2.0 / OIDC. Les certificats TLS sont provisionnés automatiquement par Vercel et Railway (Let's Encrypt). Le **CDN** Vercel assure une latence inférieure à 50ms pour les assets statiques sur l'ensemble du territoire français.
+L'infrastructure de déploiement de Tech4Value repose sur trois plateformes cloud en free tier pour la phase MVP. Le frontend React est déployé sur **Vercel** (CDN global, edge functions, déploiement automatique sur push main). Le backend Node.js/Express est déployé sur **Railway** (conteneur Docker, scaling automatique, PostgreSQL managé via add-on Railway). La base de données PostgreSQL 15 est hébergée sur **Néon** (PostgreSQL serverless, backups automatiques, branching de base de données). Le flux réseau suit le chemin HTTPS : utilisateur → **CDN** Vercel (edge) → API Railway (TLS 1.3) → PostgreSQL Néon (connexion chiffrée). Azure AD assure l'authentification SSO via le protocole OAuth 2.0 / OIDC. Les certificats TLS sont provisionnés automatiquement par Vercel et Railway (Let's Encrypt). Le **CDN** Vercel assure une latence inférieure à 50ms pour les assets statiques sur l'ensemble du territoire français.
 
 ### Annexe E : wireframes / user flows
 

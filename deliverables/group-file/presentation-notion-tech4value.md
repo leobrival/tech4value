@@ -220,7 +220,7 @@ Frontend React + TypeScript
   ↓ API REST
 Backend Node.js + Express
   ↓ Prisma
-PostgreSQL / Supabase
+PostgreSQL / Néon
   ↔ Odoo · SharePoint · Power BI · Azure AD
 ```
 
@@ -248,7 +248,7 @@ Le choix TypeScript full-stack optimise cohérence, rapidité et maintenabilité
 | Frontend | React 18 + TypeScript + Tailwind + Zustand |
 | Backend | Node.js 18 LTS + Express + TypeScript |
 | ORM / DB | Prisma + PostgreSQL 15 |
-| Déploiement | Vercel + Railway + Supabase |
+| Déploiement | Vercel + Railway + Néon |
 | CI/CD | GitHub Actions |
 | Reporting | Power BI export / CSV structuré |
 
