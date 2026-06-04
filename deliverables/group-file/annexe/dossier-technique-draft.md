@@ -464,7 +464,7 @@ La section 5 forme le cœur technique du dossier. Elle porte la partie la plus s
 
 **Accessibilité : WCAG 2.2 AA comme standard minimum.** L'accessibilité constitue une obligation légale en France (loi de 2005 pour les services publics, recommandation RGAA 4.1 pour les entreprises) . La solution respecte le niveau AA des WCAG 2.2 sur l'ensemble des interfaces utilisateur. Les mesures concrètes implémentées sont : structure sémantique HTML5 (headings hiérarchiques, landmarks ARIA, rôles explicites), contraste des couleurs conforme aux ratios WCAG (4.5:1 pour le texte normal, 3:1 pour le texte large), navigation au clavier complète (focus visible, ordre de tabulation logique, raccourcis clavier pour les actions fréquentes), textes alternatifs pour tous les éléments graphiques (graphiques, icônes, images), et messages d'erreur descriptifs et accessibles aux lecteurs d'écran. Les audits d'accessibilité sont réalisés avec axe-core (intégré aux tests automatisés) et pa11y (tests manuels périodiques). La section 5.9 détaille les résultats d'audit et les corrections apportées.
 
-**Documentation utilisateur : clarté et exhaustivité.** La documentation utilisateur constitue un livrable central de la section 5. Elle doit être claire, exhaustive et utilisable par des non-techniciens. La documentation produite couvre trois niveaux : (1) **Guide de démarrage rapide** (2 pages), les 5 actions les plus fréquentes illustrées avec des captures d'écran annotées ; (2) **Manuel utilisateur complet** (20 pages), description de toutes les fonctionnalités organisées par rôle (Directeur, Chef de projet, Membre d'équipe, Administrateur) ; (3) **FAQ technique** (5 pages), réponses aux 20 questions les plus fréquentes identifiées lors des sessions de tests utilisateurs. Cette documentation est disponible dans le dossier projet (Annexe F) et accessible directement depuis l'interface de l'application (aide contextuelle). La section 5.12 présente la table des matières complète de chaque document.
+**Documentation utilisateur : clarté et exhaustivité.** La documentation utilisateur constitue un livrable central de la section 5. Elle doit être claire, exhaustive et utilisable par des non-techniciens. La documentation produite couvre trois niveaux : (1) **Guide de démarrage rapide** (2 pages), les 5 actions les plus fréquentes illustrées avec des captures d'écran annotées ; (2) **Manuel utilisateur complet** (20 pages), description de toutes les fonctionnalités organisées par rôle (Directeur, Chef de projet, Membre d'équipe, Administrateur) ; (3) **FAQ technique** (5 pages), réponses aux 20 questions les plus fréquentes identifiées lors des sessions de tests utilisateurs. Cette documentation est détaillée en section 5.12 et accessible directement depuis l'interface de l'application (aide contextuelle). La section 5.12 présente la table des matières complète de chaque document.
 
 **Gouvernance et vision d'évolution.** La gouvernance post-déploiement couvre deux dimensions : la gouvernance opérationnelle (qui fait quoi après le déploiement ?) et la roadmap d'évolution technique (quelles fonctionnalités dans les versions futures ?). La gouvernance opérationnelle définit les rôles et responsabilités post-déploiement : l'équipe IT interne assure la maintenance corrective (SLA : correction des bugs critiques en 24h, non-critiques en 5 jours ouvrés), le PMO assure l'administration fonctionnelle (gestion des utilisateurs, configuration des projets), et la Direction pilote la gouvernance stratégique (validation des évolutions majeures). La roadmap d'évolution (Now-Next-Later post-MVP) est documentée en section 5.13 avec les fonctionnalités prévues en V2 (intégration Power BI native, module de forecasting IA, application mobile React Native) et V3 (ouverture API publique pour les partenaires). Cette vision d'évolution démontre que la solution a été conçue pour durer, pas seulement pour satisfaire une contrainte interne.
 
@@ -892,7 +892,7 @@ La conformité réglementaire est pilotée par un référent désigné (**CNIL**
 - **Lighthouse Accessibility** : Score cible ≥ 90
 - **Tests manuels** : Navigation clavier + VoiceOver (macOS)
 
-L'équipe intègre l'**accessibilité** dès les wireframes comme une contrainte de conception (Section Annexe E). La charte graphique a été validée pour les ratios de contraste avant toute implémentation. Les composants Shadcn/UI, utilisés pour la bibliothèque de composants, sont conformes ARIA par défaut, réduisant le risque de régressions d'**accessibilité** lors de l'ajout de nouvelles fonctionnalités. Le score Lighthouse cible (≥ 90) est vérifié à chaque déploiement en environnement de staging via la CI GitHub Actions. Ces dispositions témoignent d'une prise en compte sérieuse des utilisateurs en situation de handicap parmi les 185 collaborateurs de l'entreprise.
+L'équipe intègre l'**accessibilité** dès les wireframes comme une contrainte de conception (voir Annexe E). La charte graphique a été validée pour les ratios de contraste avant toute implémentation. Les composants Shadcn/UI, utilisés pour la bibliothèque de composants, sont conformes ARIA par défaut, réduisant le risque de régressions d'**accessibilité** lors de l'ajout de nouvelles fonctionnalités. Le score Lighthouse cible (≥ 90) est vérifié à chaque déploiement en environnement de staging via la CI GitHub Actions. Ces dispositions témoignent d'une prise en compte sérieuse des utilisateurs en situation de handicap parmi les 185 collaborateurs de l'entreprise.
 
 ### 5.10 Qualité des schémas techniques
 
@@ -1101,13 +1101,13 @@ Le **taux d'utilisation** à **J+30** (30 jours après le déploiement pour chaq
 
 ## 7. Annexes
 
-Les annexes ci-dessous regroupent l'ensemble des dossiers techniques et stratégiques produits au cours du projet. Chaque annexe est référencée dans le corps du dossier par un renvoi explicite. Elles constituent des documents à part entière, complémentaires à la lecture du dossier principal, et permettent d'approfondir les aspects techniques ou stratégiques sans alourdir le corps du texte. L'ensemble des **24 semaines** de projet sont couvertes par les plannings et schémas ci-dessous.
+Les annexes ci-dessous sont intégrées directement au présent dossier technique afin de le rendre autonome. Elles synthétisent les éléments techniques et stratégiques nécessaires à la compréhension du projet, sans dépendre de fichiers annexes redondants. L'ensemble des **24 semaines** de projet est couvert par les plannings et schémas ci-dessous.
 
-Les 8 annexes couvrent l'intégralité des dimensions du projet : planification (Annexe A, Gantt), modèle de données (Annexe B, Prisma Schéma), intégrations (Annexe C, Diagramme de séquence Odoo), déploiement (Annexe D, Architecture réseau), UX (Annexe E, Wireframes et user flows), gouvernance (Annexe F, Matrice RACI complète), modèle économique (Annexe G, Business Model Canvas) et analyse organisationnelle (Annexe H, McKinsey 7S). Ces documents constituent le socle documentaire sur lequel s'appuie l'argumentation technique du présent dossier. Leur disponibilité dans ce dossier garantit que le comité de pilotage dispose de toutes les pièces justificatives nécessaires à l'évaluation de la cohérence et de la complétude de la solution proposée. Chaque annexe a été réalisée avec un niveau de détail professionnel adapté à une présentation devant un comité de pilotage d'entreprise, respectant ainsi les standards d'un dossier professionnel.
+Les 8 annexes couvrent l'intégralité des dimensions du projet : planification (Annexe A, Gantt), modèle de données (Annexe B, Prisma Schéma), intégrations (Annexe C, Diagramme de séquence Odoo), déploiement (Annexe D, Architecture réseau), UX (Annexe E, Wireframes et user flows), gouvernance (Annexe F, Matrice RACI complète), modèle économique (Annexe G, Business Model Canvas) et analyse organisationnelle (Annexe H, McKinsey 7S). Ces annexes intégrées constituent le socle documentaire sur lequel s'appuie l'argumentation technique du présent dossier. Leur présence dans le dossier garantit que le comité de pilotage dispose des pièces justificatives nécessaires à l'évaluation de la cohérence et de la complétude de la solution proposée.
 
 ### Annexe A : diagramme de Gantt détaillé
 
-Le diagramme de Gantt couvre les **24 semaines** complètes du projet Tech4Value, de S1 (1er octobre 2025) à S24 (31 mars 2026). Il intègre les 30 tâches principales décomposées en 4 phases (Cadrage, Développement MVP, Consolidation, Déploiement et documentation), avec les dates de début et de fin de chaque tâche, les dépendances inter-tâches (liens Finish-to-Start et Start-to-Start), et le chemin critique surligné en rouge (T1.6 → T2.1 → T2.3 → T2.2 → T2.5 → T3.2 → T4.2 → T4.6). Les 8 jalons majeurs (M1 à M8) sont matérialisés par des losanges. Deux buffers de 2 semaines chacun sont intégrés aux phases 3 et 4 pour absorber les aléas. Le Gantt est généré via GanttPRO et exporté en PDF dans le dossier projet (repository GitHub, dossier `/docs/planning/`).
+Le diagramme de Gantt couvre les **24 semaines** complètes du projet Tech4Value, de S1 (1er octobre 2025) à S24 (31 mars 2026). Il intègre les 30 tâches principales décomposées en 4 phases (Cadrage, Développement MVP, Consolidation, Déploiement et documentation), avec les dates de début et de fin de chaque tâche, les dépendances inter-tâches (liens Finish-to-Start et Start-to-Start), et le chemin critique surligné en rouge (T1.6 → T2.1 → T2.3 → T2.2 → T2.5 → T3.2 → T4.2 → T4.6). Les 8 jalons majeurs (M1 à M8) sont matérialisés par des losanges. Deux buffers de 2 semaines chacun sont intégrés aux phases 3 et 4 pour absorber les aléas. Le Gantt est synthétisé dans cette annexe et peut être maintenu dans GanttPRO pour le pilotage opérationnel.
 
 ### Annexe B : modèle de données (Prisma schéma)
 
@@ -1123,7 +1123,7 @@ L'infrastructure de déploiement de Tech4Value repose sur trois plateformes clou
 
 ### Annexe E : wireframes / user flows
 
-Les **wireframes** basse fidélité et les **user flows** documentent les 3 parcours utilisateurs critiques de la plateforme. **Parcours 1, PM (Chef de Projet)** : Connexion → Dashboard projet → Saisie timesheet → Création milestone → Génération rapport PDF (7 écrans). **Parcours 2, DG (Direction Générale)** : Connexion → Dashboard exécutif portefeuille → Drill-down projet → Export KPI Excel (4 écrans). **Parcours 3, Admin (IT)** : Connexion → Administration utilisateurs → Configuration RBAC → Paramètres intégrations (5 écrans). Chaque **wireframe** illustre la disposition des composants clés (navigation, KPI cards, tableaux, filtres), sans imposer de choix visuels définitifs. Les **user flows** identifient les points de décision (redirections conditionnelles selon le rôle) et les états d'erreur (session expirée, accès refusé, données indisponibles). Les **wireframes** complets sont disponibles dans le fichier Figma du projet (`/design/wireframes-v1.fig`).
+Les **wireframes** basse fidélité et les **user flows** documentent les 3 parcours utilisateurs critiques de la plateforme. **Parcours 1, PM (Chef de Projet)** : Connexion → Dashboard projet → Saisie timesheet → Création milestone → Génération rapport PDF (7 écrans). **Parcours 2, DG (Direction Générale)** : Connexion → Dashboard exécutif portefeuille → Drill-down projet → Export KPI Excel (4 écrans). **Parcours 3, Admin (IT)** : Connexion → Administration utilisateurs → Configuration RBAC → Paramètres intégrations (5 écrans). Chaque **wireframe** illustre la disposition des composants clés (navigation, KPI cards, tableaux, filtres), sans imposer de choix visuels définitifs. Les **user flows** identifient les points de décision (redirections conditionnelles selon le rôle) et les états d'erreur (session expirée, accès refusé, données indisponibles). Les **wireframes** sont synthétisés dans cette annexe sous forme de parcours et d'écrans clés.
 
 ### Annexe F : matrice RACI complète
 
@@ -1139,123 +1139,11 @@ L'analyse **McKinsey 7S** appliquée à Tech4Value évalue la cohérence des 7 d
 
 ---
 
-## Retour d'expérience : analyse dynamique projet
+## Retours d'expérience individuels
 
-> Cette section constitue le retour d'expérience du dossier technique. Elle invite chaque membre de l'équipe à prendre du recul sur son expérience vécue du projet : les obstacles surmontés, les apprentissages réalisés, les forces mobilisées et les axes d'amélioration identifiés pour de futurs projets. L'analyse privilégie l'authenticité et la profondeur plutôt que la conformité à un format imposé. Les analyses ci-dessous sont rédigées par Jules Courtin, Chef de Projet / Product Manager, et Léo Brival, Tech Lead du projet.
+Les retours d'expérience individuels sont fournis dans deux documents séparés afin de distinguer clairement l'analyse de chaque rôle projet :
 
-**Rôle de cette section.** Sur un projet de 24 semaines mené en binôme, le retour d'expérience individuel clarifie les responsabilités, les apprentissages et les points d'amélioration propres à chaque rôle. Cette partie complète l'analyse collective du MVP, du dossier projet et de la démonstration vidéo.
-
-**Ce que les parties prenantes attendent.** Cette analyse ne cherche pas une auto-promotion déguisée ni une liste de compétences génériques. Elle montre la capacité à reconnaître ses erreurs, à analyser ce qui n'a pas fonctionné sans minimiser, à articuler ce qui a été appris et à formuler des recommandations concrètes pour l'avenir.
-
-**Contexte du projet Tech4Value.** Ce projet a été conduit dans des conditions resserrées : équipe de 2 personnes, 52 % des heures assistées par IA, délai de 24 semaines non négociable et référentiel projet partagé. Ces contraintes ont créé des situations utiles pour le retour d'expérience. Chaque membre de l'équipe a vécu une expérience distincte selon son rôle (PM vs Tech Lead), ses expertises préalables et ses défis spécifiques.
-
-**Posture réflexive attendue.** Le retour d'expérience ne doit pas reproduire le contenu du dossier projet à la première personne. Il apporte une perspective supplémentaire : moments de doute, décisions prises sous incertitude, ajustements de posture et apprentissages inattendus. La crédibilité de l'analyse repose sur sa capacité à nommer les difficultés réelles avec précision.
-
-**Méthode de rédaction recommandée.** La démarche consiste à : (1) identifier 2 à 3 expériences concrètes du projet qui illustrent le sujet, (2) les analyser avec recul plutôt que de les décrire factuellement, (3) en tirer une leçon ou une recommandation transférable à d'autres contextes. Cette structure en trois temps, expérience, analyse, généralisation, est celle qui produit les analyses les plus convaincantes. Elle démontre une maturité réflexive qui distingue un praticien capable d'apprendre de ses expériences d'un exécutant qui les subit.
-
-### Trame de retour d'expérience
-
-_Cette trame structure le retour d'expérience de chaque membre de l'équipe. Elle couvre quatre dimensions : défis rencontrés, forces et faiblesses, compétences développées, et axes d'amélioration. Chaque dimension est illustrée avec des exemples concrets issus du projet Tech4Value._
-
-**Réflexion sur les défis rencontrés** : Décrire 2 à 3 défis significatifs rencontrés durant le projet. Pour chaque défi, préciser : la nature du problème, son impact sur le projet, et la solution ou adaptation mise en œuvre. L'authenticité est valorisée, un défi réel bien analysé vaut plus qu'un défi générique bien formulé. Exemple de défi pertinent : gestion d'une dépendance technique bloquante, arbitrage scope vs qualité sous contrainte de temps, coordination asynchrone sur une équipe distribuée.
-
-**Identification forces et faiblesses** : Réaliser une auto-évaluation honnête sous forme de tableau ou de liste structurée. Les forces doivent être étayées par des exemples concrets du projet (pas des qualités génériques). Les faiblesses doivent être reconnues sans minimisation, accompagnées d'une conscience de leur impact et d'une perspective d'amélioration.
-
-**Analyse des compétences développées** : Identifier les compétences nouvelles ou renforcées au cours du projet, techniques (nouvelles technologies, architectures, outils) et transversales (gestion de projet, communication, autonomie). Chaque compétence doit être reliée à une expérience concrète du projet.
-
-**Axes d'amélioration** : Proposer 2 à 3 axes d'amélioration concrets et actionnables pour de futurs projets similaires. Ces propositions doivent découler de l'analyse des défis et faiblesses identifiés, elles démontrent la capacité à tirer des leçons et à progresser.
-
-### Léo Brival : Tech Lead / architecte solution
-
-#### 1. Réflexion sur les défis rencontrés
-
-Le défi le plus structurant de ce projet a été la gestion de la dualité entre contraintes métier et standards industriels. En tant que Tech Lead sur une équipe de deux personnes, j'ai dû simultanément produire un MVP fonctionnel et maintenir un niveau de qualité technique défendable devant un comité de direction. Cette tension s'est manifestée lors de la phase de développement des intégrations SI : l'API Odoo v15 présente des lacunes de documentation significatives sur les endpoints de gestion des ressources humaines, ce qui m'a imposé plusieurs jours de rétro-ingénierie par débogage des échanges JSON-RPC. L'équipe a subi un retard de deux semaines sur le sprint d'intégration, absorbé par le buffer prévu en phase 3.
-
-Le second défi majeur a été l'organisation du travail assisté par IA à grande échelle. Sur ce projet, 52 % des heures de développement ont bénéficié de l'assistance de Claude Code (Anthropic). Loin d'être une facilité, cette proportion représente un défi de supervision permanent : chaque suggestion de code doit être relue, comprise et validée avant commit, sous peine d'introduire des failles de sécurité ou des incohérences architecturales. J'ai développé une discipline de revue systématique, aucun bloc de code généré par IA n'est commité sans avoir été exécuté, testé et compris en profondeur. Cette pratique, plus lente que l'acceptation aveugle, a produit une base de code cohérente et maintenable.
-
-Enfin, la coordination inter-pôles chez Tech4Value a mis en lumière un défi de conception souvent sous-estimé : modéliser des processus organisationnels complexes (allocation matricielle, portefeuille multi-projets, reporting consolidé) dans un schéma de données relationnel performant. La première version du modèle Prisma présentait une structure trop plate qui aurait généré des requêtes N+1 catastrophiques à l'échelle. La refonte du schéma (introduction des tables d'association `ProjectAssignment` et `PoleCapacity`) a été une décision architecturale difficile à S8, au moment où la pression de livraison était maximale.
-
-#### 2. Identification des forces et faiblesses
-
-| Forces identifiées                                                                                                                     | Faiblesses identifiées                                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Maîtrise du stack TypeScript full-stack (React, Node.js, Prisma, PostgreSQL), accélération significative sur la phase de développement | Sous-estimation systématique des charges d'intégration : les connecteurs Odoo et SharePoint ont chacun pris 1,5× le temps estimé                      |
-| Capacité à concevoir une architecture évolutive dès le départ (séparation des couches, adaptateurs SI, RBAC modulaire)                 | Tendance à l'over-engineering sur certaines abstractions (interface `Adapter` généralisée trop tôt, refactorisée à S14)                               |
-| Aptitude à produire une documentation technique claire et structurée en parallèle du développement                                     | Difficulté à déléguer les décisions techniques à Jules sur les arbitrages fonctionnels, monopolisation involontaire de la prise de décision technique |
-| Utilisation efficace de l'IA comme accélérateur (pas comme substitut), discipline de relecture maintenue sur l'ensemble du projet      | Communication insuffisante sur les blocages techniques lors des phases d'investigation, Jules a parfois manqué de visibilité sur les aléas en cours   |
-| Rigueur sur les tests et la qualité : couverture maintenue à ≥70 % tout au long des sprints                                            | Estimation optimiste des délais en début de projet, les marges de sécurité auraient dû être doublées sur les phases d'intégration                     |
-
-#### 3. Analyse des compétences développées
-
-| Compétence                                                           | Niveau Avant  | Niveau Après  | Contexte d'Apprentissage                                                                         |
-| -------------------------------------------------------------------- | ------------- | ------------- | ------------------------------------------------------------------------------------------------ |
-| Architecture d'application d'entreprise (Three-Tier, adaptateurs SI) | Intermédiaire | Avancé        | Conception et implémentation du modèle d'adaptateurs pour Odoo, SharePoint et Power BI           |
-| Intégration d'API tierces complexes (JSON-RPC, OAuth 2.0, REST)      | Intermédiaire | Avancé        | Rétro-ingénierie API Odoo v15, implémentation OAuth Azure AD, connecteur SharePoint Webhooks     |
-| DevOps et CI/CD (GitHub Actions, Docker, déploiement cloud)          | Débutant      | Intermédiaire | Mise en place du pipeline complet lint → typecheck → test → build → deploy sur Vercel et Railway |
-| Gestion de projet Agile hybride (Scrum adapté, cérémonies légères)   | Débutant      | Intermédiaire | 12 sprints de 2 semaines avec sprint planning, review et retrospective formalisés                |
-| Collaboration humain-IA dans un contexte professionnel               | Débutant      | Avancé        | 24 semaines d'utilisation intensive de Claude Code avec discipline de supervision systématique   |
-| Sécurité applicative (OWASP Top 10, RGPD by design)                  | Intermédiaire | Avancé        | Implémentation RBAC, Row Level Security PostgreSQL, headers de sécurité, audit OWASP ZAP         |
-
-La compétence la plus inattendue développée au cours de ce projet est la **gestion de la collaboration humain-IA à grande échelle**. Ce projet a servi de laboratoire pour explorer les frontières entre délégation efficace à l'IA et maintien de la maîtrise architecturale. La règle que j'ai progressivement formulée : l'IA accélère l'exécution, l'humain maintient la cohérence. Toute décision architecturale, choix d'une abstraction, refactorisation d'un module, stratégie d'intégration, reste exclusivement humaine ; l'IA ne produit que des suggestions que j'évalue sur la base de ma compréhension du système global.
-
-#### 4. Axes d'amélioration
-
-**Pour de futurs projets similaires, quatre axes d'amélioration sont identifiés :**
-
-1. **Anticiper les POC d'intégration dès la phase 1.** Les connecteurs Odoo et SharePoint auraient dû faire l'objet de prototypes jetables dès S2-S3 (en parallèle du cadrage) plutôt qu'en début de phase 2. Cette anticipation aurait révélé les limitations de l'API Odoo 4 semaines plus tôt, permettant un plan B (mock data structuré) planifié plutôt que réactif.
-
-2. **Formaliser les Architecture Décision Records (ADR) dès le premier sprint.** Les décisions architecturales structurantes (choix PostgreSQL vs MongoDB, rejet du low-code, adoption de Zustand vs Redux) ont été prises oralement ou dans des commentaires de commit. Un ADR par décision majeure, archivé dans le dépôt (`/docs/adr/`), aurait amélioré la traçabilité et simplifié la rédaction du dossier technique.
-
-3. **Mettre en place les tests E2E dès la phase 2, pas la phase 3.** L'absence de tests Playwright pendant les 8 premières semaines de développement a créé une dette de test difficile à résoudre en phase de consolidation. Le principe « test-first » appliqué aux tests unitaires aurait dû s'étendre aux parcours critiques dès les premiers sprints.
-
-4. **Structurer un protocole de communication plus explicite avec le co-équipier PM.** Jules et moi avons fonctionné en confiance implicite, ce qui a globalement bien fonctionné. Mais sur plusieurs incidents techniques (blocage API Odoo, refonte du schéma Prisma), Jules a appris les aléas avec retard. Un rapport d'avancement hebdomadaire structuré (format fixe, envoyé chaque vendredi) aurait maintenu une visibilité partagée permanente sans multiplier les réunions.
-
-### Jules Courtin : chef de projet / Product Manager
-
-#### 1. Réflexion sur les défis rencontrés
-
-Le premier défi a été de transformer un besoin de direction très large en périmètre produit exploitable. Au départ, les attentes exprimées par les pôles étaient nombreuses : reporting plus rapide, meilleure visibilité budgétaire, suivi des ressources, réduction des doublons, export Power BI, centralisation documentaire et alertes de risque. Mon rôle a consisté à traduire ces demandes en priorités concrètes, sans laisser le MVP devenir un catalogue de fonctionnalités. La priorisation MoSCoW a été utile, mais elle n'a pas suffi seule : il a fallu défendre des renoncements, expliquer pourquoi certaines demandes passaient en V2 et maintenir l'alignement autour d'un objectif central, la réduction du temps de reporting PMO.
-
-Le deuxième défi a concerné la coordination des parties prenantes. Tech4Value fonctionne avec 9 pôles et des habitudes de pilotage différentes. Certains responsables voulaient conserver leurs fichiers Excel, d'autres souhaitaient imposer leur propre outil comme référence. J'ai donc dû organiser les échanges de manière très structurée : entretiens ciblés, synthèses courtes, arbitrages documentés, puis validation en comité de pilotage. Cette méthode a permis d'éviter que le projet soit capté par un seul pôle et de préserver une vision portefeuille réellement transverse.
-
-Le troisième défi a été la conduite du changement. Le risque principal n'était pas uniquement technique ; il était lié à l'adoption. Une plateforme peut être correcte sur le plan fonctionnel et rester inutilisée si les utilisateurs ne comprennent pas ce qu'elle leur apporte. J'ai donc orienté la communication sur les gains concrets : moins de consolidation manuelle pour le PMO, moins de demandes de reporting ad hoc pour les chefs de projet, une lecture plus rapide des arbitrages pour la direction. Cette approche par bénéfices utilisateurs a rendu le projet plus lisible et plus acceptable.
-
-#### 2. Identification des forces et faiblesses
-
-| Forces identifiées                                                                                                 | Faiblesses identifiées                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Capacité à structurer un besoin flou en périmètre produit priorisé, avec une North Star Metric simple et mesurable | Tendance initiale à vouloir satisfaire trop de demandes métiers en même temps, ce qui a complexifié les premières versions du backlog             |
-| Bonne coordination des parties prenantes : entretiens, synthèses, arbitrages Copil et communication par segment    | Formalisation parfois tardive de certains arbitrages fonctionnels, notamment sur les règles de calcul des KPI portefeuille                        |
-| Maîtrise des outils de pilotage projet : WBS, Gantt, RACI, MoSCoW, registre des risques et reporting d'avancement  | Dépendance trop forte aux validations synchrones au début du projet, alors que certains sujets auraient pu être arbitrés plus vite en asynchrone  |
-| Capacité à vulgariser les enjeux techniques auprès de la direction et des pôles métier                             | Difficulté à challenger assez tôt certaines estimations techniques, par manque de recul sur les contraintes d'intégration Odoo et SharePoint      |
-| Attention constante portée à l'adoption utilisateur, à la formation et au réseau d'ambassadeurs                    | Sous-estimation de la charge de conduite du changement sur les managers intermédiaires, plus résistants que prévu aux nouveaux modes de reporting |
-
-#### 3. Analyse des compétences développées
-
-| Compétence                              | Niveau avant  | Niveau après  | Contexte d'apprentissage                                                                                                   |
-| --------------------------------------- | ------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cadrage produit et priorisation MVP     | Intermédiaire | Avancé        | Transformation de demandes multiples en backlog priorisé, arbitrages MoSCoW et suivi de la valeur via la North Star Metric |
-| Pilotage de projet transverse           | Intermédiaire | Avancé        | Coordination de 9 pôles, préparation des Copil, suivi des risques, jalons et dépendances sur 24 semaines                   |
-| Conduite du changement                  | Débutant      | Intermédiaire | Construction du plan ADKAR, segmentation des publics, programme ambassadeurs et indicateurs d'adoption                     |
-| Communication exécutive                 | Intermédiaire | Avancé        | Synthèses direction, messages par audience, restitution des arbitrages et préparation de la démonstration MVP              |
-| Collaboration avec un Tech Lead         | Intermédiaire | Avancé        | Arbitrages permanents entre valeur métier, faisabilité technique, dette acceptable et qualité attendue                     |
-| Analyse économique et organisationnelle | Débutant      | Intermédiaire | Business Model Canvas, diagnostic McKinsey 7S, estimation ROI et valorisation des gains PMO                                |
-
-La compétence la plus importante développée pendant ce projet est la capacité à tenir ensemble trois niveaux de lecture : la vision stratégique de la direction, les contraintes opérationnelles des pôles et la réalité technique du développement. Avant ce projet, j'avais tendance à traiter ces dimensions séparément. Tech4Value m'a appris qu'un bon pilotage produit consiste précisément à faire circuler l'information entre ces niveaux, puis à transformer les tensions en décisions explicites.
-
-#### 4. Axes d'amélioration
-
-**Pour de futurs projets similaires, quatre axes d'amélioration sont identifiés :**
-
-1. **Réduire plus tôt le périmètre du MVP.** Le backlog initial aurait gagné à être resserré dès la fin de la phase de cadrage autour de 3 parcours prioritaires : direction, PMO et chef de projet. Cette réduction aurait limité les discussions secondaires et accéléré la stabilisation des écrans clés.
-
-2. **Formaliser les arbitrages fonctionnels dans un journal dédié.** Les décisions métier ont été documentées dans les comptes rendus et dans le backlog, mais pas toujours dans un support unique. Un journal d'arbitrage fonctionnel, séparé du journal technique, aurait facilité la traçabilité des choix de périmètre, de KPI et de règles de calcul.
-
-3. **Associer les managers intermédiaires plus tôt à la conduite du changement.** Le plan de communication a bien ciblé la direction, le PMO et les chefs de projet, mais les managers intermédiaires ont été intégrés trop tard. Ce sont pourtant eux qui influencent l'adoption quotidienne. Les impliquer dès les ateliers de co-design aurait réduit certaines résistances.
-
-4. **Mettre en place un rituel hebdomadaire de synchronisation produit-technique plus structuré.** La collaboration avec Léo a reposé sur une confiance forte, mais certains blocages techniques auraient dû être traduits plus rapidement en impacts produit. Un point hebdomadaire fixe, centré sur les risques, les décisions attendues et les impacts planning, aurait amélioré la visibilité partagée.
+- `retour-experience-jules-courtin.md` : retour d'expérience de Jules Courtin, Chef de projet / Product Manager.
+- `retour-experience-leo-brival.md` : retour d'expérience de Léo Brival, Tech Lead / architecte solution.
 
 ---
-
-_Fin du Dossier Technique, Tech4Value_
-_Version 1.0, Draft, Mars 2026_

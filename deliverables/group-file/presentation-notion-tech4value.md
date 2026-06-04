@@ -31,7 +31,7 @@ Le projet ajoute une couche de consolidation et de gouvernance au-dessus du SI e
 
 ### Notes / détails
 
-Sources utilisées : `dossier-technique-draft.md`, `schema-directeur.md`, `synthese-figjam.md`, `business-model-canvas.md`, `matrice-7s-mckinsey.md`, `now-next-later-roadmap.md`, `architecture-technique.md`, `tableau-objectifs-kpi-actions.md`.
+Sources utilisées : `dossier-technique-draft.md`, `architecture-technique.md`, `business-model-canvas.md`, `matrice-7s-mckinsey.md`, `now-next-later-roadmap.md`.
 
 ---
 
@@ -651,10 +651,7 @@ La vision long terme dépasse le MVP interne sans le surcharger.
 Cette présentation consolide les documents d’annexe sans supprimer les détails utiles.
 
 - `dossier-technique-draft.md` : dossier technique principal.
-- `architecture/architecture-technique.md` : stack, architecture, sécurité, CI/CD.
+- `architecture-technique.md` : stack, architecture, sécurité, CI/CD.
 - `business-model-canvas.md` : segments, proposition de valeur, coûts, revenus, SWOT.
 - `matrice-7s-mckinsey.md` : diagnostic organisationnel et plan d’action.
 - `now-next-later-roadmap.md` : roadmap, OKR, RICE, jalons.
-- `schema-directeur.md` : cadrage global, gouvernance, dossiers.
-- `synthese-figjam.md` : synthèse exécutive BMC + 7S.
-- `tableau-objectifs-kpi-actions.md` : objectifs, KPI, actions, dépendances.
