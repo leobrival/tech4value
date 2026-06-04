@@ -8,7 +8,7 @@ notionTokenEnv: NOTION_TOKEN
 
 Présentation Notion-ready issue du dossier technique et des annexes.
 
-**M2 CPIT 2025 · Jules Courtin & Léo Brival · Mars 2026**
+**Projet interne Tech4Value · Jules Courtin & Léo Brival · Mars 2026**
 
 ---
 
@@ -270,7 +270,7 @@ Les intégrations sont priorisées selon leur impact sur le reporting et la gouv
 |---|---|---|
 | Odoo v15 | P0 | budgets, temps, ressources |
 | Power BI | P0 | dashboards et reporting exécutif |
-| SharePoint | P0 | documents, livrables, versioning |
+| SharePoint | P0 | documents, dossiers, versioning |
 | Azure AD | P0 | SSO, MFA, RBAC |
 | HubSpot | P2 | contexte commercial optionnel |
 
@@ -313,7 +313,7 @@ La méthode Agile Hybride combine cadrage structuré et exécution itérative.
 S1-S4    Cadrage Waterfall
 S5-S16   Développement Agile / sprints 2 semaines
 S17-S20  Consolidation, tests, optimisation
-S21-S24  Vidéo, dossier technique, soutenance
+S21-S24  Vidéo, dossier technique, présentation de direction
 ```
 
 - Cérémonies allégées adaptées à 2 personnes.
@@ -323,7 +323,7 @@ S21-S24  Vidéo, dossier technique, soutenance
 
 ### Notes / détails
 
-Le Scrum pur est trop lourd pour une équipe de deux personnes ; le Waterfall pur est trop rigide pour des intégrations SI. L’hybride répond aux contraintes académiques et techniques.
+Le Scrum pur est trop lourd pour une équipe de deux personnes ; le Waterfall pur est trop rigide pour des intégrations SI. L’hybride répond aux contraintes internes et techniques.
 
 ---
 
@@ -339,7 +339,7 @@ La roadmap garde le cap sur 24 semaines tout en permettant l’apprentissage con
 |---|---:|---|
 | NOW | S1-S4 | besoin, benchmark, périmètre MVP |
 | NEXT | S5-S12 | architecture, intégrations, MVP alpha |
-| LATER | S13-S24 | bêta, tests utilisateurs, livrables académiques |
+| LATER | S13-S24 | bêta, tests utilisateurs, dossiers projet |
 
 - WIP limité à 3 items NOW.
 - Promotion NEXT → NOW par checklist.
@@ -400,7 +400,7 @@ caption: gains temps + productivité + réduction fragmentation
 
 ### Notes / détails
 
-Les coûts annuels sont dominés par la masse salariale (~73%). Le projet académique MVP utilise des free tiers et une assistance IA documentée, mais les projections présentent aussi un déploiement réaliste en production.
+Les coûts annuels sont dominés par la masse salariale (~73%). Le projet interne MVP utilise des free tiers et une assistance IA documentée, mais les projections présentent aussi un déploiement réaliste en production.
 
 ---
 
@@ -457,7 +457,7 @@ Les dimensions dures (Strategy, Structure, Systems) créent les conditions de tr
 
 ### Message clé
 
-L’adoption est traitée comme un livrable à part entière, pas comme une conséquence du déploiement.
+L’adoption est traitée comme un dossier à part entière, pas comme une conséquence du déploiement.
 
 ### À retenir
 
@@ -520,15 +520,15 @@ La gamification sert de levier d’engagement éthique avec reconnaissance, prog
 
 ---
 
-## Livrables académiques et conformité
+## Documentation projet et conformité
 
 ### Message clé
 
-Le projet est aligné avec les attendus académiques.
+Le projet est aligné avec les attendus internes.
 
 ### À retenir
 
-| Livrable | Points | Preuve attendue |
+| Dossier | Points | Preuve attendue |
 |---|---:|---|
 | Vidéo MVP | 64 | démo, impact, conviction |
 | Management projet | 25 | coûts, méthode, change |
@@ -539,7 +539,7 @@ Le projet est aligné avec les attendus académiques.
 
 ### Notes / détails
 
-Le dossier technique groupe vise 85-110 pages ; les dossiers individuels 25-35 pages par étudiant. Tous les membres doivent apparaître dans la vidéo avec prise de parole.
+Le dossier technique vise 85-110 pages. Les retours d’expérience de Jules et Léo complètent le dossier principal avec les enseignements opérationnels de chaque rôle.
 
 ---
 
@@ -562,7 +562,7 @@ Le MVP apporte un impact direct sur le temps, la qualité de décision et la coo
 
 ### Notes / détails
 
-La valeur combine gain économique, meilleure traçabilité, réduction des silos, amélioration de la qualité documentaire et meilleure préparation à l’audit comme à la soutenance.
+La valeur combine gain économique, meilleure traçabilité, réduction des silos, amélioration de la qualité documentaire et meilleure préparation à l’audit comme à la présentation de direction.
 
 ---
 
@@ -586,7 +586,7 @@ Décision recommandée : lancer le MVP cadré, avec reporting PMO automatisé co
 
 ### Notes / détails
 
-Pour une soutenance, cette slide sert de conclusion : elle transforme l’analyse en décision claire et rappelle pourquoi le MVP est réaliste, mesurable et aligné avec les attendus académiques.
+Pour une présentation de direction, cette slide sert de conclusion : elle transforme l’analyse en décision claire et rappelle pourquoi le MVP est réaliste, mesurable et aligné avec les attendus internes.
 
 ---
 
@@ -633,7 +633,7 @@ Les fonctionnalités secondaires incluent le suivi Agile avancé, la gamificatio
 
 ### Message clé
 
-La vision long terme dépasse le MVP académique sans le surcharger.
+La vision long terme dépasse le MVP interne sans le surcharger.
 
 | Phase | Horizon | Contenu |
 |---|---|---|
@@ -650,11 +650,11 @@ La vision long terme dépasse le MVP académique sans le surcharger.
 
 Cette présentation consolide les documents d’annexe sans supprimer les détails utiles.
 
-- `dossier-technique-draft.md` : dossier principal.
+- `dossier-technique-draft.md` : dossier technique principal.
 - `architecture/architecture-technique.md` : stack, architecture, sécurité, CI/CD.
 - `business-model-canvas.md` : segments, proposition de valeur, coûts, revenus, SWOT.
 - `matrice-7s-mckinsey.md` : diagnostic organisationnel et plan d’action.
 - `now-next-later-roadmap.md` : roadmap, OKR, RICE, jalons.
-- `schema-directeur.md` : cadrage global, gouvernance, livrables.
+- `schema-directeur.md` : cadrage global, gouvernance, dossiers.
 - `synthese-figjam.md` : synthèse exécutive BMC + 7S.
 - `tableau-objectifs-kpi-actions.md` : objectifs, KPI, actions, dépendances.

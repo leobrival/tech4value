@@ -11,14 +11,14 @@
 **Intervenant : Jules**
 **Slides à afficher : page titre puis Slide 1 : Thèse**
 
-Bonjour, nous sommes Jules Courtin et Léo Brival, et nous vous présentons Tech4Value, notre projet d'étude M2 CPIT 2025. Cette vidéo suit la présentation Notion préparée pour expliquer le projet avec un déroulé progressif et convaincant. Notre objectif est simple : montrer comment Tech4Value peut passer d'un pilotage fragmenté de ses projets stratégiques à une plateforme unifiée, capable de consolider les données, de réduire le reporting manuel et d'accélérer les décisions.
+Bonjour, nous sommes Jules Courtin et Léo Brival, et nous vous présentons Tech4Value, notre projet interne de pilotage stratégique. Cette vidéo suit la présentation Notion préparée pour expliquer le projet avec un déroulé progressif et convaincant. Notre objectif est simple : montrer comment Tech4Value peut passer d'un pilotage fragmenté de ses projets stratégiques à une plateforme unifiée, capable de consolider les données, de réduire le reporting manuel et d'accélérer les décisions.
 
 Nous construisons la vidéo comme un récit. Nous partons d'abord du contexte de l'entreprise : 185 collaborateurs, 9 pôles, 3 sites et 5 projets stratégiques mobilisant 78 ETP. Ensuite, nous présentons le problème central : les données sont dispersées dans plusieurs outils et le PMO consacre encore trop de temps à consolider manuellement les informations. Puis nous montrons la solution cible, son architecture, ses choix techniques, sa roadmap et son impact attendu.
 
 **Intervenant : Léo**
 **Slides à afficher : Slide 1, puis aperçu rapide des Slides 2 à 8**
 
-La structure de la vidéo suit également les attendus de la soutenance. Nous couvrirons le contexte, les objectifs, la qualité de la démonstration, la qualité technique, l'originalité, l'impact potentiel et la capacité à convaincre. Jules portera principalement la vision projet, les enjeux métier, la conduite du changement et les bénéfices pour les utilisateurs. Je porterai davantage la solution technique, les intégrations SI, l'architecture, la sécurité et la démonstration fonctionnelle.
+La structure de la vidéo suit également les attendus de la présentation de direction. Nous couvrirons le contexte, les objectifs, la qualité de la démonstration, la qualité technique, l'originalité, l'impact potentiel et la capacité à convaincre. Jules portera principalement la vision projet, les enjeux métier, la conduite du changement et les bénéfices pour les utilisateurs. Je porterai davantage la solution technique, les intégrations SI, l'architecture, la sécurité et la démonstration fonctionnelle.
 
 Le fil conducteur : pourquoi ce projet existe, ce que nous avons choisi de construire, comment le MVP fonctionne, et pourquoi cette trajectoire reste crédible pour une ETI numérique. À la fin de la vidéo, vous devez retenir trois messages : le besoin est réel, le MVP apporte une preuve de valeur, et la suite du projet est gouvernable grâce à une roadmap, des jalons, des risques identifiés et des indicateurs mesurables.
 
@@ -75,7 +75,7 @@ Nous cadrons le MVP. Il démontre la valeur avec un périmètre clair : dashboar
 **Intervenant : Jules**
 **Slides à afficher : Annexe B : Fonctionnalités MVP core**
 
-Ce périmètre protège la preuve de valeur. Le MVP se concentre sur cette preuve. Ici, la preuve attendue est simple : en une seule vue, le COPIL doit comprendre quels projets vont bien, quels projets nécessitent une décision, quels risques sont critiques, et quelles ressources sont sous tension. Cette discipline permet de défendre le projet devant un jury comme devant un comité de direction.
+Ce périmètre protège la preuve de valeur. Le MVP se concentre sur cette preuve. Ici, la preuve attendue est simple : en une seule vue, le COPIL doit comprendre quels projets vont bien, quels projets nécessitent une décision, quels risques sont critiques, et quelles ressources sont sous tension. Cette discipline permet de défendre le projet devant un comité de pilotage comme devant un comité de direction.
 
 ---
 
@@ -100,7 +100,7 @@ Prenons un cas d'usage. Le COPIL ouvre la plateforme et voit immédiatement que 
 
 Techniquement, nous avons retenu une stack TypeScript full-stack : React 18, TypeScript, Tailwind et Zustand côté frontend ; Node.js, Express, TypeScript, Prisma et PostgreSQL côté backend ; GitHub Actions pour la CI/CD ; Vercel, Railway et Supabase pour le déploiement. Cette stack convient à une équipe réduite : elle utilise le même langage sur toute la chaîne, réduit les frictions et maintient une base de code lisible.
 
-Les alternatives comme Java Spring, Python Django ou une architecture microservices complète ont été étudiées, mais elles auraient ajouté de la complexité pour un MVP académique de 24 semaines. Notre choix privilégie la cohérence, la rapidité de développement, la maintenabilité et la capacité à déployer rapidement une preuve de valeur.
+Les alternatives comme Java Spring, Python Django ou une architecture microservices complète ont été étudiées, mais elles auraient ajouté de la complexité pour un MVP de 24 semaines. Notre choix privilégie la cohérence, la rapidité de développement, la maintenabilité et la capacité à déployer rapidement une preuve de valeur.
 
 **Intervenant : Léo**
 **Slides à afficher : Slide 11 : Intégrations SI critiques, puis captures Odoo / SharePoint / Power BI**
@@ -132,7 +132,7 @@ Le deuxième principe est la cohérence. La présentation Notion utilise des tit
 
 Le troisième principe est le rythme narratif. La vidéo ne doit pas être une lecture du dossier technique. Elle doit raconter une progression : contexte, problème, solution, preuve, impact, décision attendue. Les slides 13 à 15 soutiennent cette progression. Elles montrent que nous avons conçu une solution technique et structuré le projet avec une méthode Agile Hybride, une roadmap Now-Next-Later et 8 jalons vérifiables.
 
-Cette partie contribue à la qualité globale de la vidéo, car elle montre le professionnalisme de la démarche. Le spectateur comprend que le MVP s'inscrit dans un planning, une gouvernance, une gestion des risques et une trajectoire académique cohérente.
+Cette partie contribue à la qualité globale de la vidéo, car elle montre le professionnalisme de la démarche. Le spectateur comprend que le MVP s'inscrit dans un planning, une gouvernance, une gestion des risques et une trajectoire de déploiement cohérente.
 
 ---
 
@@ -182,9 +182,9 @@ Le MVP résout un problème immédiat et ouvre une trajectoire vers un cockpit d
 ## 8. Conclusion convaincante
 
 **Intervenant : Léo**
-**Slides à afficher : Slide 22 : Livrables académiques et conformité**
+**Slides à afficher : Slide 22 : Documentation projet et conformité**
 
-Pour conclure, Tech4Value répond à un besoin clair : donner aux décideurs une vision fiable, consolidée et actionnable des projets stratégiques. Le projet est aligné avec les attendus académiques : vidéo MVP, management de projet, planification, solution technique, analyse individuelle, professionnalisme du livrable et capacité à aller au-delà des demandes. La présentation Notion et le dossier technique permettent de relier chaque choix à une preuve : contexte, diagnostic, architecture, roadmap, risques, conduite du changement et impact.
+Pour conclure, Tech4Value répond à un besoin clair : donner aux décideurs une vision fiable, consolidée et actionnable des projets stratégiques. Le projet est aligné avec les attendus internes : démonstration MVP, management de projet, planification, solution technique, retours d’expérience, documentation professionnelle et amélioration continue. La présentation Notion et le dossier technique permettent de relier chaque choix à une preuve : contexte, diagnostic, architecture, roadmap, risques, conduite du changement et impact.
 
 **Intervenant : Jules**
 **Slides à afficher : Slide 24 : Ask / décision attendue**
