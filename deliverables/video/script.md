@@ -1,209 +1,260 @@
-# Script vidéo MVP : Tech4Value
+# Script vidéo Tech4Value
 
-**Format visé** : vidéo finale de 20 à 30 minutes, avec une cible de 25 minutes. Le déroulé est aligné sur la présentation Notion `deliverables/group-file/presentation-notion-tech4value.md`. Les slides 1 à 24 constituent le fil principal ; les annexes A à D servent de support de secours pendant les questions ou pour enrichir certains plans de coupe.
-
-**Principe de réalisation** : alterner prise de parole de Jules Courtin et Léo Brival, slides Notion en plein écran, zooms sur les tableaux ou schémas clés, puis captures MVP/Odoo pour illustrer la démonstration. Chaque section ci-dessous indique les slides à afficher.
-
----
-
-## 1. Introduction et structure de la vidéo
-
-**Intervenant : Jules**
-**Slides à afficher : page titre puis Slide 1 : Thèse**
-
-Bonjour, nous sommes Jules Courtin et Léo Brival, et nous vous présentons Tech4Value, notre projet interne de pilotage stratégique. Notre objectif est simple : montrer comment Tech4Value peut passer d'un pilotage fragmenté de ses projets stratégiques à une plateforme unifiée, capable de consolider les données, de réduire le reporting manuel et d'accélérer les décisions.
-
-Nous construisons la vidéo comme un récit. Nous partons d'abord du contexte de l'entreprise : 185 collaborateurs, 9 pôles, 3 sites et 5 projets stratégiques mobilisant 78 ETP. Ensuite, nous présentons le problème central : les données sont dispersées dans plusieurs outils et le PMO consacre encore trop de temps à consolider manuellement les informations. Puis nous montrons la solution cible, son architecture, ses choix techniques, sa roadmap et son impact attendu.
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 1, puis aperçu rapide des Slides 2 à 8**
-
-La structure de la vidéo suit également les attendus de la présentation de direction. Nous couvrirons le contexte, les objectifs, la qualité de la démonstration, la qualité technique, l'originalité, l'impact potentiel et la capacité à convaincre. Jules portera principalement la vision projet, les enjeux métier, la conduite du changement et les bénéfices pour les utilisateurs. Je porterai davantage la solution technique, les intégrations SI, l'architecture, la sécurité et la démonstration fonctionnelle.
-
-Le fil conducteur : pourquoi ce projet existe, ce que nous avons choisi de construire, comment le MVP fonctionne, et pourquoi cette trajectoire reste crédible pour une ETI numérique. À la fin de la vidéo, vous devez retenir trois messages : le besoin est réel, le MVP apporte une preuve de valeur, et la suite du projet est gouvernable grâce à une roadmap, des jalons, des risques identifiés et des indicateurs mesurables.
+**Format visé** : vidéo finale de 20 à 30 minutes, cible 25 minutes.
+**Principe** : un texte par slide de `presentation-notion-tech4value.md`, dans le même ordre, avec des séquences de démonstration ajoutées aux moments utiles.
+**Intervenants** : Jules Courtin et Léo Brival.
+**Règle de tournage** : afficher la slide indiquée, lire ou adapter le texte associé, puis basculer sur les captures de démonstration lorsque la section le précise.
 
 ---
 
-## 2. Contexte et objectifs du projet
+## Slide 1 : Thèse
 
 **Intervenant : Jules**
-**Slides à afficher : Slide 2 : Contexte entreprise**
 
-Tech4Value est une entreprise de services numériques de taille intermédiaire. Elle compte 185 collaborateurs répartis sur un siège et deux antennes régionales, Rennes et Lyon. Elle fonctionne avec une organisation matricielle composée de 9 pôles : Direction et PMO, IT et Infrastructure, Développement, Data et BI, Sécurité et Conformité, RH et Communication, Finance et Achats, RSE et Green IT, et enfin Fonctions support.
-
-Tech4Value dispose déjà d'un socle numérique : Odoo pour certaines données RH, financières et projet, Microsoft 365 et SharePoint pour la collaboration documentaire, Power BI pour la restitution décisionnelle, et Azure AD pour l'identité et les accès. La difficulté vient de l'absence d'une couche de consolidation capable de transformer ces briques en pilotage stratégique.
-
-**Intervenant : Jules**
-**Slides à afficher : Slide 3 : Portefeuille stratégique**
-
-Le portefeuille étudié comprend 5 projets stratégiques. Le premier est la mise en conformité RGPD, avec 13 ETP et une priorité critique. Le deuxième est le déploiement ERP Finance et Supply Chain, avec 19 ETP et une priorité critique. Le troisième est la plateforme Data Lake et BI Groupe, avec 18 ETP et une priorité haute. Le quatrième est le programme Green IT Cloud Durable, avec 11 ETP. Le cinquième est le Portail RH Unifié, avec 17 ETP et une priorité haute.
-
-Ces 5 projets mobilisent 78 ETP, soit environ 42 % des effectifs. Ce chiffre suffit à expliquer l'enjeu : lorsqu'un arbitrage est mal informé, lorsqu'un retard est détecté trop tard ou lorsqu'une ressource critique est mal allouée, l'impact ne concerne pas un seul projet. Il peut toucher plusieurs pôles, plusieurs jalons et plusieurs budgets en même temps.
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 4 : Problème central**
-
-La situation actuelle révèle plusieurs irritants. Le PMO consacre environ 30 heures par semaine au reporting manuel. Les décisions sont souvent prises sur des données qui ont entre 3 et 7 jours. Le taux de livraison à temps est seulement de 65 %. Le pôle IT est en surcharge, autour de 120 % de capacité, tandis que le pôle Data est sous-utilisé autour de 70 %. Enfin, 7 outils coexistent : Trello, Jira, Notion, Excel, Odoo, SharePoint et Power BI.
-
-Chaque outil porte une partie de la vérité, mais aucun ne donne une vision consolidée du portefeuille. La discussion en comité risque donc de porter sur la fiabilité des chiffres plutôt que sur les décisions à prendre. Tech4Value corrige cette faille.
-
-**Intervenant : Jules**
-**Slides à afficher : Slide 5 : Besoin et North Star Metric, puis Slide 6 : Objectifs stratégiques**
-
-Le besoin central est de centraliser le pilotage stratégique dans une plateforme intégrée. Notre North Star Metric est la réduction de 30 % du temps de reporting PMO, avec une cible de 30 heures à 21 heures par semaine. Cette métrique est volontairement opérationnelle : elle mesure un gain concret pour l'organisation et oblige la solution à produire une valeur visible rapidement.
-
-Les autres objectifs sont également mesurables : améliorer la livraison à temps de 65 % à 90 %, optimiser l'allocation des ressources de 72 % à 82 %, consolider progressivement 7 outils vers une plateforme intégrée, et viser un payback inférieur à 3 mois. Ces objectifs structurent la conception du MVP, la planification, la roadmap et les indicateurs de succès.
+Tech4Value doit reprendre le contrôle de ses 5 projets stratégiques avec une plateforme de pilotage unifiée. Aujourd'hui, l'entreprise dispose déjà de plusieurs briques utiles, mais elles ne produisent pas encore une vision consolidée du portefeuille. Le projet consiste donc à ajouter une couche de pilotage au-dessus du SI existant pour réduire le reporting manuel, fiabiliser les données et accélérer les arbitrages.
 
 ---
 
-## 3. Problématique et axes choisis
+## Slide 2 : Contexte entreprise
 
 **Intervenant : Jules**
-**Slides à afficher : Slide 4 : Problème central, puis Slide 7 : Proposition de valeur**
 
-La problématique centrale peut se formuler ainsi : comment permettre à Tech4Value de piloter ses 5 projets stratégiques avec une vision fiable, consolidée et actionnable, alors que les informations sont dispersées dans plusieurs outils et que le reporting dépend encore largement de consolidations manuelles ?
-
-Nous avons retenu une proposition de valeur adaptée aux différents profils. Pour la Direction, la plateforme apporte une vision portefeuille à 360 degrés et des décisions plus rapides. Pour les managers opérationnels, elle apporte une meilleure allocation des ressources et une meilleure coordination inter-pôles. Pour le PMO et les chefs de projet, elle réduit le reporting manuel et facilite la préparation des comités. Pour les équipes projet, elle clarifie les jalons, les documents, les risques et les priorités.
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 8 : Solution cible**
-
-Pour répondre à ce besoin, nous avons choisi trois axes. Le premier est la consolidation du pilotage : un dashboard exécutif, des fiches projet, un suivi des jalons, des risques et des budgets. Le deuxième est l'interopérabilité : la plateforme doit respecter le SI existant et se connecter à Odoo, SharePoint, Power BI et Azure AD. Le troisième est l'aide à la décision : le système doit rendre visibles les signaux faibles, les écarts et les arbitrages nécessaires.
-
-Nous cadrons le MVP. Il démontre la valeur avec un périmètre clair : dashboard exécutif, planning Gantt, RACI, suivi budgétaire, reporting automatisé et allocation des ressources par pôle. Les fonctionnalités plus ambitieuses, comme les prédictions avancées, les alertes intelligentes ou le mode SaaS multi-tenant, sont placées dans la roadmap post-MVP.
-
-**Intervenant : Jules**
-**Slides à afficher : Annexe B : Fonctionnalités MVP core**
-
-Ce périmètre protège la preuve de valeur. Le MVP se concentre sur cette preuve. Ici, la preuve attendue est simple : en une seule vue, le COPIL doit comprendre quels projets vont bien, quels projets nécessitent une décision, quels risques sont critiques, et quelles ressources sont sous tension. Cette discipline permet de défendre le projet devant un comité de pilotage comme devant un comité de direction.
+Tech4Value est une ETI numérique de 185 collaborateurs, répartie sur 9 pôles et 3 sites. L'entreprise possède une maturité digitale intermédiaire : les processus sont présents, les outils existent, mais le pilotage reste fragmenté. L'enjeu est de passer d'une organisation qui consolide encore beaucoup manuellement à une organisation capable de piloter ses projets avec des indicateurs fiables et partagés.
 
 ---
 
-## 4. Démonstration du MVP
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 9 : Architecture fonctionnelle**
-
-Passons maintenant à la démonstration du MVP et à sa logique de fonctionnement. La plateforme suit une architecture en trois couches. La première couche est le frontend Next.js, basé sur React et TypeScript, qui porte les écrans de dashboard, de projets, de reporting et de consultation. La deuxième couche est le backend Node.js et Express, qui gère l'API, les règles métier, l'authentification, les rôles et les connecteurs. La troisième couche est la base PostgreSQL, qui centralise les projets, les utilisateurs, les temps, les jalons, les documents, les risques et les rapports.
-
-Dans la démonstration, l'utilisateur commence par une connexion simulant Azure AD. Selon son rôle, Direction, PMO ou chef de projet, il accède à une vue adaptée. L'objectif est de montrer que le même socle de données peut produire plusieurs lectures : une lecture stratégique pour la Direction, une lecture portefeuille pour le PMO, et une lecture opérationnelle pour les chefs de projet.
+## Slide 3 : Portefeuille stratégique
 
 **Intervenant : Jules**
-**Slides à afficher : Slide 8 : Solution cible, puis capture MVP/Odoo Dashboard**
 
-Le premier écran clé est le dashboard exécutif. On y retrouve les 5 projets stratégiques, avec des indicateurs comparables : avancement, budget prévu, budget consommé, charge ETP, niveau de risque, jalons proches et santé globale. Cette vue répond au besoin prioritaire : arrêter de préparer un comité en assemblant manuellement plusieurs fichiers.
+Le portefeuille étudié comprend 5 projets stratégiques. Ils mobilisent 78 ETP, soit 42 % des effectifs. Deux projets sont critiques : la conformité RGPD et le déploiement ERP Finance et Supply Chain. Trois autres projets structurent la transformation : Data Lake et BI Groupe, Green IT Cloud Durable et Portail RH Unifié. Cette concentration de projets crée une forte tension sur les ressources et rend les arbitrages plus complexes.
 
-Prenons un cas d'usage. Le COPIL ouvre la plateforme et voit immédiatement que l'ERP Finance est en tension budgétaire, que le Data Lake a un jalon critique proche, que Green IT reste sous contrôle et que le Portail RH présente un risque d'adoption. En quelques secondes, la discussion peut se concentrer sur les décisions : faut-il réallouer des ressources ? faut-il renforcer le plan de conduite du changement ? faut-il arbitrer un budget ?
+---
+
+## Slide 4 : Problème central
+
+**Intervenant : Jules**
+
+Le problème central est la fragmentation du pilotage. Le PMO consacre environ 30 heures par semaine au reporting manuel. Les décisions reposent souvent sur des données vieilles de 3 à 7 jours. Le taux de livraison à temps est de 65 %, tandis que certains pôles sont en surcharge et d'autres sous-utilisés. Les 7 outils existants créent des doublons, des écarts de version et des discussions de Copil trop centrées sur la recherche de données plutôt que sur la décision.
+
+---
+
+## Slide 5 : Besoin et North Star Metric
+
+**Intervenant : Jules**
+
+Le besoin est de centraliser le pilotage stratégique dans une plateforme intégrée. La North Star Metric retenue est la réduction de 30 % du temps de reporting PMO, de 30 heures à 21 heures par semaine. Cette métrique est volontairement opérationnelle : si la plateforme ne réduit pas concrètement le temps de reporting, elle ne remplit pas son rôle. Elle oblige donc le MVP à produire rapidement une valeur mesurable.
+
+---
+
+## Slide 6 : Objectifs stratégiques
+
+**Intervenant : Jules**
+
+Les objectifs sont formulés de façon mesurable. Tech4Value vise une baisse du reporting PMO, une amélioration de la livraison à temps de 65 % à 90 %, une meilleure allocation des ressources, la consolidation progressive des 7 outils et un payback inférieur à 3 mois. Ces objectifs servent de fil conducteur pour la solution, la roadmap, les indicateurs de succès et la conduite du changement.
+
+---
+
+## Slide 7 : Proposition de valeur
+
+**Intervenant : Jules**
+
+La proposition de valeur est simple : un seul écran pour piloter tous les projets stratégiques. Pour la direction, cela signifie une vision portefeuille claire. Pour le PMO, moins de consolidation manuelle. Pour les chefs de projet, une lecture plus directe des jalons, des risques et des ressources. Pour les équipes, une meilleure visibilité sur les priorités et les arbitrages.
+
+---
+
+## Slide 8 : Solution cible
 
 **Intervenant : Léo**
+
+La solution cible est une plateforme web de pilotage stratégique connectée aux briques existantes : Odoo, SharePoint, Power BI et Azure AD. Elle ne remplace pas brutalement les outils déjà en place. Elle les orchestre. La plateforme centralise les projets, les ressources, les budgets, les jalons et les risques, puis restitue ces informations dans des vues adaptées à la Direction, au PMO, aux chefs de projet et aux administrateurs.
+
+### Démo additionnelle après slide 8 : premier aperçu MVP
+
+**Interfaces à afficher : plateforme Tech4Value, dashboard exécutif**
+
+Dans cette première démonstration, on affiche le dashboard exécutif. On y retrouve les 5 projets stratégiques, leur avancement, leur budget, leur charge ETP, leur niveau de risque et leurs jalons proches. L'objectif est de montrer immédiatement la promesse du MVP : passer d'une consolidation manuelle à une lecture portefeuille exploitable en quelques secondes.
+
+---
+
+## Slide 9 : Architecture fonctionnelle
+
+**Intervenant : Léo**
+
+L'architecture fonctionnelle suit un modèle trois-tiers. La couche présentation est portée par Next.js, React et TypeScript. La couche applicative repose sur Node.js, Express et des services métier. La couche données s'appuie sur PostgreSQL hébergé sur Néon. Les intégrations avec Odoo, SharePoint, Power BI et Azure AD permettent de relier la plateforme au SI existant. Cette séparation rend la solution plus testable, plus maintenable et plus facile à faire évoluer.
+
+---
+
+## Slide 10 : Stack technique retenue
+
+**Intervenant : Léo**
+
+La stack retenue est TypeScript de bout en bout. Côté frontend : Next.js 14, React 18, Tailwind et Zustand. Côté backend : Node.js, Express, Prisma et PostgreSQL. Le déploiement repose sur Vercel pour le frontend, Railway pour l'API et Néon pour la base de données. Cette stack est adaptée à une équipe interne réduite, car elle limite les changements de langage, accélère le développement et reste cohérente avec les standards web actuels.
+
+---
+
+## Slide 11 : Intégrations SI critiques
+
+**Intervenant : Léo**
+
+Les intégrations sont le cœur de la valeur. Odoo est prioritaire pour les projets, les budgets, les ressources et les temps passés. SharePoint porte les documents projet. Power BI reste l'outil de restitution avancée, alimenté par API REST dédiée quand le connecteur est fiable, avec export CSV ou XLSX comme fallback. Azure AD structure l'identité, le SSO, la MFA et le RBAC.
+
+### Démo additionnelle après slide 11 : interfaces Odoo en ligne
+
 **Interfaces à afficher : Odoo Apps, Project, Timesheets, Planning, Documents, Dashboards, Approvals**
 
-Nous ouvrons maintenant Odoo pour montrer la source opérationnelle des données. L'idée importante est la suivante : Tech4Value ne remplace pas Odoo, il l'utilise comme brique métier existante. Sur l'écran Apps, nous montrons les modules Project, Timesheets, Planning, Documents, Dashboards et Approvals. Ces modules représentent les données que le PMO manipule déjà, mais qui restent difficiles à consolider manuellement.
+Nous ouvrons Odoo pour montrer la source opérationnelle des données. Sur l'écran Apps, nous mettons en avant Project, Timesheets, Planning, Documents, Dashboards et Approvals. Ces modules représentent les informations que le PMO manipule déjà, mais qui restent difficiles à consolider manuellement.
 
-Dans Project, nous affichons les 5 projets stratégiques : RGPD, ERP Finance et Supply Chain, Data Lake et BI Groupe, Green IT Cloud Durable et Portail RH Unifié. Nous ouvrons ensuite un projet, par exemple ERP Finance, pour montrer les tâches, les jalons, les responsables, le statut et les points de risque. Cette vue illustre la donnée opérationnelle brute : elle est utile au chef de projet, mais elle n'est pas encore suffisante pour arbitrer un portefeuille complet.
+Dans Project, nous affichons les 5 projets stratégiques : RGPD, ERP Finance et Supply Chain, Data Lake et BI Groupe, Green IT Cloud Durable et Portail RH Unifié. Nous ouvrons ensuite un projet, par exemple ERP Finance, pour montrer les tâches, les jalons, les responsables, le statut et les points de risque.
 
-Dans Timesheets et Planning, nous montrons la charge réelle et l'allocation des ressources. C'est ici que l'on relie le chiffre de 78 ETP à des données concrètes : temps passé, capacité disponible, surcharge IT ou sous-utilisation Data. Cette séquence permet d'expliquer pourquoi le pilotage ne peut pas se limiter à une intuition ou à un fichier Excel mensuel.
+Dans Timesheets et Planning, nous montrons la charge réelle et l'allocation des ressources. C'est ici que l'on relie concrètement les 78 ETP aux données projet : temps passé, capacité disponible, surcharge IT ou sous-utilisation Data.
 
-Dans Documents, nous montrons les pièces projet : cahier des charges, compte rendu de COPIL, registre des risques, support de formation ou document de recette. Le point clé est la traçabilité : un arbitrage doit pouvoir être relié à un document, à une version et à un projet. Tech4Value récupère ces liens pour éviter que les preuves restent dispersées dans SharePoint ou dans des dossiers locaux.
+Dans Documents, nous montrons les pièces projet : cahier des charges, compte rendu de Copil, registre des risques, support de formation ou document de recette. Le point clé est la traçabilité : un arbitrage doit pouvoir être relié à un document, à une version et à un projet.
 
-Dans Dashboards, nous montrons la valeur de synthèse côté Odoo : projets actifs, budget consommé, avancement, risques et indicateurs de charge. Puis nous revenons à la plateforme Tech4Value pour montrer la différence : Odoo reste le système source, tandis que Tech4Value consolide, normalise et présente les indicateurs dans une lecture Copil plus directe.
+Dans Dashboards, nous montrons la valeur de synthèse côté Odoo : projets actifs, budget consommé, avancement, risques et indicateurs de charge. Puis nous revenons à Tech4Value pour montrer la différence : Odoo reste le système source, Tech4Value consolide et présente les indicateurs dans une lecture Copil plus directe.
 
-Enfin, dans Approvals, nous montrons un exemple d'arbitrage : validation d'un budget ERP, approbation d'un jalon Data Lake ou demande de changement sur le Portail RH. Cette dernière interface montre le passage de l'information à la décision. La donnée remonte depuis Odoo, elle est consolidée dans Tech4Value, puis elle alimente un arbitrage formalisé.
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 10 : Stack technique retenue**
-
-Techniquement, nous avons retenu une stack TypeScript full-stack : Next.js 14, React 18, TypeScript, Tailwind et Zustand côté frontend ; Node.js, Express, TypeScript, Prisma et PostgreSQL côté backend ; GitHub Actions pour la CI/CD ; Vercel, Railway et Néon pour le déploiement. Cette stack convient à une équipe réduite : elle utilise le même langage sur toute la chaîne, réduit les frictions et maintient une base de code lisible.
-
-Les alternatives comme Java Spring, Python Django ou une architecture microservices complète ont été étudiées, mais elles auraient ajouté de la complexité pour un MVP de 24 semaines. Notre choix privilégie la cohérence, la rapidité de développement, la maintenabilité et la capacité à déployer rapidement une preuve de valeur.
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 11 : Intégrations SI critiques, puis captures Odoo / SharePoint / Power BI**
-
-Les intégrations sont le cœur de la démonstration. Odoo est prioritaire pour les budgets, les temps passés et les ressources. SharePoint sert de référentiel documentaire : cahiers des charges, comptes rendus de COPIL, documents de recette, supports de formation. Power BI reste l'outil de restitution avancée, alimenté par une API REST dédiée lorsque le connecteur est fiable, avec export CSV ou XLSX comme fallback. Azure AD structure l'authentification, le SSO, la MFA et le RBAC.
-
-Dans la version MVP, certaines intégrations peuvent être simulées ou alimentées par des données structurées. Nous devons prouver le flux cible : les données opérationnelles entrent dans la plateforme, elles sont normalisées, puis restituées sous forme de KPI, de rapports ou d'exports.
-
-**Intervenant : Jules**
-**Slides à afficher : Slide 12 : Sécurité, conformité et qualité**
-
-La démonstration ne se limite pas aux écrans. Nous montrons aussi que la solution est pensée comme un projet professionnel. L'authentification est structurée autour de JWT puis d'Azure AD. Les rôles sont gérés par RBAC. Les risques OWASP sont couverts par des choix comme Prisma, Zod, Helmet, CORS et le rate limiting. Le RGPD est pris en compte avec la minimisation, la traçabilité et la gestion des accès. L'accessibilité vise WCAG 2.1 AA, avec navigation clavier, contrastes et composants lisibles.
-
-La qualité logicielle est également intégrée : tests unitaires, tests d'intégration, tests end-to-end, tests de charge, monitoring, Sentry et suivi des performances. Nous évitons une démonstration jolie mais fragile. Le MVP doit être compréhensible, testable et industrialisable.
+Dans Approvals, nous montrons un arbitrage : validation d'un budget ERP, approbation d'un jalon Data Lake ou demande de changement sur le Portail RH. Cette dernière interface montre le passage de l'information à la décision.
 
 ---
 
-## 5. Qualité visuelle et technique
+## Slide 12 : Sécurité, conformité et qualité
 
 **Intervenant : Léo**
-**Slides à afficher : Slide 9, Slide 10, Slide 12, puis exemples de captures annotées**
 
-La qualité visuelle et technique de la vidéo repose sur trois principes. Le premier est la lisibilité. Chaque slide doit soutenir une seule idée : le contexte, le problème, la solution, l'architecture, la roadmap ou l'impact. Lorsqu'un tableau apparaît, nous devons zoomer sur les chiffres clés. Lorsqu'un schéma apparaît, nous devons le commenter de haut en bas pour éviter de perdre l'audience.
-
-Le deuxième principe est la cohérence. La présentation Notion utilise des titres courts, un message clé, trois à cinq points à retenir et des notes de détail. Ce format rend la vidéo plus fluide et évite les slides surchargées. Pendant le montage, nous garderons ce rythme : une idée, un visuel, une preuve.
-
-**Intervenant : Jules**
-**Slides à afficher : Slide 13 : Management de projet, Slide 14 : Roadmap, Slide 15 : Jalons**
-
-Le troisième principe est le rythme narratif. La vidéo ne doit pas être une lecture du dossier technique. Elle doit raconter une progression : contexte, problème, solution, preuve, impact, décision attendue. Les slides 13 à 15 soutiennent cette progression. Elles montrent que nous avons conçu une solution technique et structuré le projet avec une méthode Agile Hybride, une roadmap Now-Next-Later et 8 jalons vérifiables.
-
-Cette partie contribue à la qualité globale de la vidéo, car elle montre le professionnalisme de la démarche. Le spectateur comprend que le MVP s'inscrit dans un planning, une gouvernance, une gestion des risques et une trajectoire de déploiement cohérente.
+La solution est pensée comme une application professionnelle. L'authentification est structurée autour d'Azure AD, les rôles sont gérés par RBAC, les entrées sont validées côté serveur et les risques OWASP sont pris en compte. Le RGPD est traité par la minimisation, la traçabilité et la gestion des droits. La qualité repose sur des tests unitaires, d'intégration, end-to-end, des tests de charge, du monitoring et une cible Lighthouse élevée.
 
 ---
 
-## 6. Originalité et dépassement des attentes
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 21 : Différenciation et innovation**
-
-L'originalité du projet tient d'abord à son positionnement. Tech4Value ajoute une couche de pilotage stratégique connectée au SI existant. La plateforme orchestre Odoo, SharePoint, Power BI et Azure AD pour produire une vision consolidée et utile à la décision.
-
-Le deuxième élément de différenciation est l'usage contrôlé de l'IA. La solution documente l'intégration de Claude API pour générer des synthèses de risques, préparer des comptes rendus de COPIL et proposer des points d'arbitrage. Cette IA n'a pas vocation à décider à la place du comité ; elle aide à préparer la décision en résumant les écarts et en mettant en avant les signaux faibles.
+## Slide 13 : Management de projet
 
 **Intervenant : Jules**
-**Slides à afficher : Slide 17 : Business model potentiel, Slide 18 : Diagnostic 7S McKinsey**
 
-Le projet va aussi au-delà du MVP en proposant un modèle économique potentiel et un diagnostic organisationnel. Le Business Model Canvas montre qu'une telle plateforme pourrait devenir une offre SaaS pour des PME ou ETI confrontées aux mêmes problèmes de pilotage. Le diagnostic 7S McKinsey montre que la transformation ne se limite pas à la technologie : elle touche la stratégie, la structure, les systèmes, les valeurs partagées, le style de management, le personnel et les compétences.
-
-Ce double niveau, produit et organisation, renforce la crédibilité du projet. Nous présentons une solution de pilotage, sa valeur, ses conditions d'adoption et sa trajectoire d'évolution.
+La méthode retenue est Agile Hybride. Le cadrage initial reprend la rigueur du Waterfall : besoin, périmètre, planning, budget, risques. L'exécution utilise ensuite des sprints courts pour absorber les découvertes techniques, notamment sur Odoo, Azure AD et SharePoint. Cette méthode est adaptée à une équipe de deux personnes : elle garde une vision long terme tout en permettant d'ajuster le MVP.
 
 ---
 
-## 7. Impact potentiel du MVP
+## Slide 14 : Roadmap Now-Next-Later
 
 **Intervenant : Jules**
-**Slides à afficher : Slide 16 : Budget et ROI, puis Slide 23 : Impact attendu**
 
-L'impact potentiel du MVP se mesure d'abord par le gain opérationnel. La cible principale est de réduire le reporting PMO de 30 %, de 30 heures à 21 heures par semaine. Ce gain signifie moins de temps passé à recopier, vérifier et consolider les chiffres, et plus de temps consacré à l'analyse et aux décisions.
-
-La valeur économique annuelle estimée est de 1,06 million d'euros, en combinant les gains de temps, la réduction de la fragmentation et l'amélioration de la productivité. Le projet prévoit un setup initial autour de 235 000 euros, un MVP 24 semaines autour de 198 000 euros, et un payback inférieur à 3 mois dans le scénario de valeur interne. Ces chiffres donnent un ordre de grandeur et justifient l'investissement.
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 19 : Conduite du changement, Slide 20 : Risques et mitigations**
-
-L'impact dépend aussi de l'adoption. Nous intégrons la conduite du changement dès le départ. Nous utilisons le modèle ADKAR : Awareness, Desire, Knowledge, Ability, Reinforcement. Nous prévoyons un programme d'early adopters avec deux à trois champions par pôle, des formations par rôle, une newsletter hebdomadaire, des ateliers mensuels et des KPI d'usage.
-
-Les risques sont également traités de manière explicite : confusion sur le besoin, intégration Odoo complexe, scope creep, adoption faible, dépendance à une équipe réduite, qualité insuffisante. Chaque risque est associé à une mitigation : cadrage, POC API, fallback CSV, MoSCoW, documentation, CI/CD, tests et support.
-
-**Intervenant : Jules**
-**Slides à afficher : Slide 23 : Impact attendu**
-
-Pour les utilisateurs finaux, l'impact se voit dans les usages quotidiens. La Direction gagne une vision consolidée. Le PMO gagne du temps et une meilleure préparation des comités. Les chefs de projet gagnent une fiche projet plus claire. Les équipes projet gagnent une meilleure visibilité sur les jalons, les documents et les priorités. Et l'organisation gagne une meilleure traçabilité des décisions.
-
-Le MVP résout un problème immédiat et ouvre une trajectoire vers un cockpit de gouvernance plus complet.
+La roadmap Now-Next-Later permet de protéger le MVP contre le scope creep. Le Now couvre le cadrage et les fondations. Le Next couvre l'architecture, les intégrations et le MVP Alpha. Le Later couvre la consolidation, les tests utilisateurs, les retours d'expérience et les évolutions post-MVP. Cette approche évite de promettre trop tôt des fonctionnalités non critiques.
 
 ---
 
-## 8. Conclusion convaincante
-
-**Intervenant : Léo**
-**Slides à afficher : Slide 22 : Documentation projet et conformité**
-
-Pour conclure, Tech4Value répond à un besoin clair : donner aux décideurs une vision fiable, consolidée et actionnable des projets stratégiques. Le projet est aligné avec les attendus internes : démonstration MVP, management de projet, planification, solution technique, retours d’expérience, documentation professionnelle et amélioration continue. La présentation Notion et le dossier technique permettent de relier chaque choix à une preuve : contexte, diagnostic, architecture, roadmap, risques, conduite du changement et impact.
+## Slide 15 : Jalons majeurs
 
 **Intervenant : Jules**
-**Slides à afficher : Slide 24 : Ask / décision attendue**
 
-La décision attendue est de valider le cadrage MVP et de concentrer l'exécution sur les intégrations prioritaires : Odoo, Power BI, SharePoint et Azure AD. Notre recommandation est de lancer le MVP cadré, avec le reporting PMO automatisé comme premier cas d'usage démontrable. Ce lancement prouve vite la valeur, mesure l'adoption et prépare la suite.
+Le projet est piloté par 8 jalons vérifiables. Les premiers jalons sécurisent le cadrage, l'infrastructure et l'authentification. Les jalons intermédiaires valident l'intégration Odoo, le MVP Alpha puis la bêta stable. Les derniers jalons couvrent la vidéo, le dossier projet et les retours d'expérience. Cette logique permet au Copil de suivre l'avancement avec des critères de validation concrets.
 
-La force du projet tient dans cette combinaison : un besoin métier réaliste, une réponse technique cohérente, une démonstration lisible, une gouvernance de projet structurée et une trajectoire d'amélioration crédible. En résumé : mieux voir, mieux arbitrer, mieux piloter. Merci pour votre attention.
+---
+
+## Slide 16 : Budget et ROI
+
+**Intervenant : Jules**
+
+Le budget distingue l'effort interne du MVP et les dépenses directes d'infrastructure. Jules et Léo sont valorisés dans les coûts RH du MVP. Les dépenses directes d'infrastructure et de licences restent limitées grâce aux free tiers. La valeur économique annuelle estimée atteint 1,06 million d'euros, principalement grâce au temps gagné, à la réduction de la fragmentation et à une meilleure allocation des ressources.
+
+---
+
+## Slide 17 : Business model potentiel
+
+**Intervenant : Jules**
+
+Même si le projet est d'abord interne, la logique peut devenir une offre SaaS pour des PME ou ETI qui rencontrent les mêmes problèmes : outils fragmentés, reporting manuel et manque de vision portefeuille. Le modèle potentiel combine abonnement SaaS, implémentation, formation et support. Cette projection n'est pas le cœur du MVP, mais elle montre que la solution a une valeur réutilisable.
+
+---
+
+## Slide 18 : Diagnostic 7S McKinsey
+
+**Intervenant : Jules**
+
+Le diagnostic 7S montre que la transformation ne se limite pas à la technologie. La stratégie et la structure sont déjà assez alignées : Tech4Value veut mieux piloter ses projets et dispose d'un PMO. Les points les plus sensibles sont les systèmes, les compétences et les valeurs partagées. Il faut donc accompagner l'adoption, former les utilisateurs et installer une culture de décision par la donnée.
+
+---
+
+## Slide 19 : Conduite du changement
+
+**Intervenant : Jules**
+
+La conduite du changement est traitée comme un volet central du projet. Le modèle ADKAR structure l'accompagnement : comprendre le changement, vouloir y participer, savoir l'utiliser, être capable de l'appliquer, puis l'ancrer dans la durée. Le programme repose sur des early adopters, des ambassadeurs par pôle, des formations par rôle et des indicateurs d'adoption à J+30 et J+90.
+
+---
+
+## Slide 20 : Risques et mitigations
+
+**Intervenant : Jules**
+
+Les risques critiques sont identifiés dès le cadrage. Les principaux risques sont la confusion sur le besoin, la complexité de l'intégration Odoo, le scope creep, l'adoption faible, la dépendance à une équipe réduite et la qualité insuffisante. Chaque risque dispose d'une mitigation : cadrage strict, POC API, fallback CSV, priorisation MoSCoW, documentation, tests et support utilisateur.
+
+---
+
+## Slide 21 : Différenciation et innovation
+
+**Intervenant : Léo**
+
+La différenciation vient de trois éléments : l'intégration avec le SI existant, la gouvernance projet et l'usage contrôlé de l'IA. La solution ne se limite pas à un tableau de bord. Elle relie les données opérationnelles, les documents, les responsabilités et les arbitrages. L'intégration Claude API est documentée comme un différenciant pour la synthèse de risques, la préparation de comptes rendus et les recommandations d'arbitrage.
+
+---
+
+## Slide 22 : Documentation projet et conformité
+
+**Intervenant : Léo**
+
+Le projet est documenté de manière professionnelle : dossier technique, annexes sobres, retours d'expérience séparés, script vidéo, présentation Notion et PDFs générés. La documentation ne sert pas seulement à expliquer le projet ; elle garantit sa reprise, son audit et son amélioration. Chaque choix important est relié à une preuve : besoin, architecture, planning, risque, test ou conduite du changement.
+
+---
+
+## Slide 23 : Impact attendu
+
+**Intervenant : Jules**
+
+L'impact attendu est direct : moins de temps passé à consolider, des décisions plus rapides, une meilleure livraison à temps, une allocation plus fiable et une adoption mesurable. Le MVP doit démontrer que Tech4Value peut passer d'un pilotage fragmenté à un pilotage consolidé. La valeur n'est pas seulement économique ; elle est aussi organisationnelle, documentaire et managériale.
+
+---
+
+## Slide 24 : Ask / décision attendue
+
+**Intervenant : Jules**
+
+La décision attendue est de valider le cadrage MVP et de concentrer l'exécution sur les intégrations prioritaires : Odoo, Power BI, SharePoint et Azure AD. La recommandation est de lancer un MVP cadré, avec le reporting PMO automatisé comme premier cas d'usage démontrable. Cela permet de prouver vite la valeur, de mesurer l'adoption et de préparer les évolutions.
+
+---
+
+## Annexe A : répartition des pôles
+
+**Intervenant : Jules, si besoin en support**
+
+Cette annexe sert de support si l'on doit expliquer la complexité organisationnelle. Elle montre les 9 pôles, leurs effectifs et leurs missions. Elle justifie pourquoi le pilotage des ressources est difficile : les projets stratégiques mobilisent plusieurs pôles à la fois, avec des contraintes différentes.
+
+---
+
+## Annexe B : fonctionnalités MVP core
+
+**Intervenant : Léo, si besoin en support**
+
+Cette annexe résume les fonctionnalités du MVP : dashboard exécutif, planning Gantt, RACI, suivi budget, reporting automatisé et allocation des ressources. Elle permet de rappeler que le MVP est volontairement limité aux fonctions qui réduisent le reporting et améliorent les arbitrages.
+
+---
+
+## Annexe C : Roadmap 24 mois
+
+**Intervenant : Jules, si besoin en support**
+
+Cette annexe présente la vision long terme : MVP, normalisation, valeur ajoutée puis monétisation potentielle. Elle permet de montrer que le projet est conçu pour durer, sans surcharger la première version.
+
+---
+
+## Annexe D : sources consolidées
+
+**Intervenant : Léo, si besoin en support**
+
+Cette annexe liste les documents sources : dossier technique, architecture, Business Model Canvas, matrice 7S et roadmap. Elle sert de preuve de cohérence documentaire et montre que la présentation n'est pas isolée du reste du dossier.
+
+---
+
+## Conclusion courte
+
+**Intervenant : Jules**
+
+La force du projet tient dans cette combinaison : un besoin métier réaliste, une réponse technique cohérente, une démonstration lisible, une gouvernance structurée et une trajectoire d'amélioration crédible. En résumé : mieux voir, mieux arbitrer, mieux piloter. Merci pour votre attention.
