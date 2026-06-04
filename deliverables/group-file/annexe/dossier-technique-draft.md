@@ -7,9 +7,6 @@
 - **Jules Courtin**, Chef de Projet / Product Manager
 - **Léo Brival**, Tech Lead / Architecte Solution
 
-**Date** : Mars 2026
-**Version** : 1.0, Draft
-
 ---
 
 ## Table des matières
@@ -44,18 +41,18 @@ Cette section présente le contexte organisationnel dans lequel s'inscrit le pro
 
 **Tech4Value** est une entreprise de services numériques comptant **185 collaborateurs**, organisée en structure matricielle autour de **9 pôles** répartis sur **3 sites** (siège + antennes Rennes et Lyon).
 
-| Pôle | Effectif | Missions Principales |
-|------|----------|----------------------|
-| Direction Générale & PMO | 10 | Gouvernance, priorisation stratégique, reporting exécutif |
-| IT & Infrastructure | 32 | Supervision SI, réseau, ERP, cloud, sécurité opérationnelle |
-| Développement & Digital Factory | 38 | Applications internes/clients (web, mobile, API) |
-| Data & BI | 18 | Gouvernance donnée, Data Lake, reporting groupe |
-| Sécurité & Conformité | 15 | RGPD, cybersécurité, audits, conformité SI |
-| RH & Communication | 20 | Gestion RH, formations, communication corporate |
-| Finance & Achats | 16 | Budgets, contrôle de gestion, contractualisation |
-| RSE & Green IT | 6 | Indicateurs environnementaux, gouvernance durable cloud |
-| Fonctions Support | 10 | Support administratif, juridique, gestion de site |
-| **TOTAL** | **185** | |
+| Pôle                            | Effectif | Missions Principales                                        |
+| ------------------------------- | -------- | ----------------------------------------------------------- |
+| Direction Générale & PMO        | 10       | Gouvernance, priorisation stratégique, reporting exécutif   |
+| IT & Infrastructure             | 32       | Supervision SI, réseau, ERP, cloud, sécurité opérationnelle |
+| Développement & Digital Factory | 38       | Applications internes/clients (web, mobile, API)            |
+| Data & BI                       | 18       | Gouvernance donnée, Data Lake, reporting groupe             |
+| Sécurité & Conformité           | 15       | RGPD, cybersécurité, audits, conformité SI                  |
+| RH & Communication              | 20       | Gestion RH, formations, communication corporate             |
+| Finance & Achats                | 16       | Budgets, contrôle de gestion, contractualisation            |
+| RSE & Green IT                  | 6        | Indicateurs environnementaux, gouvernance durable cloud     |
+| Fonctions Support               | 10       | Support administratif, juridique, gestion de site           |
+| **TOTAL**                       | **185**  |                                                             |
 
 Tech4Value affiche un chiffre d'affaires estimé à **24 M€** et positionne sa maturité digitale au **niveau 3 sur 5** selon le référentiel CMM adapté au numérique : les processus sont définis et documentés, mais leur automatisation et leur pilotage par la donnée restent insuffisants. La répartition géographique sur trois sites (siège parisien + antennes Rennes et Lyon) introduit des contraintes de coordination que la solution Tech4Value doit impérativement prendre en compte. L'objectif de montée à maturité **niveau 4** (processus mesurés et pilotés par KPI temps-réel) constitue l'horizon de référence de l'ensemble du programme.
 
@@ -65,22 +62,22 @@ Sur le plan opérationnel, **78 ETP** (Équivalents Temps Plein) sont mobilisés
 
 L'entreprise gère simultanément **5 projets stratégiques** mobilisant **78 ETP** (soit **42% des effectifs**) :
 
-| Projet | Pôles Impliqués | ETP | Priorité |
-|--------|-----------------|-----|----------|
-| Mise en conformité RGPD | Sécurité, Data, PMO | 13 | Critique |
-| Déploiement ERP Finance & Supply Chain | IT, Finance, PMO | 19 | Critique |
-| Plateforme Data Lake & BI Groupe | Data & BI, IT, PMO | 18 | Haute |
-| Programme Green IT, Cloud Durable | IT, RSE, Sécurité | 11 | Moyenne |
-| Portail RH Unifié | RH, IT, PMO | 17 | Haute |
+| Projet                                 | Pôles Impliqués     | ETP | Priorité |
+| -------------------------------------- | ------------------- | --- | -------- |
+| Mise en conformité RGPD                | Sécurité, Data, PMO | 13  | Critique |
+| Déploiement ERP Finance & Supply Chain | IT, Finance, PMO    | 19  | Critique |
+| Plateforme Data Lake & BI Groupe       | Data & BI, IT, PMO  | 18  | Haute    |
+| Programme Green IT, Cloud Durable      | IT, RSE, Sécurité   | 11  | Moyenne  |
+| Portail RH Unifié                      | RH, IT, PMO         | 17  | Haute    |
 
 La complexité du pilotage multi-projets est significative : cinq projets de priorités différentes mobilisent simultanément **42 % des effectifs** répartis sur **6 des 9 pôles**. Les interdépendances inter-pôles sont nombreuses, le PMO partage des ressources avec l'IT, la Data et la Finance sur trois projets critiques en parallèle. Cette situation crée des tensions sur l'allocation, des risques de retard en cascade et un besoin urgent de visibilité consolidée. La plateforme Tech4Value répond directement à cette problématique de coordination en offrant une vue unifiée du portefeuille, des charges et des jalons. Chaque **projet stratégique** dispose de son espace dédié dans la plateforme, permettant au PMO de consolider l'ensemble en une vue portefeuille globale et à la direction d'arbitrer les priorités sur la base de données fraîches et fiables.
 
 ### 1.3 Équipe projet
 
-| Membre | Rôle | Responsabilités |
-|--------|------|-----------------|
-| **Jules Courtin** | Chef de Projet / PM | Cadrage fonctionnel, planification, gouvernance, conduite du changement, relation stakeholders |
-| **Léo Brival** | Tech Lead / Architecte | Architecture technique, développement MVP, intégrations SI, CI/CD, documentation technique |
+| Membre            | Rôle                   | Responsabilités                                                                                |
+| ----------------- | ---------------------- | ---------------------------------------------------------------------------------------------- |
+| **Jules Courtin** | Chef de Projet / PM    | Cadrage fonctionnel, planification, gouvernance, conduite du changement, relation stakeholders |
+| **Léo Brival**    | Tech Lead / Architecte | Architecture technique, développement MVP, intégrations SI, CI/CD, documentation technique     |
 
 La complémentarité entre Jules Courtin (PM) et Léo Brival (Tech Lead) est au cœur de la réussite du projet. Jules assure l'interface avec les parties prenantes, la priorisation fonctionnelle et l'alignement métier ; Léo traduit les besoins en architecture technique et en code exploitable. Le binôme fonctionne en mode de collaboration asynchrone (daily Slack, sprint planning bi-hebdomadaire, revue hebdomadaire des dossiers), ce qui permet de maintenir une cadence soutenue malgré la contrainte d'une équipe réduite à deux personnes. La matrice RACI (section 3.2.2) documente cette organisation et trace toutes les décisions. Jules porte la vision fonctionnelle et la relation stakeholders ; Léo porte l'architecture et la qualité technique. Les deux membres participent aux décisions structurantes (choix de stack, priorisation MoSCoW, arbitrages scope).
 
@@ -118,14 +115,14 @@ L'analyse du système d'information existant révèle plusieurs dysfonctionnemen
 
 #### Cartographie SI existante
 
-| Couche | Outil | Usagé | Limite Identifiée |
-|--------|-------|-------|-------------------|
-| **ERP & Finance** | Odoo v15 Cloud | RH, comptabilité, facturation, achats | Désynchronisation Excel/Odoo |
-| **CRM** | HubSpot | Cycles commerciaux, avant-vente | Non utilisé par les équipes techniques |
-| **Collaboration** | M365 + SharePoint + Teams | Espaces projets, documents, communication | Gouvernance documentaire faible |
-| **BI & Reporting** | Power BI | Dashboards, KPI | Données manuellement consolidées |
-| **Sécurité** | Azure AD | Authentification, groupes, MFA | Pas de SSO unifié pour tous les outils |
-| **Gestion de projet** | Trello / Jira / Notion / Excel | Suivi tâches et jalons | Éclatement multi-outils, pas de source unique |
+| Couche                | Outil                          | Usagé                                     | Limite Identifiée                             |
+| --------------------- | ------------------------------ | ----------------------------------------- | --------------------------------------------- |
+| **ERP & Finance**     | Odoo v15 Cloud                 | RH, comptabilité, facturation, achats     | Désynchronisation Excel/Odoo                  |
+| **CRM**               | HubSpot                        | Cycles commerciaux, avant-vente           | Non utilisé par les équipes techniques        |
+| **Collaboration**     | M365 + SharePoint + Teams      | Espaces projets, documents, communication | Gouvernance documentaire faible               |
+| **BI & Reporting**    | Power BI                       | Dashboards, KPI                           | Données manuellement consolidées              |
+| **Sécurité**          | Azure AD                       | Authentification, groupes, MFA            | Pas de SSO unifié pour tous les outils        |
+| **Gestion de projet** | Trello / Jira / Notion / Excel | Suivi tâches et jalons                    | Éclatement multi-outils, pas de source unique |
 
 Au-delà de la fragmentation des outils, l'analyse révèle des **silos organisationnels** profonds : chaque pôle gère ses données dans son propre espace sans mécanisme de partage structuré. La fragmentation des données qui en résulte crée des angles morts décisionnels, le PMO ne dispose d'aucune visibilité consolidée sur la charge réelle des 78 ETP engagés, et la direction ne peut pas évaluer en temps réel l'avancement du portefeuille. Ces silos génèrent des doublons de saisie, des incohérences entre les versions et une perte estimée à **8 heures par semaine** par chef de projet en réconciliation manuelle de données. Ce diagnostic établit le socle objectif des choix techniques : Tech4Value répond à des dysfonctionnements opérationnels mesurés et documentés.
 
@@ -139,13 +136,13 @@ Le contexte décisionnel actuel souffre d'angles morts structurels : la directio
 
 ### 2.3 Objectifs stratégiques
 
-| Objectif | KPI Cible | Baseline | Horizon |
-|----------|-----------|----------|---------|
-| Réduire le temps de reporting PMO | -30% (30h → 21h/semaine) | 30h/semaine | S12 |
-| Améliorer la livraison à temps | +25% (65% → 90%) | 65% | S24 |
-| Optimiser l'allocation ressources | +10% productivité (72% → 82%) | 72% | S12 |
-| Consolider les outils | 7 → 1 plateforme intégrée | 7 outils | S18 |
-| ROI mesurable | Payback < 3 mois | Non applicable | S6 |
+| Objectif                          | KPI Cible                     | Baseline       | Horizon |
+| --------------------------------- | ----------------------------- | -------------- | ------- |
+| Réduire le temps de reporting PMO | -30% (30h → 21h/semaine)      | 30h/semaine    | S12     |
+| Améliorer la livraison à temps    | +25% (65% → 90%)              | 65%            | S24     |
+| Optimiser l'allocation ressources | +10% productivité (72% → 82%) | 72%            | S12     |
+| Consolider les outils             | 7 → 1 plateforme intégrée     | 7 outils       | S18     |
+| ROI mesurable                     | Payback < 3 mois              | Non applicable | S6      |
 
 Ces objectifs sont formulés selon la méthode SMART et s'inscrivent dans l'enveloppe budgétaire de **350 000 €** allouée au programme de transformation. Chaque objectif dispose d'une baseline mesurée, d'une cible chiffrée et d'un horizon temporel précis, permettant un suivi rigoureux en Copil. Le ROI cible (payback < 3 mois) est calculé sur la base des gains de productivité des 78 ETP engagés sur les 5 projets stratégiques. Cette enveloppe budgétaire de 350 000 € couvre l'ensemble du cycle, cadrage, développement, déploiement, formation et conduite du changement, et a été dimensionnée pour rester cohérente avec les contraintes financières d'une ETI de 185 collaborateurs. La priorisation MoSCoW (Must / Should / Could / Won't) garantit que les fonctionnalités à plus fort impact sur les KPI sont développées en premier, maximisant la valeur perçue dès le MVP Alpha à S12. Les objectifs non atteints à mi-parcours déclenchent automatiquement une révision du scope selon le plan de contingence défini en Section 4.5.
 
@@ -175,27 +172,27 @@ Le management de projet est la discipline qui détermine si une solution techniq
 
 #### 3.1.1 Budget prévisionnel
 
-| Poste de Coût | Phase MVP (M0-6) | Année 1 | Année 2 |
-|---------------|------------------|---------|---------|
-| **Ressources Humaines** | €198k | €900k | €870k |
-| **Infrastructure Cloud** | €2 000 (free tiers) | €120k | €140k |
-| **Licences & Services** | €500 | €30k | €35k |
-| **Consulting & Design** | Non applicable | €50k | €30k |
-| **Formation & Change** | Non applicable | €40k | €25k |
-| **Recrutement Initial** | Non applicable | €95k | Non applicable |
-| **TOTAL** | **~€200,5k** | **€1 235k** | **€1 100k** |
+| Poste de Coût            | Phase MVP (M0-6)    | Année 1     | Année 2        |
+| ------------------------ | ------------------- | ----------- | -------------- |
+| **Ressources Humaines**  | €198k               | €900k       | €870k          |
+| **Infrastructure Cloud** | €2 000 (free tiers) | €120k       | €140k          |
+| **Licences & Services**  | €500                | €30k        | €35k           |
+| **Consulting & Design**  | Non applicable      | €50k        | €30k           |
+| **Formation & Change**   | Non applicable      | €40k        | €25k           |
+| **Recrutement Initial**  | Non applicable      | €95k        | Non applicable |
+| **TOTAL**                | **~€200,5k**        | **€1 235k** | **€1 100k**    |
 
 > **Note** : Les coûts RH de la phase MVP correspondent à l'effort interne estimé de Jules et Léo. Les **2 500 €** de dépenses directes MVP correspondent uniquement à l'infrastructure cloud et aux licences/services, hors effort interne. Le budget ci-dessus projette ensuite les coûts réels pour un déploiement production.
 
 #### 3.1.2 Analyse ROI
 
-| Indicateur | Valeur |
-|------------|--------|
-| **Investissement initial** | €235k (setup) + €198k (MVP) |
-| **Coût annuel opérationnel** | ~€1,22M/an |
-| **Gains annuels estimés** | €1,06M/an (30% gain temps × 78 ETP) |
-| **Payback period** | < 3 mois |
-| **ROI à 3 ans** | 280% |
+| Indicateur                   | Valeur                              |
+| ---------------------------- | ----------------------------------- |
+| **Investissement initial**   | €235k (setup) + €198k (MVP)         |
+| **Coût annuel opérationnel** | ~€1,22M/an                          |
+| **Gains annuels estimés**    | €1,06M/an (30% gain temps × 78 ETP) |
+| **Payback period**           | < 3 mois                            |
+| **ROI à 3 ans**              | 280%                                |
 
 #### 3.1.3 Suivi budgétaire
 
@@ -217,14 +214,14 @@ Nous avons retenu une approche **Agile Hybride** combinant :
 
 **Justification** :
 
-| Critère | Waterfall Pur | Agile Pur (Scrum) | **Hybride (Retenu)** |
-|---------|--------------|-------------------|----------------------|
-| Cadrage structuré | ✅ | ❌ | ✅ |
-| Flexibilité exécution | ❌ | ✅ | ✅ |
-| Documentation complète | ✅ | ❌ | ✅ |
-| Feedback utilisateur rapide | ❌ | ✅ | ✅ |
-| Adapté à l'interne | ❌ | ❌ | ✅ |
-| Gestion risques | ✅ | ✅ | ✅ |
+| Critère                     | Waterfall Pur | Agile Pur (Scrum) | **Hybride (Retenu)** |
+| --------------------------- | ------------- | ----------------- | -------------------- |
+| Cadrage structuré           | ✅            | ❌                | ✅                   |
+| Flexibilité exécution       | ❌            | ✅                | ✅                   |
+| Documentation complète      | ✅            | ❌                | ✅                   |
+| Feedback utilisateur rapide | ❌            | ✅                | ✅                   |
+| Adapté à l'interne          | ❌            | ❌                | ✅                   |
+| Gestion risques             | ✅            | ✅                | ✅                   |
 
 **Raisons du choix hybride** :
 
@@ -237,28 +234,28 @@ Nous avons retenu une approche **Agile Hybride** combinant :
 
 **Matrice RACI Projet** :
 
-| Activité | Jules (PM) | Léo (Tech Lead) | Direction | Copil |
-|----------|-----------|-----------------|-----------|-------|
-| Cadrage fonctionnel | R | C | A | I |
-| Architecture technique | C | R | I | I |
-| Planification & Gantt | R | C | I | A |
-| Développement MVP | C | R | I | I |
-| Tests & Qualité | I | R | I | I |
-| Conduite du changement | R | C | A | I |
-| Reporting Copil | R | C | I | A |
-| Documentation projet | R | R | I | I |
+| Activité               | Jules (PM) | Léo (Tech Lead) | Direction | Copil |
+| ---------------------- | ---------- | --------------- | --------- | ----- |
+| Cadrage fonctionnel    | R          | C               | A         | I     |
+| Architecture technique | C          | R               | I         | I     |
+| Planification & Gantt  | R          | C               | I         | A     |
+| Développement MVP      | C          | R               | I         | I     |
+| Tests & Qualité        | I          | R               | I         | I     |
+| Conduite du changement | R          | C               | A         | I     |
+| Reporting Copil        | R          | C               | I         | A     |
+| Documentation projet   | R          | R               | I         | I     |
 
 > R = Réalisateur (Responsible), A = Approbateur (Accountable), C = Consulté (Consulted), I = Informé (Informed)
 
 #### 3.2.3 Cérémonies Agile
 
-| Cérémonie | Fréquence | Durée | Participants |
-|-----------|-----------|-------|-------------|
-| Sprint Planning | Bi-hebdomadaire | 1h | Jules + Léo |
-| Daily Standup | Quotidien (async Slack) | 5 min | Jules + Léo |
-| Sprint Review | Bi-hebdomadaire | 30 min | Jules + Léo + stakeholders |
-| Sprint Retrospective | Bi-hebdomadaire | 30 min | Jules + Léo |
-| Copil Reporting | Mensuel | 1h | PM + Direction |
+| Cérémonie            | Fréquence               | Durée  | Participants               |
+| -------------------- | ----------------------- | ------ | -------------------------- |
+| Sprint Planning      | Bi-hebdomadaire         | 1h     | Jules + Léo                |
+| Daily Standup        | Quotidien (async Slack) | 5 min  | Jules + Léo                |
+| Sprint Review        | Bi-hebdomadaire         | 30 min | Jules + Léo + stakeholders |
+| Sprint Retrospective | Bi-hebdomadaire         | 30 min | Jules + Léo                |
+| Copil Reporting      | Mensuel                 | 1h     | PM + Direction             |
 
 Cette organisation des cérémonies a été calibrée pour une équipe de deux personnes : les cérémonies formelles sont condensées (30 min au lieu de 2h en Scrum classique) afin de maximiser le temps disponible pour la production. L'async est privilégié pour le suivi quotidien.
 
@@ -300,12 +297,12 @@ La planification détaillée est la colonne vertébrale opérationnelle du proje
 
 Le projet est structuré selon le framework **Now-Next-Later**, organisé en **4 phases majeures** sur **24 semaines**, avec des **jalons** définis à chaque transition de phase :
 
-| Phase | Horizon | Semaines | Objectif Principal |
-|-------|---------|----------|--------------------|
-| **Phase 1, NOW : Cadrage** | 0-4 semaines | S1-S4 | Analyse besoin, cahier des charges, architecture |
-| **Phase 2, NEXT : Fondations** | 1-3 mois | S5-S12 | Développement MVP, intégrations, tests |
-| **Phase 3, LATER : Consolidation** | 3-5 mois | S13-S18 | Intégrations avancées, bêta testing, optimisation |
-| **Phase 4, Dossiers** | 5-6 mois | S19-S24 | Vidéo, dossier technique, soumission |
+| Phase                              | Horizon      | Semaines | Objectif Principal                                |
+| ---------------------------------- | ------------ | -------- | ------------------------------------------------- |
+| **Phase 1, NOW : Cadrage**         | 0-4 semaines | S1-S4    | Analyse besoin, cahier des charges, architecture  |
+| **Phase 2, NEXT : Fondations**     | 1-3 mois     | S5-S12   | Développement MVP, intégrations, tests            |
+| **Phase 3, LATER : Consolidation** | 3-5 mois     | S13-S18  | Intégrations avancées, bêta testing, optimisation |
+| **Phase 4, Dossiers**              | 5-6 mois     | S19-S24  | Vidéo, dossier technique, soumission              |
 
 La cohérence de la planification globale tient à trois principes directeurs. Premièrement, le framework Now-Next-Later impose une discipline de priorisation : seules les fonctionnalités nécessaires au MVP alpha (S12) entrent en Phase 2 ; tout le reste est repoussé en Phase 3 ou 4, évitant le scope creep. Deuxièmement, chaque phase se termine par un **jalon** de validation formelle (recette, démo Copil, revue qualité) avant le passage à la phase suivante. L'équipe ne démarre aucune phase avant la clôture de la précédente. Troisièmement, les 480 heures-homme estimées intègrent une réserve de 15 % (buffer) distribuée sur les tâches à plus haute incertitude technique (intégrations Odoo, Azure AD SSO), ce qui garantit que les estimations initiales restent réalistes sur 24 semaines. Cette approche équilibrée entre rigueur Waterfall (phases jalonnées) et flexibilité Agile (priorisation sprint par sprint) est détaillée dans la justification méthodologique de la Section 3.2.
 
@@ -315,49 +312,49 @@ La décomposition du projet suit une structure **WBS (Work Breakdown Structure)*
 
 #### Phase 1 : cadrage (S1-S4)
 
-| ID | Tâche | Sous-tâches | Owner | Durée |
-|----|-------|-------------|-------|-------|
-| T1.1 | Analyse stakeholders | Interviews 10-15 personnes, synthèse besoins | Jules | 2 semaines |
-| T1.2 | Benchmark concurrentiel | Analyse 5-7 solutions (Monday, Asana, Wrike, Planisware, Sciforma, PPM Pro, Clarizen) | Jules | 2 semaines |
-| T1.3 | Cahier des charges | Rédaction, validation Comex | Jules | 1 semaine |
-| T1.4 | Atelier co-design MVP | 2 jours de workshops, wireframes, priorisation features | Jules + Léo | 3 jours |
-| T1.5 | Architecture technique | Stack décisions, schémas, modèle de données | Léo | 2 semaines |
-| T1.6 | Setup infrastructure | Railway (backend) + Vercel (frontend) + Supabase (DB) | Léo | 1 semaine |
-| T1.7 | Matrice RACI | Atelier inter-pôles, validation 9 pôles | Jules | 1 semaine |
+| ID   | Tâche                   | Sous-tâches                                                                           | Owner       | Durée      |
+| ---- | ----------------------- | ------------------------------------------------------------------------------------- | ----------- | ---------- |
+| T1.1 | Analyse stakeholders    | Interviews 10-15 personnes, synthèse besoins                                          | Jules       | 2 semaines |
+| T1.2 | Benchmark concurrentiel | Analyse 5-7 solutions (Monday, Asana, Wrike, Planisware, Sciforma, PPM Pro, Clarizen) | Jules       | 2 semaines |
+| T1.3 | Cahier des charges      | Rédaction, validation Comex                                                           | Jules       | 1 semaine  |
+| T1.4 | Atelier co-design MVP   | 2 jours de workshops, wireframes, priorisation features                               | Jules + Léo | 3 jours    |
+| T1.5 | Architecture technique  | Stack décisions, schémas, modèle de données                                           | Léo         | 2 semaines |
+| T1.6 | Setup infrastructure    | Railway (backend) + Vercel (frontend) + Supabase (DB)                                 | Léo         | 1 semaine  |
+| T1.7 | Matrice RACI            | Atelier inter-pôles, validation 9 pôles                                               | Jules       | 1 semaine  |
 
 #### Phase 2 : développement MVP (S5-S12)
 
-| ID | Tâche | Sous-tâches | Owner | Durée |
-|----|-------|-------------|-------|-------|
-| T2.1 | Authentification Azure AD | SSO, RBAC, MFA | Léo | 2 semaines |
-| T2.2 | Module Dashboard exécutif | KPI temps-réel, graphiques Recharts, vues par rôle | Léo | 3 semaines |
-| T2.3 | Module Gestion Projets | CRUD projets, timesheets, milestones, risques | Léo | 3 semaines |
-| T2.4 | Intégration Odoo API | POC, connecteur temps-réel, sync budgets/ressources | Léo | 3 semaines |
-| T2.5 | Module Reporting | Génération rapports PDF/Excel, templates Copil | Léo | 2 semaines |
-| T2.6 | Export Power BI | Pipeline CSV/XLSX → Power BI | Léo | 1 semaine |
-| T2.7 | CI/CD Pipeline | GitHub Actions (lint, test, deploy auto) | Léo | 1 semaine |
-| T2.8 | Tests automatisés | Unit + Intégration + E2E, coverage ≥70% | Léo | Continue (S5-S12) |
+| ID   | Tâche                     | Sous-tâches                                         | Owner | Durée             |
+| ---- | ------------------------- | --------------------------------------------------- | ----- | ----------------- |
+| T2.1 | Authentification Azure AD | SSO, RBAC, MFA                                      | Léo   | 2 semaines        |
+| T2.2 | Module Dashboard exécutif | KPI temps-réel, graphiques Recharts, vues par rôle  | Léo   | 3 semaines        |
+| T2.3 | Module Gestion Projets    | CRUD projets, timesheets, milestones, risques       | Léo   | 3 semaines        |
+| T2.4 | Intégration Odoo API      | POC, connecteur temps-réel, sync budgets/ressources | Léo   | 3 semaines        |
+| T2.5 | Module Reporting          | Génération rapports PDF/Excel, templates Copil      | Léo   | 2 semaines        |
+| T2.6 | Export Power BI           | Pipeline CSV/XLSX → Power BI                        | Léo   | 1 semaine         |
+| T2.7 | CI/CD Pipeline            | GitHub Actions (lint, test, deploy auto)            | Léo   | 1 semaine         |
+| T2.8 | Tests automatisés         | Unit + Intégration + E2E, coverage ≥70%             | Léo   | Continue (S5-S12) |
 
 #### Phase 3 : consolidation (S13-S18)
 
-| ID | Tâche | Sous-tâches | Owner | Durée |
-|----|-------|-------------|-------|-------|
-| T3.1 | Intégration SharePoint | Webhooks, gestion documentaire, métadonnées | Léo | 3 semaines |
-| T3.2 | MVP Bêta | Déploiement 3 projets pilotes, bêta testing | Jules + Léo | 3 semaines |
-| T3.3 | Optimisation performance | Caching, CDN, load testing 200 req/min | Léo | 2 semaines |
-| T3.4 | Formation utilisateurs | Par vagues, support dédié, FAQ | Jules | 3 semaines |
-| T3.5 | Migration données | Historiques depuis outils existants | Léo | 2 semaines |
+| ID   | Tâche                    | Sous-tâches                                 | Owner       | Durée      |
+| ---- | ------------------------ | ------------------------------------------- | ----------- | ---------- |
+| T3.1 | Intégration SharePoint   | Webhooks, gestion documentaire, métadonnées | Léo         | 3 semaines |
+| T3.2 | MVP Bêta                 | Déploiement 3 projets pilotes, bêta testing | Jules + Léo | 3 semaines |
+| T3.3 | Optimisation performance | Caching, CDN, load testing 200 req/min      | Léo         | 2 semaines |
+| T3.4 | Formation utilisateurs   | Par vagues, support dédié, FAQ              | Jules       | 3 semaines |
+| T3.5 | Migration données        | Historiques depuis outils existants         | Léo         | 2 semaines |
 
 #### Phase 4 : dossiers projet (S19-S24)
 
-| ID | Tâche | Sous-tâches | Owner | Durée |
-|----|-------|-------------|-------|-------|
-| T4.1 | Script vidéo + storyboard | Structure, répartition temps de parole | Jules | 1 semaine |
-| T4.2 | Enregistrement vidéo | Screencast MVP + voix-off | Jules + Léo | 1 semaine |
-| T4.3 | Montage vidéo | Montage final, sous-titres, 15-20 min | Jules | 1 semaine |
-| T4.4 | Dossier technique groupe | Rédaction 85-110 pages | Jules + Léo | 4 semaines |
-| T4.5 | Retours d'expérience individuels | Analyse réflexive de chaque rôle projet | Jules / Léo | 3 semaines |
-| T4.6 | Review & validation finale | Relecture, corrections, validation finale | Jules + Léo | 1 semaine |
+| ID   | Tâche                            | Sous-tâches                               | Owner       | Durée      |
+| ---- | -------------------------------- | ----------------------------------------- | ----------- | ---------- |
+| T4.1 | Script vidéo + storyboard        | Structure, répartition temps de parole    | Jules       | 1 semaine  |
+| T4.2 | Enregistrement vidéo             | Screencast MVP + voix-off                 | Jules + Léo | 1 semaine  |
+| T4.3 | Montage vidéo                    | Montage final, sous-titres, 15-20 min     | Jules       | 1 semaine  |
+| T4.4 | Dossier technique groupe         | Rédaction 85-110 pages                    | Jules + Léo | 4 semaines |
+| T4.5 | Retours d'expérience individuels | Analyse réflexive de chaque rôle projet   | Jules / Léo | 3 semaines |
+| T4.6 | Review & validation finale       | Relecture, corrections, validation finale | Jules + Léo | 1 semaine  |
 
 ### 4.3 Calendrier projet
 
@@ -375,14 +372,14 @@ Le calendrier projet s'étend du **1er octobre 2025** (date de début, S1) au **
 
 ### 4.4 Gestion des dépendances
 
-| Tâche Dépendante | Prérequis (**prédécesseur**) | Type | **Dépendance** et Impact si Retard |
-|-------------------|-----------|------|------------------|
-| T2.1 (Auth Azure AD) | T1.6 (Infrastructure) | Finish-to-Start | **Dépendance** bloquante : sans infra, impossible de déployer l'auth |
-| T2.2 (Dashboard) | T2.1 (Auth) + T2.3 (Projets) | Finish-to-Start | Dashboard sans données ni sécurité |
-| T2.4 (Odoo API) | T1.5 (Architecture) | Finish-to-Start | **Prédécesseur** obligatoire : contrat d'API non défini |
-| T2.6 (Power BI) | T2.5 (Reporting) | Finish-to-Start | Pas d'export automatisé |
-| T3.2 (Bêta) | T2.* (tous dev) | Finish-to-Start | **Dépendance** multiple : chemin critique du projet |
-| T4.2 (Vidéo) | T3.2 (Bêta stable) | Finish-to-Start | Démo sur version instable |
+| Tâche Dépendante     | Prérequis (**prédécesseur**) | Type            | **Dépendance** et Impact si Retard                                   |
+| -------------------- | ---------------------------- | --------------- | -------------------------------------------------------------------- |
+| T2.1 (Auth Azure AD) | T1.6 (Infrastructure)        | Finish-to-Start | **Dépendance** bloquante : sans infra, impossible de déployer l'auth |
+| T2.2 (Dashboard)     | T2.1 (Auth) + T2.3 (Projets) | Finish-to-Start | Dashboard sans données ni sécurité                                   |
+| T2.4 (Odoo API)      | T1.5 (Architecture)          | Finish-to-Start | **Prédécesseur** obligatoire : contrat d'API non défini              |
+| T2.6 (Power BI)      | T2.5 (Reporting)             | Finish-to-Start | Pas d'export automatisé                                              |
+| T3.2 (Bêta)          | T2.\* (tous dev)             | Finish-to-Start | **Dépendance** multiple : chemin critique du projet                  |
+| T4.2 (Vidéo)         | T3.2 (Bêta stable)           | Finish-to-Start | Démo sur version instable                                            |
 
 **Chemin critique** : T1.6 → T2.1 → T2.3 → T2.2 → T2.5 → T3.2 → T4.2 → T4.6
 
@@ -390,17 +387,17 @@ La gestion des **dépendances** inter-tâches est un levier de réduction des ri
 
 ### 4.5 Gestion des risques
 
-| ID | Risque | Probabilité | Impact | Criticité | Stratégie de Mitigation |
-|----|--------|-------------|--------|-----------|--------------------------|
-| R1 | API Odoo instable / documentation insuffisante | Moyenne | Élevé | **Critique** | POC précoce (S1-4), mock data en fallback |
-| R2 | Retard livraison MVP | Moyenne | Élevé | **Critique** | Buffer 2 semaines, scope réduit (MoSCoW) |
-| R3 | Adoption utilisateurs faible | Moyenne | Moyen | **Majeur** | Programme early adopters, champions par pôle |
-| R4 | Surcharge équipe (2 personnes) | Haute | Moyen | **Majeur** | Priorisation RICE stricte, automatisation max |
-| R5 | Incompatibilité Azure AD / SSO | Faible | Élevé | **Majeur** | POC auth S4, fallback JWT classique |
-| R6 | Complexité intégration SharePoint | Moyenne | Moyen | **Modéré** | Phase 3 seulement, non critique pour MVP |
-| R7 | Perte de données migration | Faible | Élevé | **Majeur** | Backup systématique, migration progressive |
-| R8 | Retard sur jalons de gouvernance | Faible | Critique | **Critique** | Phase 4 dédiée, buffer 2 semaines |
-| R9 | Indisponibilité ressource (équipe 2 pers.) | Moyenne | Élevé | **Critique** | Documentation exhaustive, plan de **contingence** individuel |
+| ID  | Risque                                         | Probabilité | Impact   | Criticité    | Stratégie de Mitigation                                      |
+| --- | ---------------------------------------------- | ----------- | -------- | ------------ | ------------------------------------------------------------ |
+| R1  | API Odoo instable / documentation insuffisante | Moyenne     | Élevé    | **Critique** | POC précoce (S1-4), mock data en fallback                    |
+| R2  | Retard livraison MVP                           | Moyenne     | Élevé    | **Critique** | Buffer 2 semaines, scope réduit (MoSCoW)                     |
+| R3  | Adoption utilisateurs faible                   | Moyenne     | Moyen    | **Majeur**   | Programme early adopters, champions par pôle                 |
+| R4  | Surcharge équipe (2 personnes)                 | Haute       | Moyen    | **Majeur**   | Priorisation RICE stricte, automatisation max                |
+| R5  | Incompatibilité Azure AD / SSO                 | Faible      | Élevé    | **Majeur**   | POC auth S4, fallback JWT classique                          |
+| R6  | Complexité intégration SharePoint              | Moyenne     | Moyen    | **Modéré**   | Phase 3 seulement, non critique pour MVP                     |
+| R7  | Perte de données migration                     | Faible      | Élevé    | **Majeur**   | Backup systématique, migration progressive                   |
+| R8  | Retard sur jalons de gouvernance               | Faible      | Critique | **Critique** | Phase 4 dédiée, buffer 2 semaines                            |
+| R9  | Indisponibilité ressource (équipe 2 pers.)     | Moyenne     | Élevé    | **Critique** | Documentation exhaustive, plan de **contingence** individuel |
 
 **Matrice de criticité** :
 
@@ -417,29 +414,29 @@ La gestion des risques est un processus vivant : le registre est mis à jour à 
 
 ### 4.6 Outils de planification
 
-| Outil | Usagé | Fréquence |
-|-------|-------|-----------|
-| **Gantt (GanttPRO / MS Project)** | Planification macro, chemin critique, jalons | Mise à jour hebdomadaire |
-| **GitHub Projects** | Backlog produit, sprint board, Kanban avec cérémonies **Scrum** | Quotidien |
-| **Now-Next-Later Board** | Roadmap produit, priorisation stratégique | Review bi-hebdomadaire |
-| **RICE Scoring** | Priorisation features (Reach × Impact × Confidence / Effort) | Par sprint |
-| **Matrice RACI** | Répartition responsabilités | Stable, revue mensuelle |
-| **Power BI** | Dashboard KPI, suivi avancement | Temps-réel |
+| Outil                             | Usagé                                                           | Fréquence                |
+| --------------------------------- | --------------------------------------------------------------- | ------------------------ |
+| **Gantt (GanttPRO / MS Project)** | Planification macro, chemin critique, jalons                    | Mise à jour hebdomadaire |
+| **GitHub Projects**               | Backlog produit, sprint board, Kanban avec cérémonies **Scrum** | Quotidien                |
+| **Now-Next-Later Board**          | Roadmap produit, priorisation stratégique                       | Review bi-hebdomadaire   |
+| **RICE Scoring**                  | Priorisation features (Reach × Impact × Confidence / Effort)    | Par sprint               |
+| **Matrice RACI**                  | Répartition responsabilités                                     | Stable, revue mensuelle  |
+| **Power BI**                      | Dashboard KPI, suivi avancement                                 | Temps-réel               |
 
 Le choix de GitHub Projects comme outil de planification opérationnelle est cohérent avec la méthode **Scrum** retenue (Section 3.2). L'intégration native avec le dépôt de code permet de lier chaque tâche planifiée à ses commits et pull requests, assurant une traçabilité complète entre le planning et l'exécution réelle. GanttPRO est utilisé pour la vision macro (phases, **milestone** clés, chemin critique), tandis que GitHub Projects gère le backlog sprint au quotidien. Cette complémentarité couvre les besoins de planification opérationnelle. La combinaison de ces outils couvre l'ensemble des besoins de planification : vision long terme (Gantt), priorisation (RICE), exécution quotidienne (GitHub Projects) et reporting (Power BI).
 
 ### 4.7 Jalons clés : milestones
 
-| Jalon | Semaine | Critère de Validation | Dossier |
-|-------|---------|----------------------|----------|
-| **M1 : Cadrage validé** | S3 | Cahier des charges approuvé Comex | CDC + Architecture |
-| **M2 : Infrastructure opérationnelle** | S4 | Environnements dev/staging/prod déployés | CI/CD fonctionnel |
-| **M3 : Auth & Sécurité** | S6 | SSO Azure AD + MFA opérationnels | Module auth |
-| **M4 : Intégration Odoo** | S8 | Sync quotidienne budgets/ressources | Connecteur Odoo |
-| **M5 : MVP Alpha** | S12 | 6 features core déployées, 3 projets pilotes | MVP fonctionnel |
-| **M6 : Bêta stable** | S18 | Tests OK, performance validée, formations lancées | MVP optimisé |
-| **M7 : Vidéo finalisée** | S22 | 15-20 min, tous les membres présents | Fichier MP4 |
-| **M8 : Validation finale** | S24 | Dossier projet + individuels complets | dossier final |
+| Jalon                                  | Semaine | Critère de Validation                             | Dossier            |
+| -------------------------------------- | ------- | ------------------------------------------------- | ------------------ |
+| **M1 : Cadrage validé**                | S3      | Cahier des charges approuvé Comex                 | CDC + Architecture |
+| **M2 : Infrastructure opérationnelle** | S4      | Environnements dev/staging/prod déployés          | CI/CD fonctionnel  |
+| **M3 : Auth & Sécurité**               | S6      | SSO Azure AD + MFA opérationnels                  | Module auth        |
+| **M4 : Intégration Odoo**              | S8      | Sync quotidienne budgets/ressources               | Connecteur Odoo    |
+| **M5 : MVP Alpha**                     | S12     | 6 features core déployées, 3 projets pilotes      | MVP fonctionnel    |
+| **M6 : Bêta stable**                   | S18     | Tests OK, performance validée, formations lancées | MVP optimisé       |
+| **M7 : Vidéo finalisée**               | S22     | 15-20 min, tous les membres présents              | Fichier MP4        |
+| **M8 : Validation finale**             | S24     | Dossier projet + individuels complets             | dossier final      |
 
 Chaque jalon fait l'objet d'une procédure de **recette** formalisée : les conditions de validation sont définies avant le début de la phase, vérifiées à la date prévue et documentées dans un procès-verbal de recette signé par Jules (PM) et présenté au Copil. Le jalon M5 (MVP Alpha, S12) constitue le point de **déploiement** critique. À ce moment, les 3 projets pilotes basculent sur la plateforme et les premières mesures d'adoption sont collectées. Un jalon non atteint déclenche automatiquement l'activation du buffer de deux semaines et une révision du scope (méthode MoSCoW) pour garantir la livraison finale à S24.
 
@@ -463,7 +460,7 @@ La section 5 forme le cœur technique du dossier. Elle porte la partie la plus s
 
 **Conformité réglementaire : RGPD et sécurité.** La solution traite des données personnelles (profils employés, allocations de ressources nominatives, données de performance individuelle). La conformité RGPD est donc une obligation légale, pas un bonus. Les mesures implémentées sont : chiffrement des données au repos (PostgreSQL avec chiffrement AES-256) et en transit (HTTPS obligatoire, HSTS), minimisation des données collectées (seuls les champs nécessaires au pilotage sont stockés), mécanisme de droit à l'oubli (suppression en cascade implémentée dans le schéma Prisma), journalisation des accès aux données sensibles (audit log), et politique de rétention des données documentée (données de projet conservées 5 ans, logs d'accès 1 an). La politique de sécurité applicative suit les recommandations OWASP Top 10 : protection CSRF, validation des entrées côté serveur, rate limiting sur les endpoints d'authentification, headers de sécurité (Content-Security-Policy, X-Frame-Options, HSTS). Ces mesures sont documentées en section 5.8.
 
-**GreenIT : efficience environnementale par conception.** La démarche GreenIT de Tech4Value repose sur le référentiel GR491 (Institut du Numérique Responsable) et sur trois principes opérationnels. (1) **Éco-conception des interfaces** : lazy loading des composants non visibles, compression des images (WebP, AVIF), mise en cache agressive côté client (Service Worker), élimination du CSS inutilisé (PurgeCSS intégré à Tailwind). (2) **Architecture serverless** : Vercel et Néon facturent à l'usage, pas de serveurs allumés en permanence pour une charge nulle. Cela réduit l'empreinte carboné proportionnellement au trafic réel. (3) **Optimisation des requêtes** : chaque requête SQL est auditée via Prisma Query Analyzer pour éliminer les N+1 queries, les requêtes sans index et les SELECT * inutiles. Ces mesures réduisent la consommation CPU et mémoire côté serveur, avec un impact direct sur l'empreinte énergétique. La section 5.7 détaille les métriques de performance environnementale et les outils de mesure utilisés (EcoGrader, Chrome DevTools Coverage).
+**GreenIT : efficience environnementale par conception.** La démarche GreenIT de Tech4Value repose sur le référentiel GR491 (Institut du Numérique Responsable) et sur trois principes opérationnels. (1) **Éco-conception des interfaces** : lazy loading des composants non visibles, compression des images (WebP, AVIF), mise en cache agressive côté client (Service Worker), élimination du CSS inutilisé (PurgeCSS intégré à Tailwind). (2) **Architecture serverless** : Vercel et Néon facturent à l'usage, pas de serveurs allumés en permanence pour une charge nulle. Cela réduit l'empreinte carboné proportionnellement au trafic réel. (3) **Optimisation des requêtes** : chaque requête SQL est auditée via Prisma Query Analyzer pour éliminer les N+1 queries, les requêtes sans index et les SELECT \* inutiles. Ces mesures réduisent la consommation CPU et mémoire côté serveur, avec un impact direct sur l'empreinte énergétique. La section 5.7 détaille les métriques de performance environnementale et les outils de mesure utilisés (EcoGrader, Chrome DevTools Coverage).
 
 **Accessibilité : WCAG 2.2 AA comme standard minimum.** L'accessibilité constitue une obligation légale en France (loi de 2005 pour les services publics, recommandation RGAA 4.1 pour les entreprises) . La solution respecte le niveau AA des WCAG 2.2 sur l'ensemble des interfaces utilisateur. Les mesures concrètes implémentées sont : structure sémantique HTML5 (headings hiérarchiques, landmarks ARIA, rôles explicites), contraste des couleurs conforme aux ratios WCAG (4.5:1 pour le texte normal, 3:1 pour le texte large), navigation au clavier complète (focus visible, ordre de tabulation logique, raccourcis clavier pour les actions fréquentes), textes alternatifs pour tous les éléments graphiques (graphiques, icônes, images), et messages d'erreur descriptifs et accessibles aux lecteurs d'écran. Les audits d'accessibilité sont réalisés avec axe-core (intégré aux tests automatisés) et pa11y (tests manuels périodiques). La section 5.9 détaille les résultats d'audit et les corrections apportées.
 
@@ -484,6 +481,114 @@ La section 5 forme le cœur technique du dossier. Elle porte la partie la plus s
 **Schémas techniques et visualisation architecturale.** Le dossier et ses annexes regroupent 8 diagrammes techniques. Tous les schémas sont produits selon le modèle **C4 Model** (Context, Container, Component, Code) de Simon Brown, qui offre plusieurs niveaux de zoom sur l'architecture, du contexte système le plus large jusqu'aux détails d'implémentation des composants critiques. Le niveau C1 (Context) situe Tech4Value dans son écosystème (utilisateurs, systèmes externes) ; le niveau C2 (Container) détaille l'architecture trois-tiers (frontend, API, base de données) ; le niveau C3 (Component) zoom sur les modules critiques (authentification, synchronisation Odoo, tableau de bord temps réel) ; le niveau C4 (Code) est réservé aux composants les plus complexes (module de synchronisation). Cette hiérarchie de schémas permet à différents lecteurs, direction générale, architecte SI, développeur, de trouver le niveau de détail adapté à leur besoin sans être submergés par une information non pertinente pour leur niveau de lecture. Tous les diagrammes sont produits en SVG vectoriel pour garantir une lisibilité parfaite à toute résolution d'impression, et sont versionés dans le repository Git au même titre que le code source, évitant le problème classique des schémas obsolètes déconnectés de l'implémentation réelle.
 
 **Politique de veille IT.** Cette politique couvre la veille sur les pratiques et standards du management de systèmes d'information. Notre politique de veille s'articule autour de quatre sources structurées : (1) **Gartner Magic Quadrant** pour le positionnement des éditeurs de solutions de gestion de portefeuille de projets (PPM), consulté trimestriellement pour situer nos choix technologiques par rapport au marché ; (2) **PMI Pulse of the Profession** (rapport annuel) pour les tendances et benchmarks de maturité en gestion de projet IT ; (3) **InfoQ** et **The Register** pour la veille sur les architectures cloud-native et les pratiques DevOps émergentes ; (4) **ANSSI** (Agence Nationale de Sécurité des Systèmes d'Information) pour les recommandations réglementaires en matière de sécurité applicative. Cette veille a directement alimenté les décisions de la section 5 : le choix de l'architecture serverless (tendance Gartner 2024-2025), l'adoption des pratiques DevSecOps (recommandations ANSSI), et la priorisation de l'accessibilité RGAA (obligation réglementaire française).
+
+#### Schéma directeur cible en ASCII
+
+Le schéma directeur ci-dessous synthétise la cible Tech4Value sous forme de graphiques ASCII. Il clarifie la gouvernance, l'urbanisation SI, les flux de données et la restitution décisionnelle attendue. Ces schémas ne remplacent pas les diagrammes détaillés de la section 5 ; ils servent de lecture rapide pour comprendre comment la plateforme Next.js s'insère dans le système d'information existant.
+
+**Gouvernance projet et responsabilités.**
+
+```text
+┌────────────────────────────────────────────────────────────┐
+│                    DIRECTION / COMEX                        │
+│      Arbitrages stratégiques · budget · priorités           │
+└───────────────────────────┬────────────────────────────────┘
+                            │ décisions / validations
+                            ▼
+┌────────────────────────────────────────────────────────────┐
+│                    COMITÉ DE PILOTAGE                       │
+│       PMO · DSI · Finance · RH · représentants pôles        │
+└───────────────────────────┬────────────────────────────────┘
+                            │ cadrage / suivi / escalades
+                            ▼
+┌────────────────────────────────────────────────────────────┐
+│              ÉQUIPE PROJET INTERNE TECH4VALUE               │
+│  Jules Courtin : PM / Product Manager                       │
+│  Léo Brival   : Tech Lead / Architecte Solution             │
+└───────────────────────────┬────────────────────────────────┘
+                            │ livraison MVP / amélioration
+                            ▼
+┌────────────────────────────────────────────────────────────┐
+│                  UTILISATEURS PILOTES                       │
+│      Direction · PMO · Chefs de projet · équipes            │
+└────────────────────────────────────────────────────────────┘
+```
+
+**Urbanisation SI cible.**
+
+```text
+┌────────────────────────────────────────────────────────────┐
+│                SYSTÈMES SOURCES EXISTANTS                   │
+│  Odoo ERP      SharePoint      Azure AD      Power BI        │
+│  Projets       Documents       Identités     Restitution     │
+│  Budgets       PV / livrables  SSO / rôles   Analyses        │
+└───────────────┬───────────────┬─────────────┬───────────────┘
+                │               │             │
+                └───────────────┼─────────────┘
+                                ▼
+┌────────────────────────────────────────────────────────────┐
+│               COUCHE D'INTÉGRATION TECH4VALUE              │
+│   Adaptateurs API · exports CSV · normalisation données     │
+│   Contrôles qualité · logs de synchronisation · fallback    │
+└───────────────────────────┬────────────────────────────────┘
+                            ▼
+┌────────────────────────────────────────────────────────────┐
+│                 PLATEFORME WEB NEXT.JS                     │
+│  Dashboard portefeuille · reporting · risques · ressources  │
+│  Vues par rôle : Direction / PMO / Chef de projet / Admin   │
+└───────────────────────────┬────────────────────────────────┘
+                            ▼
+┌────────────────────────────────────────────────────────────┐
+│                 DÉCISION ET PILOTAGE                        │
+│  Arbitrages Copil · alertes · exports · plans d'action      │
+└────────────────────────────────────────────────────────────┘
+```
+
+**Flux de données Odoo vers Next.js.**
+
+```text
+┌──────────────┐      API JSON-RPC       ┌──────────────────┐
+│    Odoo      │ ──────────────────────▶ │  Odoo Adapter    │
+│ Projets      │                         │  Normalisation   │
+│ Budgets      │ ◀──── erreurs/logs ──── │  Validation      │
+│ Ressources   │                         └────────┬─────────┘
+└──────────────┘                                  │
+                                                  ▼
+                                           ┌──────────────┐
+                                           │ PostgreSQL   │
+                                           │ Source fiable│
+                                           │ consolidée   │
+                                           └──────┬───────┘
+                                                  │ Prisma
+                                                  ▼
+┌──────────────┐      REST JSON          ┌──────────────────┐
+│ Frontend     │ ◀────────────────────── │ API Express      │
+│ Next.js      │                         │ Services métier  │
+│ Dashboards   │ ───── actions user ───▶ │ RBAC / sécurité  │
+└──────────────┘                         └──────────────────┘
+```
+
+**Tableau de bord exécutif cible.**
+
+```text
+╔════════════════════════════════════════════════════════════╗
+║              TECH4VALUE · PILOTAGE PORTEFEUILLE           ║
+╠════════════════════════════════════════════════════════════╣
+║ Avancement global     ███████░░░ 72%                     ║
+║ Budget consommé       ██████░░░░ 61%                     ║
+║ Reporting PMO         30h → 21h / semaine                ║
+║ Projets à risque      2 critiques · 1 élevé · 2 maîtrisés ║
+╠════════════════════════════════════════════════════════════╣
+║ Projet                         Santé   Budget   Échéance  ║
+║ RGPD                           ROUGE    82%      S+3       ║
+║ ERP Finance / Supply Chain     ORANGE   65%      S+6       ║
+║ Data Lake & BI Groupe          VERT     48%      S+9       ║
+║ Green IT Cloud Durable         VERT     37%      S+12      ║
+║ Portail RH Unifié              ORANGE   59%      S+5       ║
+╠════════════════════════════════════════════════════════════╣
+║ Actions Copil : arbitrer ressources IT · valider budget    ║
+╚════════════════════════════════════════════════════════════╝
+```
 
 ### 5.1 Cohérence de la solution proposée
 
@@ -541,47 +646,47 @@ La cohérence de la solution proposée repose sur trois piliers : l'adéquation 
 
 #### Adéquation solution / besoins
 
-| Besoin Identifié | Réponse Technique | Module Concerné |
-|------------------|-------------------|-----------------|
-| Visibilité 360° sur 5 projets | Dashboard exécutif temps-réel | Frontend (Recharts) |
-| Réduction temps reporting | Génération automatique rapports | Reporting Service |
-| Source unique de données | PostgreSQL centralisé + sync Odoo | Data Layer + Adapters |
-| Allocation optimisée ressources | Visualisation capacité/charge | Dashboard + Analytics |
-| Interopérabilité SI existant | Adapters Odoo, SharePoint, Power BI | Service Layer |
-| Sécurité & RGPD | Azure AD SSO, RBAC, chiffrement | Auth + Middleware |
+| Besoin Identifié                | Réponse Technique                   | Module Concerné       |
+| ------------------------------- | ----------------------------------- | --------------------- |
+| Visibilité 360° sur 5 projets   | Dashboard exécutif temps-réel       | Frontend (Recharts)   |
+| Réduction temps reporting       | Génération automatique rapports     | Reporting Service     |
+| Source unique de données        | PostgreSQL centralisé + sync Odoo   | Data Layer + Adapters |
+| Allocation optimisée ressources | Visualisation capacité/charge       | Dashboard + Analytics |
+| Interopérabilité SI existant    | Adapters Odoo, SharePoint, Power BI | Service Layer         |
+| Sécurité & RGPD                 | Azure AD SSO, RBAC, chiffrement     | Auth + Middleware     |
 
 ### 5.2 Qualité de la justification technique
 
 #### Stack retenue : JavaScript Full-Stack (MERN adapté)
 
-| Composant | Technologie | Version | Justification |
-|-----------|-------------|---------|---------------|
-| **Frontend Framework** | React | 18.2+ | Standard industrie, écosystème riche, communauté massive |
-| **Langage** | TypeScript | 5.0+ | Type safety, refactoring sûr, meilleure maintenabilité |
-| **Styling** | Tailwind CSS | 3.x | Utility-first, responsive natif, bundle optimisé |
-| **State** | Zustand | 4.x | Léger (1KB), API simple, moins de boilerplate que Redux |
-| **Charts** | Recharts | 2.x | Composants React natifs, responsive, customisable |
-| **Backend** | Node.js + Express | 18 LTS | Async I/Ô, même langage front/back, écosystème NPM |
-| **ORM** | Prisma | 5.x | Type-safe queries, migrations automatiques, schema-first |
-| **Database** | PostgreSQL | 15 | Robustesse, ACID, JSON support, Row Level Security |
-| **Hosting DB** | Supabase | Managed | Free tier généreux, backups, API REST auto-générée |
-| **Frontend Hosting** | Vercel | Non applicable | Deploy instantané, CDN global, preview branches |
-| **Backend Hosting** | Railway | Non applicable | Docker natif, scaling auto, free tier |
-| **CI/CD** | GitHub Actions | Non applicable | Intégré au repo, workflows YAML, gratuit open source |
-| **Auth** | Azure AD + JWT | Non applicable | SSO existant chez Tech4Value, MFA native |
+| Composant              | Technologie       | Version        | Justification                                            |
+| ---------------------- | ----------------- | -------------- | -------------------------------------------------------- |
+| **Frontend Framework** | React             | 18.2+          | Standard industrie, écosystème riche, communauté massive |
+| **Langage**            | TypeScript        | 5.0+           | Type safety, refactoring sûr, meilleure maintenabilité   |
+| **Styling**            | Tailwind CSS      | 3.x            | Utility-first, responsive natif, bundle optimisé         |
+| **State**              | Zustand           | 4.x            | Léger (1KB), API simple, moins de boilerplate que Redux  |
+| **Charts**             | Recharts          | 2.x            | Composants React natifs, responsive, customisable        |
+| **Backend**            | Node.js + Express | 18 LTS         | Async I/Ô, même langage front/back, écosystème NPM       |
+| **ORM**                | Prisma            | 5.x            | Type-safe queries, migrations automatiques, schema-first |
+| **Database**           | PostgreSQL        | 15             | Robustesse, ACID, JSON support, Row Level Security       |
+| **Hosting DB**         | Supabase          | Managed        | Free tier généreux, backups, API REST auto-générée       |
+| **Frontend Hosting**   | Vercel            | Non applicable | Deploy instantané, CDN global, preview branches          |
+| **Backend Hosting**    | Railway           | Non applicable | Docker natif, scaling auto, free tier                    |
+| **CI/CD**              | GitHub Actions    | Non applicable | Intégré au repo, workflows YAML, gratuit open source     |
+| **Auth**               | Azure AD + JWT    | Non applicable | SSO existant chez Tech4Value, MFA native                 |
 
 #### Alternatives évaluées et rejetées
 
-| Alternative | Technologie | Raison du Rejet |
-|-------------|-------------|-----------------|
-| Frontend Python (Django templates) | Django | Pas de SPA, UX inférieure pour dashboards |
-| Frontend Vue.js | Vue 3 | Écosystème moins mature, moins de composants charts |
-| Backend Python (FastAPI) | FastAPI | Langage différent du frontend, overhead de contexte |
-| Backend Java (Spring Boot) | Spring | Over-engineering pour un MVP, temps de développement plus long |
-| Database MongoDB | NoSQL | Relations complexes (projets/pôles/users) mieux gérées en SQL |
-| Database MySQL | MySQL | PostgreSQL supérieur pour JSON, RLS, et extensions |
-| Hosting AWS | EC2/RDS | Complexité inutile pour un MVP, coûts plus élevés |
-| Low-code (Retool/Appsmith) | Low-code | Limites personnalisation, vendor lock-in |
+| Alternative                        | Technologie | Raison du Rejet                                                |
+| ---------------------------------- | ----------- | -------------------------------------------------------------- |
+| Frontend Python (Django templates) | Django      | Pas de SPA, UX inférieure pour dashboards                      |
+| Frontend Vue.js                    | Vue 3       | Écosystème moins mature, moins de composants charts            |
+| Backend Python (FastAPI)           | FastAPI     | Langage différent du frontend, overhead de contexte            |
+| Backend Java (Spring Boot)         | Spring      | Over-engineering pour un MVP, temps de développement plus long |
+| Database MongoDB                   | NoSQL       | Relations complexes (projets/pôles/users) mieux gérées en SQL  |
+| Database MySQL                     | MySQL       | PostgreSQL supérieur pour JSON, RLS, et extensions             |
+| Hosting AWS                        | EC2/RDS     | Complexité inutile pour un MVP, coûts plus élevés              |
+| Low-code (Retool/Appsmith)         | Low-code    | Limites personnalisation, vendor lock-in                       |
 
 #### Critères de décision
 
@@ -591,38 +696,38 @@ Le processus de sélection technologique a suivi une matrice de cinq axes pondé
 
 #### Sources de veille active
 
-| Source | Type | Fréquence |
-|--------|------|-----------|
-| **State of JS / State of CSS** | Survey annuel | Annuel |
-| **ThoughtWorks Technology Radar** | Radar technologique | Trimestriel |
-| **Hacker News / dev.to** | Communauté développeur | Quotidien |
-| **Newsletters** (TLDR, JavaScript Weekly, Node Weekly) | Curation tech | Hebdomadaire |
-| **GitHub Trending** | Open source | Hebdomadaire |
-| **Gartner Magic Quadrant PPM** | Marché PPM enterprise | Annuel |
+| Source                                                 | Type                   | Fréquence    |
+| ------------------------------------------------------ | ---------------------- | ------------ |
+| **State of JS / State of CSS**                         | Survey annuel          | Annuel       |
+| **ThoughtWorks Technology Radar**                      | Radar technologique    | Trimestriel  |
+| **Hacker News / dev.to**                               | Communauté développeur | Quotidien    |
+| **Newsletters** (TLDR, JavaScript Weekly, Node Weekly) | Curation tech          | Hebdomadaire |
+| **GitHub Trending**                                    | Open source            | Hebdomadaire |
+| **Gartner Magic Quadrant PPM**                         | Marché PPM enterprise  | Annuel       |
 
 #### Tendances intégrées au projet
 
-| Tendance | Application dans Tech4Value |
-|----------|----------------------------|
-| **TypeScript adoption massive** (93% satisfaction) | TypeScript full-stack |
-| **Server-side rendering Renaissance** | SSR pour SEO pages publiques |
-| **Edge Computing** | Vercel Edge Functions pour API légères |
-| **AI-assisted development** | Claude Code pour accélération développement |
-| **Design Systems** | Tailwind CSS + composants réutilisables |
-| **CNCF Landscape** | Suivi des projets Cloud Native Foundation (Kubernetes, Prometheus, OpenTelemetry) pour évaluer les options d'observabilité et de déploiement conteneurisé | Trimestriel |
+| Tendance                                           | Application dans Tech4Value                                                                                                                               |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| **TypeScript adoption massive** (93% satisfaction) | TypeScript full-stack                                                                                                                                     |
+| **Server-side rendering Renaissance**              | SSR pour SEO pages publiques                                                                                                                              |
+| **Edge Computing**                                 | Vercel Edge Functions pour API légères                                                                                                                    |
+| **AI-assisted development**                        | Claude Code pour accélération développement                                                                                                               |
+| **Design Systems**                                 | Tailwind CSS + composants réutilisables                                                                                                                   |
+| **CNCF Landscape**                                 | Suivi des projets Cloud Native Foundation (Kubernetes, Prometheus, OpenTelemetry) pour évaluer les options d'observabilité et de déploiement conteneurisé | Trimestriel |
 
 La veille technologique est un processus continu, non une activité ponctuelle. Chaque tendance identifiée est analysée selon trois axes : maturité (Technology Readiness Level), pertinence pour Tech4Value, et coût d'adoption. Seules les tendances franchissant les trois axes sont intégrées au backlog produit.
 
 ### 5.4 Innovation de la solution
 
-| Innovation | Description | Différenciant |
-|------------|-------------|---------------|
-| **Dashboard temps-réel multi-projets** | Vue consolidée 5 projets avec KPI live | vs. Excel statique existant |
-| **Sync bidirectionnelle Odoo** | Connecteur temps-réel budgets/ressources | vs. export CSV manuel |
-| **Alertes proactives** | Détection risques 48h à l'avance | vs. reporting rétrospectif |
-| **Rapports auto-générés** | PDF/Excel en 30 min (vs 4h manuelles) | -87% temps reporting |
-| **Allocation intelligente** | Suggestions optimisation 78 ETP | vs. intuition seule |
-| **Intégration Claude API** | Assistant IA embarqué pour la synthèse de rapports et la génération de recommandations | Aucun concurrent direct sur le marché PMO ETI |
+| Innovation                             | Description                                                                            | Différenciant                                 |
+| -------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------- |
+| **Dashboard temps-réel multi-projets** | Vue consolidée 5 projets avec KPI live                                                 | vs. Excel statique existant                   |
+| **Sync bidirectionnelle Odoo**         | Connecteur temps-réel budgets/ressources                                               | vs. export CSV manuel                         |
+| **Alertes proactives**                 | Détection risques 48h à l'avance                                                       | vs. reporting rétrospectif                    |
+| **Rapports auto-générés**              | PDF/Excel en 30 min (vs 4h manuelles)                                                  | -87% temps reporting                          |
+| **Allocation intelligente**            | Suggestions optimisation 78 ETP                                                        | vs. intuition seule                           |
+| **Intégration Claude API**             | Assistant IA embarqué pour la synthèse de rapports et la génération de recommandations | Aucun concurrent direct sur le marché PMO ETI |
 
 La solution innove en combinant trois dimensions : l'unification du SI existant (Odoo, SharePoint, Power BI) en une source unique de vérité, l'automatisation du reporting par des algorithmes de génération documentaire et l'intégration de l'intelligence artificielle via la **Claude API** pour l'analyse prédictive. Cette triple innovation positionne Tech4Value comme un co-pilote décisionnel pour les managers de portefeuilles projets.
 
@@ -630,15 +735,15 @@ La solution innove en combinant trois dimensions : l'unification du SI existant 
 
 #### Veille spécifique chef de projet IT
 
-| Domaine de Veille | Périmètre | Sources Clés |
-|-------------------|-----------|-------------|
-| **Méthodologies Agile** | Scrum, SAFe, LeSS, Kanban | Scrum.org, SAFe Framework, Agile Alliance |
-| **Gouvernance IT** | ITIL v4, COBIT 2019 | AXELOS, ISACA |
-| **Gestion de Portefeuille** | PPM, MoP (Management of Portfolios) | PMI, AXELOS |
-| **Transformation Digitale** | Change management, digital workplace | McKinsey Digital, Gartner |
-| **Réglementation** | RGPD, NIS2, AI Act | CNIL, ANSSI, EU Commission |
-| **Cybersécurité** | OWASP, Zéro Trust | ANSSI, OWASP Foundation |
-| **Green IT** | INR, GR491 | Institut du Numérique Responsable |
+| Domaine de Veille           | Périmètre                            | Sources Clés                              |
+| --------------------------- | ------------------------------------ | ----------------------------------------- |
+| **Méthodologies Agile**     | Scrum, SAFe, LeSS, Kanban            | Scrum.org, SAFe Framework, Agile Alliance |
+| **Gouvernance IT**          | ITIL v4, COBIT 2019                  | AXELOS, ISACA                             |
+| **Gestion de Portefeuille** | PPM, MoP (Management of Portfolios)  | PMI, AXELOS                               |
+| **Transformation Digitale** | Change management, digital workplace | McKinsey Digital, Gartner                 |
+| **Réglementation**          | RGPD, NIS2, AI Act                   | CNIL, ANSSI, EU Commission                |
+| **Cybersécurité**           | OWASP, Zéro Trust                    | ANSSI, OWASP Foundation                   |
+| **Green IT**                | INR, GR491                           | Institut du Numérique Responsable         |
 
 #### Application au projet
 
@@ -653,23 +758,23 @@ La politique de veille IT est formalisée en un processus de **diffusion** struc
 
 #### Stratégie de test
 
-| Type de Test | Outil | Couverture Cible | Scope |
-|-------------|-------|------------------|-------|
-| **Unitaire** | Jest + Testing Library | ≥70% | Composants, services, utils |
-| **Intégration** | Supertest | API routes | Endpoints REST |
-| **E2E** | Playwright | Parcours critiques | Login → Dashboard → Reporting |
-| **Performance** | k6 | 200 req/min | Endpoints critiques |
-| **Sécurité** | OWASP ZAP (baseline) | Scan passif | Application déployée |
+| Type de Test    | Outil                  | Couverture Cible   | Scope                         |
+| --------------- | ---------------------- | ------------------ | ----------------------------- |
+| **Unitaire**    | Jest + Testing Library | ≥70%               | Composants, services, utils   |
+| **Intégration** | Supertest              | API routes         | Endpoints REST                |
+| **E2E**         | Playwright             | Parcours critiques | Login → Dashboard → Reporting |
+| **Performance** | k6                     | 200 req/min        | Endpoints critiques           |
+| **Sécurité**    | OWASP ZAP (baseline)   | Scan passif        | Application déployée          |
 
 #### Résultats attendus
 
-| Métrique | Baseline | Cible S12 | Cible S18 |
-|----------|----------|-----------|-----------|
-| Test coverage (unit + intégration) | 0% | ≥70% | ≥80% |
-| Tests E2E parcours critiques | 0 | 5 scénarios | 10 scénarios |
-| Temps exécution suite complète | Non applicable | < 2 min | < 3 min |
-| Lighthouse Performance score | Non applicable | ≥85 | ≥90 |
-| API latency p95 | Non applicable | < 200ms | < 150ms |
+| Métrique                           | Baseline       | Cible S12   | Cible S18    |
+| ---------------------------------- | -------------- | ----------- | ------------ |
+| Test coverage (unit + intégration) | 0%             | ≥70%        | ≥80%         |
+| Tests E2E parcours critiques       | 0              | 5 scénarios | 10 scénarios |
+| Temps exécution suite complète     | Non applicable | < 2 min     | < 3 min      |
+| Lighthouse Performance score       | Non applicable | ≥85         | ≥90          |
+| API latency p95                    | Non applicable | < 200ms     | < 150ms      |
 
 #### Résultats de tests réels
 
@@ -689,10 +794,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
       - run: npm ci
-      - run: npm run typecheck    # TypeScript compilation
-      - run: npm run lint         # Biome linting
-      - run: npm run test         # Jest + Supertest
-      - run: npm run build        # Production build
+      - run: npm run typecheck # TypeScript compilation
+      - run: npm run lint # Biome linting
+      - run: npm run test # Jest + Supertest
+      - run: npm run build # Production build
 
   deploy:
     needs: quality
@@ -707,15 +812,15 @@ jobs:
 
 #### Principes d'éco-conception appliqués
 
-| Principe | Application Concrète | Impact |
-|----------|---------------------|--------|
-| **Sobriété fonctionnelle** | MVP scope réduit (6 features core, pas de feature inutile) | -40% code vs full scope |
-| **Optimisation réseau** | API pagination (max 50 items/page), compression gzip | -60% bande passante |
-| **Lazy loading** | Chargement à la demande des composants et images | -30% temps chargement initial |
-| **Caching intelligent** | Redis cache + HTTP cache headers (ETag, Cache-Control) | -50% requêtes serveur |
-| **Hébergement green** | Vercel (AWS régions EU) + Railway (EU) | Proximité utilisateurs |
-| **Dark mode** | Réduction consommation écran OLED | -15% énergie écrans |
-| **Suppression code mort** | Tree-shaking Webpack + bundle analysis | Bundle minimal |
+| Principe                   | Application Concrète                                       | Impact                        |
+| -------------------------- | ---------------------------------------------------------- | ----------------------------- |
+| **Sobriété fonctionnelle** | MVP scope réduit (6 features core, pas de feature inutile) | -40% code vs full scope       |
+| **Optimisation réseau**    | API pagination (max 50 items/page), compression gzip       | -60% bande passante           |
+| **Lazy loading**           | Chargement à la demande des composants et images           | -30% temps chargement initial |
+| **Caching intelligent**    | Redis cache + HTTP cache headers (ETag, Cache-Control)     | -50% requêtes serveur         |
+| **Hébergement green**      | Vercel (AWS régions EU) + Railway (EU)                     | Proximité utilisateurs        |
+| **Dark mode**              | Réduction consommation écran OLED                          | -15% énergie écrans           |
+| **Suppression code mort**  | Tree-shaking Webpack + bundle analysis                     | Bundle minimal                |
 
 #### Référentiel GR491 (Institut du Numérique Responsable)
 
@@ -730,30 +835,30 @@ Tech4Value intègre une approche **GreenIT** structurelle. Le choix d'une archit
 
 #### RGPD (règlement général sur la protection des données)
 
-| Exigence | Implémentation |
-|----------|----------------|
-| **Minimisation des données** | Collecte uniquement des données nécessaires au fonctionnement |
-| **Privacy by design** | Chiffrement AES-256, pseudonymisation des exports |
-| **Consentement** | Bandeau cookies, opt-in explicite pour analytics |
-| **Droit d'accès et portabilité** | Export JSON/CSV des données personnelles |
-| **Droit à l'effacement** | Soft delete avec purge automatique à 30 jours |
-| **Registre des traitements** | Documenté dans le DPO register |
-| **Notification de violation** | Procédure sous 72h, logs d'audit |
+| Exigence                         | Implémentation                                                |
+| -------------------------------- | ------------------------------------------------------------- |
+| **Minimisation des données**     | Collecte uniquement des données nécessaires au fonctionnement |
+| **Privacy by design**            | Chiffrement AES-256, pseudonymisation des exports             |
+| **Consentement**                 | Bandeau cookies, opt-in explicite pour analytics              |
+| **Droit d'accès et portabilité** | Export JSON/CSV des données personnelles                      |
+| **Droit à l'effacement**         | Soft delete avec purge automatique à 30 jours                 |
+| **Registre des traitements**     | Documenté dans le DPO register                                |
+| **Notification de violation**    | Procédure sous 72h, logs d'audit                              |
 
 #### OWASP Top 10 (2021)
 
-| Vulnérabilité | Mitigation |
-|---------------|------------|
-| A01 : Broken Access Control | RBAC middleware + Row Level Security PostgreSQL |
-| A02 : Cryptographic Failures | HTTPS obligatoire, bcrypt (salt 12), JWT HttpOnly |
-| A03 : Injection | Prisma ORM (queries paramétrées), validation Zod |
-| A04 : Insécure Design | Threat modeling en phase cadrage |
-| A05 : Security Misconfiguration | Security headers (CSP, HSTS, X-Frame-Options) |
-| A06 : Vulnérable Components | npm audit, Snyk scan automatique |
-| A07 : Auth Failures | Raté limiting login (5 tentatives/15 min), MFA Azure AD |
-| A08 : Data Integrity | Signed deployments, CI/CD pipeline intégrité |
-| A09 : Logging Failures | Winston structured logging, pas de données sensibles |
-| A10 : SSRF | Validation URL, allowlist pour appels externes |
+| Vulnérabilité                   | Mitigation                                              |
+| ------------------------------- | ------------------------------------------------------- |
+| A01 : Broken Access Control     | RBAC middleware + Row Level Security PostgreSQL         |
+| A02 : Cryptographic Failures    | HTTPS obligatoire, bcrypt (salt 12), JWT HttpOnly       |
+| A03 : Injection                 | Prisma ORM (queries paramétrées), validation Zod        |
+| A04 : Insécure Design           | Threat modeling en phase cadrage                        |
+| A05 : Security Misconfiguration | Security headers (CSP, HSTS, X-Frame-Options)           |
+| A06 : Vulnérable Components     | npm audit, Snyk scan automatique                        |
+| A07 : Auth Failures             | Raté limiting login (5 tentatives/15 min), MFA Azure AD |
+| A08 : Data Integrity            | Signed deployments, CI/CD pipeline intégrité            |
+| A09 : Logging Failures          | Winston structured logging, pas de données sensibles    |
+| A10 : SSRF                      | Validation URL, allowlist pour appels externes          |
 
 #### Sécurité : Headers HTTP
 
@@ -772,14 +877,14 @@ La conformité réglementaire est pilotée par un référent désigné (**CNIL**
 
 #### Conformité WCAG 2.1 AA
 
-| Critère | Implémentation |
-|---------|----------------|
-| **Contraste couleurs** | Ratio minimum 4.5:1 (texte normal), 3:1 (texte large) |
-| **Navigation clavier** | Tous les éléments interactifs focusables, Tab/Shift+Tab |
-| **Lecteurs d'écran** | Attributs ARIA, landmarks (`<header>`, `<nav>`, `<main>`) |
-| **Textes alternatifs** | `alt` sur toutes les images informatives |
-| **Formulaires** | Labels associés, messages d'erreur `aria-describedby` |
-| **Responsive** | Touch targets ≥ 44px, pas de scroll horizontal |
+| Critère                | Implémentation                                            |
+| ---------------------- | --------------------------------------------------------- |
+| **Contraste couleurs** | Ratio minimum 4.5:1 (texte normal), 3:1 (texte large)     |
+| **Navigation clavier** | Tous les éléments interactifs focusables, Tab/Shift+Tab   |
+| **Lecteurs d'écran**   | Attributs ARIA, landmarks (`<header>`, `<nav>`, `<main>`) |
+| **Textes alternatifs** | `alt` sur toutes les images informatives                  |
+| **Formulaires**        | Labels associés, messages d'erreur `aria-describedby`     |
+| **Responsive**         | Touch targets ≥ 44px, pas de scroll horizontal            |
 
 #### Outils de validation
 
@@ -793,14 +898,14 @@ L'équipe intègre l'**accessibilité** dès les wireframes comme une contrainte
 
 Les schémas techniques suivants sont fournis dans le dossier :
 
-| Schéma | Type | Localisation |
-|--------|------|-------------|
-| Architecture applicative Three-Tier | Diagramme d'architecture | Section 5.1 |
-| Modèle de données (Prisma schéma) | Diagramme entité-relation | Annexe B |
-| Flux d'intégration Odoo | Diagramme de séquence | Annexe C |
-| Pipeline CI/CD | Diagramme de flux | Section 5.6 |
-| Architecture réseau / déploiement | Diagramme d'infrastructure | Annexe D |
-| Parcours utilisateur (Dashboard) | Wireframe / User flow | Annexe E |
+| Schéma                              | Type                       | Localisation |
+| ----------------------------------- | -------------------------- | ------------ |
+| Architecture applicative Three-Tier | Diagramme d'architecture   | Section 5.1  |
+| Modèle de données (Prisma schéma)   | Diagramme entité-relation  | Annexe B     |
+| Flux d'intégration Odoo             | Diagramme de séquence      | Annexe C     |
+| Pipeline CI/CD                      | Diagramme de flux          | Section 5.6  |
+| Architecture réseau / déploiement   | Diagramme d'infrastructure | Annexe D     |
+| Parcours utilisateur (Dashboard)    | Wireframe / User flow      | Annexe E     |
 
 Chaque schéma respecte les conventions de modélisation standard : les diagrammes d'architecture utilisent le modèle C4 (Context, Container, Component), les diagrammes de séquence respectent UML 2.5, et les wireframes suivent les conventions de maquettage Figma (frames, composants, variants). La qualité des schémas se mesure à leur lisibilité, leur complétude et leur cohérence avec le code implémenté, un schéma qui décrit une architecture différente du code déployé n'a pas de valeur documentaire. Tous les schémas ont été réalisés avec des outils de diagramming vectoriels (FigJam, draw.io, Mermaid.js) et exportés en SVG haute résolution pour garantir leur clarté à toutes les échelles d'impression. Les schémas techniques sont intégrés au dossier final avec un niveau de qualité professionnelle.
 
@@ -808,15 +913,15 @@ Chaque schéma respecte les conventions de modélisation standard : les diagramm
 
 #### Limites techniques identifiées
 
-| Limite | Impact | Mitigation | Statut |
-|--------|--------|------------|--------|
-| **Équipe réduite (2 personnes)** | Scope limité, pas de spécialisation front/back | Priorisation RICE stricte, full-stack JS | Accepté |
-| **API Odoo v15 limitée** | Certaines données non exposées via API | Mock data pour fonctionnalités manquantes | Contourné |
-| **Pas de temps-réel WebSocket** | Refresh manuel nécessaire pour certaines données | Polling toutes les 30s, WebSocket en v2 | Différé |
-| **Free tier infrastructure** | Limites de performance et stockage | Suffisant pour 185 users, scaling prévu en v2 | Accepté |
-| **Azure AD mock (environnement de test)** | Pas de vrai SSO en environnement de test | JWT classique avec simulation des rôles | Contourné |
-| **Absence de tests E2E complets** | Couverture partielle des parcours utilisateur | Focus sur les 5 parcours critiques | Accepté |
-| **Performance Power BI** | Export CSV uniquement, pas d'API bidirectionnelle | Pipeline XLSX suffisant pour les besoins | Accepté |
+| Limite                                    | Impact                                            | Mitigation                                    | Statut    |
+| ----------------------------------------- | ------------------------------------------------- | --------------------------------------------- | --------- |
+| **Équipe réduite (2 personnes)**          | Scope limité, pas de spécialisation front/back    | Priorisation RICE stricte, full-stack JS      | Accepté   |
+| **API Odoo v15 limitée**                  | Certaines données non exposées via API            | Mock data pour fonctionnalités manquantes     | Contourné |
+| **Pas de temps-réel WebSocket**           | Refresh manuel nécessaire pour certaines données  | Polling toutes les 30s, WebSocket en v2       | Différé   |
+| **Free tier infrastructure**              | Limites de performance et stockage                | Suffisant pour 185 users, scaling prévu en v2 | Accepté   |
+| **Azure AD mock (environnement de test)** | Pas de vrai SSO en environnement de test          | JWT classique avec simulation des rôles       | Contourné |
+| **Absence de tests E2E complets**         | Couverture partielle des parcours utilisateur     | Focus sur les 5 parcours critiques            | Accepté   |
+| **Performance Power BI**                  | Export CSV uniquement, pas d'API bidirectionnelle | Pipeline XLSX suffisant pour les besoins      | Accepté   |
 
 #### Axes d'amélioration technique
 
@@ -832,14 +937,14 @@ Ces limites sont assumées et documentées avec transparence. La **dette techniq
 
 #### Structure de la documentation
 
-| Document | Public Cible | Contenu |
-|----------|-------------|---------|
-| **Guide de Démarrage Rapide** | Tous utilisateurs | Installation, premier login, navigation |
-| **Guide Administrateur** | IT & PMO | Configuration, gestion utilisateurs, RBAC |
-| **Guide Chef de Projet** | PMO, Chefs de projet | Création projet, suivi, reporting, jalons |
-| **Guide Direction** | Direction Générale | Dashboard exécutif, KPI, aide à la décision |
-| **FAQ** | Tous | Questions fréquentes, résolution problèmes courants |
-| **Documentation API** | Développeurs | Endpoints REST, authentification, exemples |
+| Document                      | Public Cible         | Contenu                                             |
+| ----------------------------- | -------------------- | --------------------------------------------------- |
+| **Guide de Démarrage Rapide** | Tous utilisateurs    | Installation, premier login, navigation             |
+| **Guide Administrateur**      | IT & PMO             | Configuration, gestion utilisateurs, RBAC           |
+| **Guide Chef de Projet**      | PMO, Chefs de projet | Création projet, suivi, reporting, jalons           |
+| **Guide Direction**           | Direction Générale   | Dashboard exécutif, KPI, aide à la décision         |
+| **FAQ**                       | Tous                 | Questions fréquentes, résolution problèmes courants |
+| **Documentation API**         | Développeurs         | Endpoints REST, authentification, exemples          |
 
 #### Exemple : Guide de démarrage rapide
 
@@ -868,52 +973,52 @@ La **prise en main** de la plateforme a été conçue pour être autonome en moi
 
 #### Modèle de gouvernance post-déploiement
 
-| Instance | Fréquence | Participants | Objectif |
-|----------|-----------|-------------|----------|
-| **Comité Stratégique** | Trimestriel | Direction, DSI, PMO | Orientations produit, budget |
-| **Comité Opérationnel** | Mensuel | PMO, Tech Lead, Représentants pôles | Suivi KPI, incidents, évolutions |
-| **Sprint Review** | Bi-hebdomadaire | Équipe dev + stakeholders | Démo nouvelles features |
-| **Maintenance Window** | Mensuel | Équipe technique | Mises à jour, patches sécurité |
+| Instance                | Fréquence       | Participants                        | Objectif                         |
+| ----------------------- | --------------- | ----------------------------------- | -------------------------------- |
+| **Comité Stratégique**  | Trimestriel     | Direction, DSI, PMO                 | Orientations produit, budget     |
+| **Comité Opérationnel** | Mensuel         | PMO, Tech Lead, Représentants pôles | Suivi KPI, incidents, évolutions |
+| **Sprint Review**       | Bi-hebdomadaire | Équipe dev + stakeholders           | Démo nouvelles features          |
+| **Maintenance Window**  | Mensuel         | Équipe technique                    | Mises à jour, patches sécurité   |
 
 #### Roadmap d'évolution (24 mois post-MVP)
 
-| Horizon | Fonctionnalités | Objectif Stratégique |
-|---------|-----------------|---------------------|
-| **V1.1 (M+3)** | WebSocket temps-réel, notifications push, mobile responsive avancé | Améliorer l'UX temps-réel |
-| **V1.2 (M+6)** | Intégration Jira/Confluence, API GraphQL, webhooks custom | Interopérabilité étendue |
-| **V2.0 (M+12)** | Module prédictif ML (retards projets), chatbot assistant | Intelligence augmentée |
-| **V2.5 (M+18)** | Multi-tenant SaaS, onboarding self-service, marketplace plugins | Commercialisation B2B |
-| **V3.0 (M+24)** | IA autonome allocation ressources, digital twin projets | Pilotage autonome |
+| Horizon         | Fonctionnalités                                                    | Objectif Stratégique      |
+| --------------- | ------------------------------------------------------------------ | ------------------------- |
+| **V1.1 (M+3)**  | WebSocket temps-réel, notifications push, mobile responsive avancé | Améliorer l'UX temps-réel |
+| **V1.2 (M+6)**  | Intégration Jira/Confluence, API GraphQL, webhooks custom          | Interopérabilité étendue  |
+| **V2.0 (M+12)** | Module prédictif ML (retards projets), chatbot assistant           | Intelligence augmentée    |
+| **V2.5 (M+18)** | Multi-tenant SaaS, onboarding self-service, marketplace plugins    | Commercialisation B2B     |
+| **V3.0 (M+24)** | IA autonome allocation ressources, digital twin projets            | Pilotage autonome         |
 
 #### Indicateurs de succès long terme
 
-| KPI | Cible M+6 | Cible M+12 | Cible M+24 |
-|-----|-----------|------------|------------|
-| Temps reporting PMO | 15h/semaine (-50%) | 10h/semaine (-67%) | 5h/semaine (-83%) |
-| Projets livrés à temps | 90% | 92% | 95% |
-| Taux adoption plateforme | 95% | 98% | 99% |
-| NPS utilisateurs | 50+ | 60+ | 70+ |
-| Uptime | 99.5% | 99.9% | 99.95% |
+| KPI                      | Cible M+6          | Cible M+12         | Cible M+24        |
+| ------------------------ | ------------------ | ------------------ | ----------------- |
+| Temps reporting PMO      | 15h/semaine (-50%) | 10h/semaine (-67%) | 5h/semaine (-83%) |
+| Projets livrés à temps   | 90%                | 92%                | 95%               |
+| Taux adoption plateforme | 95%                | 98%                | 99%               |
+| NPS utilisateurs         | 50+                | 60+                | 70+               |
+| Uptime                   | 99.5%              | 99.9%              | 99.95%            |
 
 #### Plan de maintenance
 
-| Type | Fréquence | Responsable | Actions |
-|------|-----------|-------------|---------|
-| **Corrective** | Continue | Équipe dev | Correction bugs, incidents |
-| **Évolutive** | Sprints bi-hebdo | Product Owner + dev | Nouvelles features |
-| **Préventive** | Mensuelle | Tech Lead | Mises à jour dépendances, patches sécurité |
-| **Adaptive** | Trimestrielle | Architecte | Évolution infrastructure, scaling |
+| Type           | Fréquence        | Responsable         | Actions                                    |
+| -------------- | ---------------- | ------------------- | ------------------------------------------ |
+| **Corrective** | Continue         | Équipe dev          | Correction bugs, incidents                 |
+| **Évolutive**  | Sprints bi-hebdo | Product Owner + dev | Nouvelles features                         |
+| **Préventive** | Mensuelle        | Tech Lead           | Mises à jour dépendances, patches sécurité |
+| **Adaptive**   | Trimestrielle    | Architecte          | Évolution infrastructure, scaling          |
 
 #### SLA et engagement de disponibilité
 
 Les engagements de niveau de service (**SLA**) de la plateforme Tech4Value sont définis pour chaque composant de l'infrastructure :
 
-| Composant | SLA Cible | Mesure | Pénalité en cas de breach |
-|-----------|-----------|--------|---------------------------|
-| **Application web** | 99,5 % uptime/mois | Monitoring Vercel | Incident Comop immédiat |
-| **API Backend** | 99,5 % uptime/mois | Monitoring Railway | Alerte Tech Lead < 15 min |
-| **Base de données** | 99,9 % (Supabase managed) | Dashboard Supabase | Escalade DSI si > 1h |
-| **Intégration Odoo** | 95 % (best-effort) | Health check toutes les 5 min | Fallback mode dégradé |
+| Composant            | SLA Cible                 | Mesure                        | Pénalité en cas de breach |
+| -------------------- | ------------------------- | ----------------------------- | ------------------------- |
+| **Application web**  | 99,5 % uptime/mois        | Monitoring Vercel             | Incident Comop immédiat   |
+| **API Backend**      | 99,5 % uptime/mois        | Monitoring Railway            | Alerte Tech Lead < 15 min |
+| **Base de données**  | 99,9 % (Supabase managed) | Dashboard Supabase            | Escalade DSI si > 1h      |
+| **Intégration Odoo** | 95 % (best-effort)        | Health check toutes les 5 min | Fallback mode dégradé     |
 
 Le **SLA** de 99,5 % autorise moins de 3,6 heures d'indisponibilité par mois, cohérent avec une infrastructure cloud managée en free tier. La roadmap prévoit de migrer vers des offres pro (Vercel Pro, Railway Pro) lorsque le taux d'adoption dépassera 80 %, permettant d'élever le **SLA** à 99,9 % avec des garanties contractuelles. La gouvernance des incidents suit un processus ITIL simplifié : détection automatique → notification Slack → diagnostic → résolution → post-mortem dans les 48h.
 
@@ -939,33 +1044,33 @@ La conduite du changement est le facteur différenciant entre un déploiement te
 
 La transformation numérique impacte **185 collaborateurs** répartis sur **3 sites**. La stratégie de conduite du changement s'articule autour de 4 piliers, structurés selon le modèle **ADKAR** (Awareness → Desire → Knowledge → Ability → Reinforcement). La cartographie des **parties prenantes** segmente les collaborateurs en 4 groupes selon leur niveau d'impact et leur propension au changement : les sponsors actifs (Direction, DSI), les relais métier (PMO, Chefs de projet), les utilisateurs courants (pôles opérationnels) et les utilisateurs périphériques (Fonctions Support). Les **résistances** anticipées, notamment chez les chefs de projet habitués à Excel et les managers IT craignant la perte d'autonomie sur leurs outils, sont traitées dès la phase de communication par une approche de co-construction : les utilisateurs résistants sont invités à participer au programme early adopters pour transformer leur résistance en contribution. Cette approche inclusive et participative réduit le risque d'adoption partielle et garantit un déploiement progressif réussi sur les 24 semaines du projet.
 
-| Pilier | Objectif | Actions Clés |
-|--------|----------|-------------|
-| **Communication** | Créer l'adhésion | All-hands kickoff, newsletter hebdomadaire, transparence totale |
-| **Formation** | Développer les compétences | Formations par rôle, tutoriels vidéo, ateliers pratiques |
-| **Accompagnement** | Soutenir l'adoption | Champions par pôle, help desk dédié, FAQ évolutive |
-| **Mesure** | Piloter l'adoption | NPS trimestriel, taux d'usage, satisfaction formation |
+| Pilier             | Objectif                   | Actions Clés                                                    |
+| ------------------ | -------------------------- | --------------------------------------------------------------- |
+| **Communication**  | Créer l'adhésion           | All-hands kickoff, newsletter hebdomadaire, transparence totale |
+| **Formation**      | Développer les compétences | Formations par rôle, tutoriels vidéo, ateliers pratiques        |
+| **Accompagnement** | Soutenir l'adoption        | Champions par pôle, help desk dédié, FAQ évolutive              |
+| **Mesure**         | Piloter l'adoption         | NPS trimestriel, taux d'usage, satisfaction formation           |
 
 ### 6.2 Plan de communication
 
-| Phase | Message | Canal | Cible | Timing | **Fréquence** |
-|-------|---------|-------|-------|--------|---------------|
-| **Awareness** | Vision transformation digitale | All-hands meeting | Tous (185) | S1 | 1 fois |
-| **Understanding** | Pourquoi changer ? Bénéfices par rôle | Newsletter + vidéo | Tous | S2-S4 | Hebdomadaire |
-| **Buy-in** | Démonstrations MVP, témoignages early adopters | Ateliers démo mensuels | PMO + Managers | S6-S12 | Mensuel |
-| **Adoption** | Guides d'utilisation, tips & tricks | Email + Slack | Tous | S12-S18 | Bi-hebdomadaire |
-| **Reinforcement** | Success stories, reconnaissance contributeurs | Newsletter + all-hands | Tous | S18-S24 | Mensuel |
+| Phase             | Message                                        | Canal                  | Cible          | Timing  | **Fréquence**   |
+| ----------------- | ---------------------------------------------- | ---------------------- | -------------- | ------- | --------------- |
+| **Awareness**     | Vision transformation digitale                 | All-hands meeting      | Tous (185)     | S1      | 1 fois          |
+| **Understanding** | Pourquoi changer ? Bénéfices par rôle          | Newsletter + vidéo     | Tous           | S2-S4   | Hebdomadaire    |
+| **Buy-in**        | Démonstrations MVP, témoignages early adopters | Ateliers démo mensuels | PMO + Managers | S6-S12  | Mensuel         |
+| **Adoption**      | Guides d'utilisation, tips & tricks            | Email + Slack          | Tous           | S12-S18 | Bi-hebdomadaire |
+| **Reinforcement** | Success stories, reconnaissance contributeurs  | Newsletter + all-hands | Tous           | S18-S24 | Mensuel         |
 
 Le plan de **communication** est piloté par Jules Courtin avec une **fréquence** adaptée à chaque phase. Le **message clé** central, « Tech4Value vous libère des tâches administratives pour vous concentrer sur la valeur ajoutée », est décliné par segment : pour la Direction, l'accent est mis sur la visibilité et la prise de décision ; pour les chefs de projet, sur le gain de temps de reporting ; pour les équipes opérationnelles, sur la simplification de la saisie. Cette personnalisation des messages par audience est un facteur déterminant de l'adhésion. La **communication** s'appuie sur des canaux existants (Teams, newsletter interne, réunions de pôles) pour minimiser la friction et maximiser la portée.
 
 ### 6.3 Programme de formation
 
-| Module | **Profil** Cible | Format (présentiel / **distanciel**) | Durée | Contenu |
-|--------|--------|--------|-------|---------|
-| **Prise en Main** | Tous utilisateurs | E-learning **distanciel** + atelier | 2h | Navigation, saisie temps, consultation KPI |
-| **Chef de Projet** | **Profil** PMO (15-20 pers.) | Atelier présentiel | 4h | Gestion projets, reporting, milestones |
-| **Direction** | **Profil** Comex (10 pers.) | Atelier dédié présentiel | 1h30 | Dashboard exécutif, aide à la décision |
-| **Administrateur** | **Profil** IT (5 pers.) | Formation technique **distanciel** | 4h | Configuration, RBAC, intégrations, maintenance |
+| Module             | **Profil** Cible             | Format (présentiel / **distanciel**) | Durée | Contenu                                        |
+| ------------------ | ---------------------------- | ------------------------------------ | ----- | ---------------------------------------------- |
+| **Prise en Main**  | Tous utilisateurs            | E-learning **distanciel** + atelier  | 2h    | Navigation, saisie temps, consultation KPI     |
+| **Chef de Projet** | **Profil** PMO (15-20 pers.) | Atelier présentiel                   | 4h    | Gestion projets, reporting, milestones         |
+| **Direction**      | **Profil** Comex (10 pers.)  | Atelier dédié présentiel             | 1h30  | Dashboard exécutif, aide à la décision         |
+| **Administrateur** | **Profil** IT (5 pers.)      | Formation technique **distanciel**   | 4h    | Configuration, RBAC, intégrations, maintenance |
 
 Le programme de formation est conçu pour s'adapter à chaque **profil** utilisateur, en combinant des formats **présentiel** pour les groupes prioritaires (Direction, PMO) et **distanciel** (e-learning asynchrone) pour les utilisateurs opérationnels dispersés sur 3 sites. Le module **distanciel** est hébergé sur la plateforme LMS interne (SharePoint Learning) et accessible en replay permanent. Chaque module se termine par une évaluation des acquis (QCM + exercice pratique) permettant de valider la montée en compétences et d'adapter le dispositif. Le budget formation est intégré au poste « Formation & Change » du budget prévisionnel (40k€ en année 1).
 
@@ -980,15 +1085,15 @@ Les **ambassadeurs** constituent le levier le plus puissant d'adoption organique
 
 ### 6.5 KPI de la conduite du changement
 
-| Indicateur | Baseline | Cible S6 | Cible S12 | Cible S24 |
-|------------|----------|----------|-----------|-----------|
-| NPS interne | 30 | 45 | 50 | 65 |
-| **Taux d'utilisation** à **J+30** | 0% | 60% | 80% | 90% |
-| **Taux d'utilisation** à **J+90** | 0% | 75% | 90% | 95% |
-| Taux adoption MVP | 0% | 80% | 90% | 95% |
-| Satisfaction formation (CSAT) | Non applicable | ≥7/10 | ≥8/10 | ≥8.5/10 |
-| Nombre de champions actifs | 0 | 18 | 25 | 27 |
-| Tickets support / semaine | Non applicable | <20 | <10 | <5 |
+| Indicateur                        | Baseline       | Cible S6 | Cible S12 | Cible S24 |
+| --------------------------------- | -------------- | -------- | --------- | --------- |
+| NPS interne                       | 30             | 45       | 50        | 65        |
+| **Taux d'utilisation** à **J+30** | 0%             | 60%      | 80%       | 90%       |
+| **Taux d'utilisation** à **J+90** | 0%             | 75%      | 90%       | 95%       |
+| Taux adoption MVP                 | 0%             | 80%      | 90%       | 95%       |
+| Satisfaction formation (CSAT)     | Non applicable | ≥7/10    | ≥8/10     | ≥8.5/10   |
+| Nombre de champions actifs        | 0              | 18       | 25        | 27        |
+| Tickets support / semaine         | Non applicable | <20      | <10       | <5        |
 
 Le **taux d'utilisation** à **J+30** (30 jours après le déploiement pour chaque vague d'utilisateurs) est le KPI principal de l'adoption. Un **taux d'utilisation** inférieur à 50 % à **J+30** déclenche automatiquement un plan de relance : analyse des freins par entretiens utilisateurs, adaptation du programme de formation, et activation de sessions de soutien individuels par les ambassadeurs. Le suivi à **J+90** permet de mesurer l'ancrage durable des nouvelles pratiques (vs un usage initial de curiosité). Ces deux mesures sont collectées automatiquement via les logs d'activité de la plateforme, sans déclaratif utilisateur, garantissant la fiabilité des données.
 
@@ -1036,8 +1141,7 @@ L'analyse **McKinsey 7S** appliquée à Tech4Value évalue la cohérence des 7 d
 
 ## Retour d'expérience : analyse dynamique projet
 
->
-Cette section constitue le retour d'expérience du dossier technique. Elle invite chaque membre de l'équipe à prendre du recul sur son expérience vécue du projet : les obstacles surmontés, les apprentissages réalisés, les forces mobilisées et les axes d'amélioration identifiés pour de futurs projets. L'analyse privilégie l'authenticité et la profondeur plutôt que la conformité à un format imposé. Les analyses ci-dessous sont rédigées par Jules Courtin, Chef de Projet / Product Manager, et Léo Brival, Tech Lead du projet.
+> Cette section constitue le retour d'expérience du dossier technique. Elle invite chaque membre de l'équipe à prendre du recul sur son expérience vécue du projet : les obstacles surmontés, les apprentissages réalisés, les forces mobilisées et les axes d'amélioration identifiés pour de futurs projets. L'analyse privilégie l'authenticité et la profondeur plutôt que la conformité à un format imposé. Les analyses ci-dessous sont rédigées par Jules Courtin, Chef de Projet / Product Manager, et Léo Brival, Tech Lead du projet.
 
 **Rôle de cette section.** Sur un projet de 24 semaines mené en binôme, le retour d'expérience individuel clarifie les responsabilités, les apprentissages et les points d'amélioration propres à chaque rôle. Cette partie complète l'analyse collective du MVP, du dossier projet et de la démonstration vidéo.
 
@@ -1073,24 +1177,24 @@ Enfin, la coordination inter-pôles chez Tech4Value a mis en lumière un défi d
 
 #### 2. Identification des forces et faiblesses
 
-| Forces identifiées | Faiblesses identifiées |
-|-------------------|------------------------|
-| Maîtrise du stack TypeScript full-stack (React, Node.js, Prisma, PostgreSQL), accélération significative sur la phase de développement | Sous-estimation systématique des charges d'intégration : les connecteurs Odoo et SharePoint ont chacun pris 1,5× le temps estimé |
-| Capacité à concevoir une architecture évolutive dès le départ (séparation des couches, adaptateurs SI, RBAC modulaire) | Tendance à l'over-engineering sur certaines abstractions (interface `Adapter` généralisée trop tôt, refactorisée à S14) |
-| Aptitude à produire une documentation technique claire et structurée en parallèle du développement | Difficulté à déléguer les décisions techniques à Jules sur les arbitrages fonctionnels, monopolisation involontaire de la prise de décision technique |
-| Utilisation efficace de l'IA comme accélérateur (pas comme substitut), discipline de relecture maintenue sur l'ensemble du projet | Communication insuffisante sur les blocages techniques lors des phases d'investigation, Jules a parfois manqué de visibilité sur les aléas en cours |
-| Rigueur sur les tests et la qualité : couverture maintenue à ≥70 % tout au long des sprints | Estimation optimiste des délais en début de projet, les marges de sécurité auraient dû être doublées sur les phases d'intégration |
+| Forces identifiées                                                                                                                     | Faiblesses identifiées                                                                                                                                |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Maîtrise du stack TypeScript full-stack (React, Node.js, Prisma, PostgreSQL), accélération significative sur la phase de développement | Sous-estimation systématique des charges d'intégration : les connecteurs Odoo et SharePoint ont chacun pris 1,5× le temps estimé                      |
+| Capacité à concevoir une architecture évolutive dès le départ (séparation des couches, adaptateurs SI, RBAC modulaire)                 | Tendance à l'over-engineering sur certaines abstractions (interface `Adapter` généralisée trop tôt, refactorisée à S14)                               |
+| Aptitude à produire une documentation technique claire et structurée en parallèle du développement                                     | Difficulté à déléguer les décisions techniques à Jules sur les arbitrages fonctionnels, monopolisation involontaire de la prise de décision technique |
+| Utilisation efficace de l'IA comme accélérateur (pas comme substitut), discipline de relecture maintenue sur l'ensemble du projet      | Communication insuffisante sur les blocages techniques lors des phases d'investigation, Jules a parfois manqué de visibilité sur les aléas en cours   |
+| Rigueur sur les tests et la qualité : couverture maintenue à ≥70 % tout au long des sprints                                            | Estimation optimiste des délais en début de projet, les marges de sécurité auraient dû être doublées sur les phases d'intégration                     |
 
 #### 3. Analyse des compétences développées
 
-| Compétence | Niveau Avant | Niveau Après | Contexte d'Apprentissage |
-|------------|-------------|-------------|--------------------------|
-| Architecture d'application d'entreprise (Three-Tier, adaptateurs SI) | Intermédiaire | Avancé | Conception et implémentation du modèle d'adaptateurs pour Odoo, SharePoint et Power BI |
-| Intégration d'API tierces complexes (JSON-RPC, OAuth 2.0, REST) | Intermédiaire | Avancé | Rétro-ingénierie API Odoo v15, implémentation OAuth Azure AD, connecteur SharePoint Webhooks |
-| DevOps et CI/CD (GitHub Actions, Docker, déploiement cloud) | Débutant | Intermédiaire | Mise en place du pipeline complet lint → typecheck → test → build → deploy sur Vercel et Railway |
-| Gestion de projet Agile hybride (Scrum adapté, cérémonies légères) | Débutant | Intermédiaire | 12 sprints de 2 semaines avec sprint planning, review et retrospective formalisés |
-| Collaboration humain-IA dans un contexte professionnel | Débutant | Avancé | 24 semaines d'utilisation intensive de Claude Code avec discipline de supervision systématique |
-| Sécurité applicative (OWASP Top 10, RGPD by design) | Intermédiaire | Avancé | Implémentation RBAC, Row Level Security PostgreSQL, headers de sécurité, audit OWASP ZAP |
+| Compétence                                                           | Niveau Avant  | Niveau Après  | Contexte d'Apprentissage                                                                         |
+| -------------------------------------------------------------------- | ------------- | ------------- | ------------------------------------------------------------------------------------------------ |
+| Architecture d'application d'entreprise (Three-Tier, adaptateurs SI) | Intermédiaire | Avancé        | Conception et implémentation du modèle d'adaptateurs pour Odoo, SharePoint et Power BI           |
+| Intégration d'API tierces complexes (JSON-RPC, OAuth 2.0, REST)      | Intermédiaire | Avancé        | Rétro-ingénierie API Odoo v15, implémentation OAuth Azure AD, connecteur SharePoint Webhooks     |
+| DevOps et CI/CD (GitHub Actions, Docker, déploiement cloud)          | Débutant      | Intermédiaire | Mise en place du pipeline complet lint → typecheck → test → build → deploy sur Vercel et Railway |
+| Gestion de projet Agile hybride (Scrum adapté, cérémonies légères)   | Débutant      | Intermédiaire | 12 sprints de 2 semaines avec sprint planning, review et retrospective formalisés                |
+| Collaboration humain-IA dans un contexte professionnel               | Débutant      | Avancé        | 24 semaines d'utilisation intensive de Claude Code avec discipline de supervision systématique   |
+| Sécurité applicative (OWASP Top 10, RGPD by design)                  | Intermédiaire | Avancé        | Implémentation RBAC, Row Level Security PostgreSQL, headers de sécurité, audit OWASP ZAP         |
 
 La compétence la plus inattendue développée au cours de ce projet est la **gestion de la collaboration humain-IA à grande échelle**. Ce projet a servi de laboratoire pour explorer les frontières entre délégation efficace à l'IA et maintien de la maîtrise architecturale. La règle que j'ai progressivement formulée : l'IA accélère l'exécution, l'humain maintient la cohérence. Toute décision architecturale, choix d'une abstraction, refactorisation d'un module, stratégie d'intégration, reste exclusivement humaine ; l'IA ne produit que des suggestions que j'évalue sur la base de ma compréhension du système global.
 
@@ -1106,7 +1210,6 @@ La compétence la plus inattendue développée au cours de ce projet est la **ge
 
 4. **Structurer un protocole de communication plus explicite avec le co-équipier PM.** Jules et moi avons fonctionné en confiance implicite, ce qui a globalement bien fonctionné. Mais sur plusieurs incidents techniques (blocage API Odoo, refonte du schéma Prisma), Jules a appris les aléas avec retard. Un rapport d'avancement hebdomadaire structuré (format fixe, envoyé chaque vendredi) aurait maintenu une visibilité partagée permanente sans multiplier les réunions.
 
-
 ### Jules Courtin : chef de projet / Product Manager
 
 #### 1. Réflexion sur les défis rencontrés
@@ -1119,24 +1222,24 @@ Le troisième défi a été la conduite du changement. Le risque principal n'ét
 
 #### 2. Identification des forces et faiblesses
 
-| Forces identifiées | Faiblesses identifiées |
-|-------------------|------------------------|
-| Capacité à structurer un besoin flou en périmètre produit priorisé, avec une North Star Metric simple et mesurable | Tendance initiale à vouloir satisfaire trop de demandes métiers en même temps, ce qui a complexifié les premières versions du backlog |
-| Bonne coordination des parties prenantes : entretiens, synthèses, arbitrages Copil et communication par segment | Formalisation parfois tardive de certains arbitrages fonctionnels, notamment sur les règles de calcul des KPI portefeuille |
-| Maîtrise des outils de pilotage projet : WBS, Gantt, RACI, MoSCoW, registre des risques et reporting d'avancement | Dépendance trop forte aux validations synchrones au début du projet, alors que certains sujets auraient pu être arbitrés plus vite en asynchrone |
-| Capacité à vulgariser les enjeux techniques auprès de la direction et des pôles métier | Difficulté à challenger assez tôt certaines estimations techniques, par manque de recul sur les contraintes d'intégration Odoo et SharePoint |
-| Attention constante portée à l'adoption utilisateur, à la formation et au réseau d'ambassadeurs | Sous-estimation de la charge de conduite du changement sur les managers intermédiaires, plus résistants que prévu aux nouveaux modes de reporting |
+| Forces identifiées                                                                                                 | Faiblesses identifiées                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capacité à structurer un besoin flou en périmètre produit priorisé, avec une North Star Metric simple et mesurable | Tendance initiale à vouloir satisfaire trop de demandes métiers en même temps, ce qui a complexifié les premières versions du backlog             |
+| Bonne coordination des parties prenantes : entretiens, synthèses, arbitrages Copil et communication par segment    | Formalisation parfois tardive de certains arbitrages fonctionnels, notamment sur les règles de calcul des KPI portefeuille                        |
+| Maîtrise des outils de pilotage projet : WBS, Gantt, RACI, MoSCoW, registre des risques et reporting d'avancement  | Dépendance trop forte aux validations synchrones au début du projet, alors que certains sujets auraient pu être arbitrés plus vite en asynchrone  |
+| Capacité à vulgariser les enjeux techniques auprès de la direction et des pôles métier                             | Difficulté à challenger assez tôt certaines estimations techniques, par manque de recul sur les contraintes d'intégration Odoo et SharePoint      |
+| Attention constante portée à l'adoption utilisateur, à la formation et au réseau d'ambassadeurs                    | Sous-estimation de la charge de conduite du changement sur les managers intermédiaires, plus résistants que prévu aux nouveaux modes de reporting |
 
 #### 3. Analyse des compétences développées
 
-| Compétence | Niveau avant | Niveau après | Contexte d'apprentissage |
-|------------|-------------|-------------|--------------------------|
-| Cadrage produit et priorisation MVP | Intermédiaire | Avancé | Transformation de demandes multiples en backlog priorisé, arbitrages MoSCoW et suivi de la valeur via la North Star Metric |
-| Pilotage de projet transverse | Intermédiaire | Avancé | Coordination de 9 pôles, préparation des Copil, suivi des risques, jalons et dépendances sur 24 semaines |
-| Conduite du changement | Débutant | Intermédiaire | Construction du plan ADKAR, segmentation des publics, programme ambassadeurs et indicateurs d'adoption |
-| Communication exécutive | Intermédiaire | Avancé | Synthèses direction, messages par audience, restitution des arbitrages et préparation de la démonstration MVP |
-| Collaboration avec un Tech Lead | Intermédiaire | Avancé | Arbitrages permanents entre valeur métier, faisabilité technique, dette acceptable et qualité attendue |
-| Analyse économique et organisationnelle | Débutant | Intermédiaire | Business Model Canvas, diagnostic McKinsey 7S, estimation ROI et valorisation des gains PMO |
+| Compétence                              | Niveau avant  | Niveau après  | Contexte d'apprentissage                                                                                                   |
+| --------------------------------------- | ------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Cadrage produit et priorisation MVP     | Intermédiaire | Avancé        | Transformation de demandes multiples en backlog priorisé, arbitrages MoSCoW et suivi de la valeur via la North Star Metric |
+| Pilotage de projet transverse           | Intermédiaire | Avancé        | Coordination de 9 pôles, préparation des Copil, suivi des risques, jalons et dépendances sur 24 semaines                   |
+| Conduite du changement                  | Débutant      | Intermédiaire | Construction du plan ADKAR, segmentation des publics, programme ambassadeurs et indicateurs d'adoption                     |
+| Communication exécutive                 | Intermédiaire | Avancé        | Synthèses direction, messages par audience, restitution des arbitrages et préparation de la démonstration MVP              |
+| Collaboration avec un Tech Lead         | Intermédiaire | Avancé        | Arbitrages permanents entre valeur métier, faisabilité technique, dette acceptable et qualité attendue                     |
+| Analyse économique et organisationnelle | Débutant      | Intermédiaire | Business Model Canvas, diagnostic McKinsey 7S, estimation ROI et valorisation des gains PMO                                |
 
 La compétence la plus importante développée pendant ce projet est la capacité à tenir ensemble trois niveaux de lecture : la vision stratégique de la direction, les contraintes opérationnelles des pôles et la réalité technique du développement. Avant ce projet, j'avais tendance à traiter ces dimensions séparément. Tech4Value m'a appris qu'un bon pilotage produit consiste précisément à faire circuler l'information entre ces niveaux, puis à transformer les tensions en décisions explicites.
 
