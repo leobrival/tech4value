@@ -96,6 +96,21 @@ Le premier écran clé est le dashboard exécutif. On y retrouve les 5 projets s
 Prenons un cas d'usage. Le COPIL ouvre la plateforme et voit immédiatement que l'ERP Finance est en tension budgétaire, que le Data Lake a un jalon critique proche, que Green IT reste sous contrôle et que le Portail RH présente un risque d'adoption. En quelques secondes, la discussion peut se concentrer sur les décisions : faut-il réallouer des ressources ? faut-il renforcer le plan de conduite du changement ? faut-il arbitrer un budget ?
 
 **Intervenant : Léo**
+**Interfaces à afficher : Odoo Apps, Project, Timesheets, Planning, Documents, Dashboards, Approvals**
+
+Nous ouvrons maintenant Odoo pour montrer la source opérationnelle des données. L'idée importante est la suivante : Tech4Value ne remplace pas Odoo, il l'utilise comme brique métier existante. Sur l'écran Apps, nous montrons les modules Project, Timesheets, Planning, Documents, Dashboards et Approvals. Ces modules représentent les données que le PMO manipule déjà, mais qui restent difficiles à consolider manuellement.
+
+Dans Project, nous affichons les 5 projets stratégiques : RGPD, ERP Finance et Supply Chain, Data Lake et BI Groupe, Green IT Cloud Durable et Portail RH Unifié. Nous ouvrons ensuite un projet, par exemple ERP Finance, pour montrer les tâches, les jalons, les responsables, le statut et les points de risque. Cette vue illustre la donnée opérationnelle brute : elle est utile au chef de projet, mais elle n'est pas encore suffisante pour arbitrer un portefeuille complet.
+
+Dans Timesheets et Planning, nous montrons la charge réelle et l'allocation des ressources. C'est ici que l'on relie le chiffre de 78 ETP à des données concrètes : temps passé, capacité disponible, surcharge IT ou sous-utilisation Data. Cette séquence permet d'expliquer pourquoi le pilotage ne peut pas se limiter à une intuition ou à un fichier Excel mensuel.
+
+Dans Documents, nous montrons les pièces projet : cahier des charges, compte rendu de COPIL, registre des risques, support de formation ou document de recette. Le point clé est la traçabilité : un arbitrage doit pouvoir être relié à un document, à une version et à un projet. Tech4Value récupère ces liens pour éviter que les preuves restent dispersées dans SharePoint ou dans des dossiers locaux.
+
+Dans Dashboards, nous montrons la valeur de synthèse côté Odoo : projets actifs, budget consommé, avancement, risques et indicateurs de charge. Puis nous revenons à la plateforme Tech4Value pour montrer la différence : Odoo reste le système source, tandis que Tech4Value consolide, normalise et présente les indicateurs dans une lecture Copil plus directe.
+
+Enfin, dans Approvals, nous montrons un exemple d'arbitrage : validation d'un budget ERP, approbation d'un jalon Data Lake ou demande de changement sur le Portail RH. Cette dernière interface montre le passage de l'information à la décision. La donnée remonte depuis Odoo, elle est consolidée dans Tech4Value, puis elle alimente un arbitrage formalisé.
+
+**Intervenant : Léo**
 **Slides à afficher : Slide 10 : Stack technique retenue**
 
 Techniquement, nous avons retenu une stack TypeScript full-stack : Next.js 14, React 18, TypeScript, Tailwind et Zustand côté frontend ; Node.js, Express, TypeScript, Prisma et PostgreSQL côté backend ; GitHub Actions pour la CI/CD ; Vercel, Railway et Néon pour le déploiement. Cette stack convient à une équipe réduite : elle utilise le même langage sur toute la chaîne, réduit les frictions et maintient une base de code lisible.
