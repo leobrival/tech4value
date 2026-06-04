@@ -10,6 +10,10 @@
     "check-conformance": "node scripts/validate-docs.js --strict",
     "check-words": "bun scripts/check-word-count.ts",
     "check-video": "bun scripts/check-video-script.ts",
+    "notion:deck:push": "bun .claude/skills/notion-presentation-deck/scripts/notion-deck-sync.ts push --file deliverables/group-file/presentation-notion-tech4value.md --mode reset",
+    "notion:deck:push:force": "bun .claude/skills/notion-presentation-deck/scripts/notion-deck-sync.ts push --file deliverables/group-file/presentation-notion-tech4value.md --mode reset --force",
+    "notion:deck:diff": "bun .claude/skills/notion-presentation-deck/scripts/notion-deck-sync.ts diff --file deliverables/group-file/presentation-notion-tech4value.md",
+    "notion:deck:validate": "bun .claude/skills/notion-presentation-deck/scripts/notion-deck-sync.ts validate --file deliverables/group-file/presentation-notion-tech4value.md",
     "odoo:demo:dry-run": "bun scripts/configure-odoo-demo.ts",
     "odoo:demo:apply": "bun scripts/configure-odoo-demo.ts --apply"
   },

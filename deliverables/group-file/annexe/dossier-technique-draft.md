@@ -1,4 +1,4 @@
-# Dossier Technique - Tech4Value
+# dossier technique - Tech4Value
 
 **Plateforme de Pilotage Stratégique des Projets**
 
@@ -16,7 +16,7 @@
 
 ---
 
-## Table des Matières
+## table des matières
 
 1. [Présentation de l'Entreprise et de l'Équipe Projet](#1-présentation-de-lentreprise-et-de-léquipe-projet)
 2. [Analyse de la Problématique](#2-analyse-de-la-problématique)
@@ -29,7 +29,7 @@
 
 ---
 
-## 1. Présentation de l'Entreprise et de l'Équipe Projet
+## 1. présentation de l'entreprise et de l'équipe projet
 
 Cette section présente le contexte organisationnel dans lequel s'inscrit le projet Tech4Value. Comprendre la structure de l'entreprise, son portefeuille de projets stratégiques et la composition de l'équipe projet est indispensable pour appréhender la nature des besoins identifiés et la pertinence des solutions retenues. Tech4Value est une entreprise de taille intermédiaire (ETI) du secteur des services numériques, confrontée à des défis de pilotage caractéristiques des organisations matricielles gérant plusieurs projets critiques en parallèle. Le présent dossier documente la démarche complète menée par une équipe de deux personnes pour répondre à cette problématique dans un délai de **24 semaines**, avec une enveloppe budgétaire de **350 000 €** allouée à l'ensemble du programme de transformation.
 
@@ -45,7 +45,7 @@ Cette section présente le contexte organisationnel dans lequel s'inscrit le pro
 
 **Enjeux de gouvernance et de traçabilité.** La nature académique du projet impose une exigence de traçabilité qui va au-delà des standards habituels d'un projet d'entreprise. Chaque décision structurante est documentée dans le journal de décisions versionné sur GitHub, chaque commit est signé et associé à une tâche planifiée, et l'utilisation de l'IA générative est journalisée avec les prompts utilisés et les outputs produits. Cette discipline documentaire répond simultanément au principe P10 de la constitution projet (traçabilité à deux personnes) et au critère D-28 (professionnalisme du livrable). Elle assuré également que le projet pourrait être repris, audité ou présenté devant n'importe quel comité sans risque de lacune d'information. Pour un jury qui évalue 220 points, la confiance dans la rigueur du processus est aussi importante que la qualité du livrable final — c'est pourquoi cette section présente l'organisation du travail avec le même niveau de détail que l'architecture technique.
 
-### 1.1 Tech4Value en Chiffres
+### 1.1 Tech4Value en chiffres
 
 **Tech4Value** est une entreprise de services numériques comptant **185 collaborateurs**, organisée en structure matricielle autour de **9 pôles** répartis sur **3 sites** (siège + antennes Rennes et Lyon).
 
@@ -66,7 +66,7 @@ Tech4Value affiche un chiffre d'affaires estimé à **24 M€** et positionne sa
 
 Sur le plan opérationnel, **78 ETP** (Équivalents Temps Plein) sont mobilisés sur les **5 projets stratégiques** en cours, représentant 42% des effectifs. Ces projets impliquent des ressources transverses et créent des tensions d'allocation qui se matérialisent par des retards récurrents et une difficulté à prioriser les arbitrages. La gestion simultanée de ces chantiers critiques constitue la principale problématique adressée par la plateforme Tech4Value.
 
-### 1.2 Portefeuille de Projets Stratégiques
+### 1.2 portefeuille de projets stratégiques
 
 L'entreprise gère simultanément **5 projets stratégiques** mobilisant **78 ETP** (soit **42% des effectifs**) :
 
@@ -80,7 +80,7 @@ L'entreprise gère simultanément **5 projets stratégiques** mobilisant **78 ET
 
 La complexité du pilotage multi-projets est significative : cinq projets de priorités différentes mobilisent simultanément **42 % des effectifs** répartis sur **6 des 9 pôles**. Les interdépendances inter-pôles sont nombreuses — le PMO partage des ressources avec l'IT, la Data et la Finance sur trois projets critiques en parallèle. Cette situation crée des tensions sur l'allocation, des risques de retard en cascade et un besoin urgent de visibilité consolidée. La plateforme Tech4Value répond directement à cette problématique de coordination en offrant une vue unifiée du portefeuille, des charges et des jalons. Chaque **projet stratégique** dispose de son espace dédié dans la plateforme, permettant au PMO de consolider l'ensemble en une vue portefeuille globale et à la direction d'arbitrer les priorités sur la base de données fraîches et fiables.
 
-### 1.3 Équipe Projet
+### 1.3 équipe projet
 
 | Membré | Rôle | Responsabilités |
 |--------|------|-----------------|
@@ -91,7 +91,7 @@ La complémentarité entre Jules Courtin (PM) et Léo Brival (Tech Lead) est au 
 
 ---
 
-## 2. Analyse de la Problématique
+## 2. analyse de la problématique
 
 Cette section présente le diagnostic de la situation existante, la formulation précise du besoin et les objectifs stratégiques que le projet Tech4Value doit atteindre. L'analyse repose sur une investigation terrain menée auprès des 9 pôles de l'entreprise : entretiens avec les responsables de pôles, observation des pratiques de reporting, cartographie du système d'information existant. Le constat est sans ambiguïté — la fragmentation des outils et l'absence de pilotage consolidé génèrent des inefficacités mesurables qui pénalisent directement la performance opérationnelle. Les objectifs formulés ci-après sont de type SMART (Spécifiques, Mesurables, Atteignables, Réalistes, Temporellement définis) et servent de référentiel pour évaluer le succès du projet tout au long des 24 semaines de réalisation.
 
@@ -109,7 +109,7 @@ Cette section présente le diagnostic de la situation existante, la formulation 
 
 **Priorisation des besoins.** Face aux 5 constats identifiés, il n'est pas possible de tout résoudre dans un MVP de 24 semaines. Nous avons appliqué la méthode **MoSCoW** (Must Hâve, Should Hâve, Could Hâve, Won't Hâve) pour prioriser les fonctionnalités en fonction de leur impact sur les constats les plus critiques. Les Must Hâve (tableau de bord consolidé, synchronisation Odoo, gestion des ressources en temps réel) traitent les constats (2), (4) et (5) — ceux qui ont l'impact le plus direct sur les décisions de pilotage de la direction. Les Should Hâve (notifications automatiques, export PDF des rapports) traitent le constat (1). Les Could Hâve (intégration Power BI native, chatbot assistant) sont reportés à une version ultérieure. Cette priorisation est documentée dans la section 2.3 et constitue la base de la planification détaillée de la section 4.
 
-### 2.1 Diagnostic de l'Existant
+### 2.1 diagnostic de l'existant
 
 #### Constats Clés
 
@@ -134,7 +134,7 @@ L'analyse du système d'information existant révèle plusieurs dysfonctionnemen
 
 Au-delà de la fragmentation des outils, l'analyse révèle des **silos organisationnels** profonds : chaque pôle gère ses données dans son propre espace sans mécanisme de partage structuré. La fragmentation des données qui en résulte crée des angles morts décisionnels — le PMO ne dispose d'aucune visibilité consolidée sur la chargé réelle des 78 ETP engagés, et la direction ne peut pas évaluer en temps réel l'avancement du portefeuille. Ces silos génèrent des doublons de saisie, des incohérences entre les versions et une perte estimée à **8 heures par semaine** par chef de projet en réconciliation manuelle de données. Ce diagnostic établit le socle objectif sur lequel repose toute la justification des choix techniques : la solution Tech4Value n'est pas une réponse à une tendance technologique mais à des dysfonctionnements opérationnels mesurés et documentés.
 
-### 2.2 Formulation du Besoin
+### 2.2 formulation du besoin
 
 **Besoin central** : Centraliser le pilotage stratégique des 5 projets dans une plateforme unifiée pour améliorer la visibilité, la coordination inter-pôles et la performance.
 
@@ -142,7 +142,7 @@ Au-delà de la fragmentation des outils, l'analyse révèle des **silos organisa
 
 Le contexte décisionnel actuel souffre d'angles morts structurels : la direction générale ne dispose d'aucune vue consolidée en temps réel sur l'avancement du portefeuille, et les arbitrages d'allocation de ressources reposent sur des données vieilles de plusieurs jours. Ce besoin de visibilité en temps réel est le fil conducteur de toute la conception de la plateforme : chaque fonctionnalité développée doit répondre à la question « Que doit savoir le COPIL maintenant pour prendre la bonne décision ? ». La centralisation des données n'est pas une fin en soi — elle est le moyen d'éliminer les angles morts et de restaurer la capacité décisionnelle de l'organisation. Les entretiens utilisateurs conduits en phase de cadrage (semaines S1-S2) ont confirmé que ce besoin est partagé par les trois profils cibles : la Direction Générale souffre d'un manque de synthèse, les chefs de projet souffrent d'une surcharge de reporting, et le PMO souffre d'une fragmentation des données entre 7 outils disparates. La plateforme Tech4Value répond à ces trois douleurs simultanément, ce qui justifie son adoption transversale et garantit son impact sur la performance organisationnelle dès les premières semaines de déploiement.
 
-### 2.3 Objectifs Stratégiques
+### 2.3 objectifs stratégiques
 
 | Objectif | KPI Cible | Baseline | Horizon |
 |----------|-----------|----------|---------|
@@ -156,7 +156,7 @@ Ces objectifs sont formulés selon la méthode SMART et s'inscrivent dans l'enve
 
 ---
 
-## 3. Management de Projet
+## 3. management de projet
 
 > **Section évaluée : 25 points** (Gestion des coûts : 10 pts | Méthodologie : 5 pts | Conduite du changement : 10 pts)
 
@@ -178,7 +178,7 @@ Le management de projet est la discipline qui détermine si une solution techniq
 
 **Mesure de la performance managériale.** Le succès du management de projet ne s'évalue pas uniquement à la livraison finale — il se mesure en continu tout au long des 24 semaines. Trois indicateurs clés de performance managériale sont suivis hebdomadairement dans le tableau de bord de gouvernance : le **CPI** (Cost Performance Index = Valeur acquise / Coûts réels) qui doit rester supérieur à 0,95 pour signaler un projet en bonne santé budgétaire ; le **SPI** (Schedule Performance Index = Valeur acquise / Valeur planifiée) qui doit rester supérieur à 0,90 pour signaler un projet dans les délais ; et le **taux de complétude des livrables** (nombre de livrables remis / nombre de livrables planifiés pour la semaine) qui doit atteindre 100 % sur les jalons critiques. Ces indicateurs, issus de la méthode Earned Value Management (EVM), permettent de détecter les dérives au plus tôt et de prendre des décisions correctives avant qu'elles ne deviennent irréversibles. Leur utilisation démontre une maturité managériale qui dépasse les attentes standard d'un projet académique et contribue directement au critère D-29 (aller au-delà des demandes).
 
-### 3.1 Gestion des Coûts (10 points)
+### 3.1 gestion des coûts (10 points)
 
 #### 3.1.1 Budget Prévisionnel
 
@@ -213,7 +213,7 @@ Le management de projet est la discipline qui détermine si une solution techniq
 
 L'enveloppe budgétaire totale du programme est fixée à **350 000 €**, répartie sur **24 semaines** de réalisation. Ce cadrage financier a été respecté grâce à une stratégie de sobriété technologique délibérée : utilisation systématique des offres gratuites (Vercel, Railway, Supabase free tier) pour la phase MVP, et recours massif à l'assistance par l'intelligence artificielle — **52 % des heures de développement** ont bénéficié de l'accélération apportée par Claude Code (Anthropic), réduisant mécaniquement le coût en jours-homme. Cette approche a permis de livrer un MVP fonctionnel avec un investissement infrastructure de seulement **2 500 €** sur la phase initiale, démontrant la faisabilité économique d'un tel programme pour une ETI. Le budget prévisionnel de déploiement production (1 235 k€ en année 1) intègre les coûts RH réels, les licences et la mise à l'échelle de l'infrastructure, en restant dans des ordres de grandeur cohérents avec le secteur.
 
-### 3.2 Justification de la Méthodologie (5 points)
+### 3.2 justification de la méthodologie (5 points)
 
 #### 3.2.1 Choix : Méthodologie Agile Hybride
 
@@ -269,7 +269,7 @@ Nous avons retenu une approche **Agile Hybride** combinant :
 
 Cette organisation des cérémonies a été calibrée pour une équipe de deux personnes : les cérémonies formelles sont condensées (30 min au lieu de 2h en Scrum classique) afin de maximiser le temps disponible pour la production. L'async est privilégié pour le suivi quotidien.
 
-### 3.3 Programme de Conduite du Changement (10 points)
+### 3.3 programme de conduite du changement (10 points)
 
 La conduite du changement constitue l'un des facteurs clés de succès du projet — un MVP techniquement irréprochable mais mal adopté est un échec. Le programme s'appuie sur le modèle **ADKAR** (Awareness, Désiré, Knowledge, Ability, Reinforcement) d'Hiatt, qui structure l'accompagnement individuel et collectif des 185 collaborateurs concernés. L'identification précoce des résistances potentielles est au cœur de la démarche : toute transformation numérique génère des résistances, et les ignorer conduit à un taux d'adoption insuffisant. Nous avons cartographié les parties prenantes selon leur niveau d'impact et leur niveau d'adhésion attendu, permettant de calibrer l'intensité de l'accompagnement par segment. Les actions concrètes — communication, formation, programme d'ambassadeurs, suivi des KPI d'adoption — sont détaillées dans la **Section 6** du présent dossier. Le programme est piloté par Jules Courtin avec un reporting mensuel au Copil et des indicateurs de suivi définis dès la semaine 1. Le succès de la conduite du changement se mesure par le taux d'adoption à J+30, J+90 et J+180, avec des seuils de déclenchement prédéfinis pour activer les mesures correctives.
 
@@ -277,7 +277,7 @@ La conduite du changement constitue l'un des facteurs clés de succès du projet
 
 ---
 
-## 4. Planification Détaillée
+## 4. planification détaillée
 
 > **Section évaluée : 35 points** (Cohérence : 5 | Décomposition tâches : 5 | Calendrier : 5 | Dépendances : 5 | Risques : 5 | Outils : 5 | Jalons : 5)
 
@@ -303,7 +303,7 @@ La planification détaillée est la colonne vertébrale opérationnelle du proje
 
 **Approche de la gestion des dépendances.** Les dépendances entre tâches constituent l'un des risques les plus sous-estimés dans la planification de projets IT. Une dépendance non identifiée en avance peut bloquer une équipe entière pendant plusieurs jours. Notre planification identifie explicitement trois types de dépendances : les **dépendances techniques** (la tâche B ne peut commencer que si la tâche A produit un artefact utilisable — par exemple, le module d'authentification doit être opérationnel avant tout développement de fonctionnalités authentifiées), les **dépendances de compétences** (certaines tâches nécessitent la présence simultanée des deux membres — les décisions d'architecture, les revues de sprint, les présentations de jalons), et les **dépendances externes** (l'accès aux APIs Odoo et Azure AD doit être configuré avant le développement des intégrations correspondantes). Chaque dépendance est matérialisée dans le diagramme de Gantt (Annexe A) par un lien de type Finish-to-Start ou Start-to-Start, avec indication du délai de latence le cas échéant. Cette rigueur dans la modélisation des dépendances répond directement au critère D-07 (gestion des dépendances, 5 points). Elle permet également d'anticiper les fenêtres de parallélisation — les tâches sans dépendances mutuelles sont assignées simultanément aux deux membres pour optimiser l'utilisation du temps disponible et raccourcir la durée globale du projet sans augmenter la chargé de chacun.
 
-### 4.1 Cohérence de la Planification Globale (5 points)
+### 4.1 cohérence de la planification globale (5 points)
 
 #### Framework : Now-Next-Later (Janna Bastow - ProdPad)
 
@@ -318,7 +318,7 @@ Le projet est structuré selon le framework **Now-Next-Later**, organisé en **4
 
 La cohérence de la planification globale tient à trois principes directeurs. Premièrement, le framework Now-Next-Later impose une discipline de priorisation : seules les fonctionnalités nécessaires au MVP alpha (S12) entrent en Phase 2 ; tout le reste est repoussé en Phase 3 ou 4, évitant le scope creep. Deuxièmement, chaque phase se termine par un **jalon** de validation formelle (recette, démo Copil, revue qualité) avant le passage à la phase suivante — aucune phase ne démarre si la précédente n'est pas clôturée. Troisièmement, les 480 heures-homme estimées intègrent une réserve de 15 % (buffer) distribuée sur les tâches à plus haute incertitude technique (intégrations Odoo, Azure AD SSO), ce qui garantit que les estimations initiales restent réalistes sur 24 semaines. Cette approche équilibrée entre rigueur Waterfall (phases jalonnées) et flexibilité Agile (priorisation sprint par sprint) est détaillée dans la justification méthodologique de la Section 3.2.
 
-### 4.2 Décomposition des Tâches (5 points)
+### 4.2 décomposition des tâches (5 points)
 
 La décomposition du projet suit une structure **WBS (Work Breakdown Structure)** à trois niveaux : phases, tâches et sous-tâches. Ce découpage permet d'affecter un responsable précis à chaque livrable élémentaire et d'estimer les charges avec une granularité suffisante pour le pilotage hebdomadaire. Chaque tâche comporte au minimum une liste de sous-tâches, un owner identifié (Jules ou Léo selon les responsabilités définies dans la RACI) et une durée estimée. Les tâches marquées « Continue » s'exécutent en parallèle sur toute la phase concernée. Au total, le WBS couvre **30 tâches principales** réparties sur 4 phases, pour un volume estimé à **480 heures-homme** (dont 52 % assistées par IA).
 
@@ -368,7 +368,7 @@ La décomposition du projet suit une structure **WBS (Work Breakdown Structure)*
 | T4.5 | Dossiers individuels | 25-35 pages chacun | Jules / Léo | 3 semaines |
 | T4.6 | Review & soumission | Relecture, corrections, soumission finale | Jules + Léo | 1 semaine |
 
-### 4.3 Calendrier Projet (5 points)
+### 4.3 calendrier projet (5 points)
 
 ```
 S1  S2  S3  S4  S5  S6  S7  S8  S9  S10 S11 S12 S13 S14 S15 S16 S17 S18 S19 S20 S21 S22 S23 S24
@@ -382,7 +382,7 @@ S1  S2  S3  S4  S5  S6  S7  S8  S9  S10 S11 S12 S13 S14 S15 S16 S17 S18 S19 S20 
 
 Le calendrier projet s'étend du **1er octobre 2025** (date de début — S1) au **31 mars 2026** (date de fin — S24), soit exactement 24 semaines. Chaque phase dispose de dates de début et de fin précises, formalisées dans le diagramme de Gantt (Annexe A) : Phase 1 du 1er au 28 octobre, Phase 2 du 29 octobre au 23 décembre, Phase 3 du 5 janvier au 15 février, Phase 4 du 16 février au 31 mars. Le Gantt identifie le chemin critique (T1.6 → T2.1 → T2.3 → T3.2 → T4.6) et les deux buffers de deux semaines intégrés pour absorber les aléas. Toute dérive sur le chemin critique est signalée en Copil mensuel avec un plan de rattrapage documenté. La précision du calendrier — dates de début, dates de fin et durées en jours ouvrés pour chacune des 32 tâches — répond directement au critère D-06 de la grillé d'évaluation. Les jalons sont matérialisés dans le Gantt par des losanges rouges, permettant de visualiser immédiatement les points de contrôle obligatoires sur l'ensemble de la ligne temporelle du projet.
 
-### 4.4 Gestion des Dépendances (5 points)
+### 4.4 gestion des dépendances (5 points)
 
 | Tâche Dépendante | Prérequis (**prédécesseur**) | Type | **Dépendance** et Impact si Retard |
 |-------------------|-----------|------|------------------|
@@ -397,7 +397,7 @@ Le calendrier projet s'étend du **1er octobre 2025** (date de début — S1) au
 
 La gestion des **dépendances** inter-tâches est un levier de réduction des risques de retard en cascade. Chaque **prédécesseur** est identifié dans le Gantt (Annexe A) avec le type de lien (Finish-to-Start, Start-to-Start) et le décalage éventuel. La matrice de **dépendances** ci-dessus synthétise les 6 liens critiques ; les 24 autres liens secondaires sont documentés dans le Gantt détaillé. Cette cartographie permet au PM de prioriser les arbitrages en cas d'aléa et de déclencher le protocole de reprise au bon niveau de la chaîne.
 
-### 4.5 Gestion des Risques (5 points)
+### 4.5 gestion des risques (5 points)
 
 | ID | Risque | Probabilité | Impact | Criticité | Stratégie de Mitigation |
 |----|--------|-------------|--------|-----------|--------------------------|
@@ -424,7 +424,7 @@ Impact ↑
 
 La gestion des risques est un processus vivant : le registre est mis à jour à chaque sprint et présenté en Copil mensuel. Les risques critiques (R1, R2, R8, R9) font l'objet d'un suivi hebdomadaire dédié. Pour chaque risque, la stratégie de mitigation est activée dès le franchissement d'un seuil d'alerte défini (ex. : retard > 3 jours sur le chemin critique déclenche le protocole R2). Cette approche proactive — identifier, quantifier, prioriser et mitiger avant que le risque ne se matérialise — est la marque d'une gestion de projet mâture et conforme aux exigences du critère D-08. Le plan de **contingence** global prévoit un buffer de 2 semaines à S22 pour absorber les aléas cumulés.
 
-### 4.6 Outils de Planification (5 points)
+### 4.6 outils de planification (5 points)
 
 | Outil | Usagé | Fréquence |
 |-------|-------|-----------|
@@ -437,7 +437,7 @@ La gestion des risques est un processus vivant : le registre est mis à jour à 
 
 Le choix de GitHub Projects comme outil de planification opérationnelle est cohérent avec la méthode **Scrum** retenue (Section 3.2). L'intégration native avec le dépôt de code permet de lier chaque tâche planifiée à ses commits et pull requests, assurant une traçabilité complète entre le planning et l'exécution réelle. GanttPRO est utilisé pour la vision macro (phases, **milestone** clés, chemin critique) tandis que GitHub Projects gère le backlog sprint au quotidien — cette complémentarité répond au critère D-09 (utilisation d'outils de planification pertinents). La combinaison de ces outils couvre l'ensemble des besoins de planification : vision long terme (Gantt), priorisation (RICE), exécution quotidienne (GitHub Projects) et reporting (Power BI).
 
-### 4.7 Jalons Clés - Milestones (5 points)
+### 4.7 jalons clés - milestones (5 points)
 
 | Jalon | Semaine | Critère de Validation | Livrable |
 |-------|---------|----------------------|----------|
@@ -454,7 +454,7 @@ Chaque jalon fait l'objet d'une procédure de **recette** formalisée : les crit
 
 ---
 
-## 5. Solution Technique
+## 5. solution technique
 
 > **Section évaluée : 73 points** (Cohérence : 10 | Justification : 10 | Veille techno : 2 | Innovation : 2 | Veille CPIT : 5 | Tests : 5 | GreenIT : 2 | Normes : 5 | Accessibilité : 2 | Schémas : 5 | Limites : 5 | Doc utilisateur : 10 | Gouvernance & évolution : 10)
 
@@ -496,7 +496,7 @@ La section 5 est le cœur technique du dossier. Avec 73 points sur 156 (47 % de 
 
 **Politique de veille CPIT.** Le critère D-15 (politique de veille spécifique au Mastère CPIT, 5 points) couvre la veille sur les pratiques et standards du management de systèmes d'information. Notre politique de veille s'articule autour de quatre sources structurées : (1) **Gartner Magic Quadrant** pour le positionnement des éditeurs de solutions de gestion de portefeuille de projets (PPM) — consulté trimestriellement pour situer nos choix technologiques par rapport au marché ; (2) **PMI Pulse of the Profession** (rapport annuel) pour les tendances et benchmarks de maturité en gestion de projet IT ; (3) **InfoQ** et **The Register** pour la veille sur les architectures cloud-native et les pratiques DevOps émergentes ; (4) **ANSSI** (Agence Nationale de Sécurité des Systèmes d'Information) pour les recommandations réglementaires en matière de sécurité applicative. Cette veille a directement alimenté les décisions de la section 5 : le choix de l'architecture serverless (tendance Gartner 2024-2025), l'adoption des pratiques DevSecOps (recommandations ANSSI), et la priorisation de l'accessibilité RGAA (obligation réglementaire française).
 
-### 5.1 Cohérence de la Solution Proposée (10 points)
+### 5.1 cohérence de la solution proposée (10 points)
 
 #### Architecture Three-Tier
 
@@ -561,7 +561,7 @@ La cohérence de la solution proposée repose sur trois piliers : l'adéquation 
 | Interopérabilité SI existant | Adapters Odoo, SharePoint, Power BI | Service Layer |
 | Sécurité & RGPD | Azure AD SSO, RBAC, chiffrement | Auth + Middleware |
 
-### 5.2 Qualité de la Justification Technique (10 points)
+### 5.2 qualité de la justification technique (10 points)
 
 #### Stack Retenue : JavaScript Full-Stack (MERN adapté)
 
@@ -598,7 +598,7 @@ La cohérence de la solution proposée repose sur trois piliers : l'adéquation 
 
 Le processus de sélection technologique a suivi une grillé de 5 critères pondérés : (1) **maîtrise de l'équipe** (coefficient 3 — une technologie inconnue double le temps de développement), (2) **maturité de l'écosystème** (coefficient 2), (3) **coût total de possession** (coefficient 2), (4) **performance pour les cas d'usagé cibles** (coefficient 2 — dashboards temps-réel, exports PDF, APIs REST), (5) **facilité de recrutement** si l'équipe venait à grandir (coefficient 1). TypeScript full-stack répond au critère 1 avec le score maximal : Léo maîtrise React, Node.js et Prisma depuis plus de 3 ans, éliminant le risque d'apprentissage en cours de projet. La décision finale — stack JavaScript unifié avec PostgreSQL — est documentée dans un ADR (Architecture Décision Record) archivé dans le dépôt GitHub du projet, garantissant la traçabilité des choix techniques conformément au principe P10 de la constitution projet. Les tests unitaires utilisent **Vitest** (compatible Vite, plus rapide que Jest) et les tests d'intégration sont orchestrés via Supertest sur l'API Express.
 
-### 5.3 Veille Technologique (2 points)
+### 5.3 veille technologique (2 points)
 
 #### Sources de Veille Active
 
@@ -624,7 +624,7 @@ Le processus de sélection technologique a suivi une grillé de 5 critères pond
 
 La veille technologique est un processus continu — non une activité ponctuelle. Chaque tendance identifiée est évaluée selon trois critères : maturité (Technology Readiness Level), pertinence pour Tech4Value, et coût d'adoption. Seules les tendances franchissant les trois critères sont intégrées au backlog produit.
 
-### 5.4 Innovation de la Solution (2 points)
+### 5.4 innovation de la solution (2 points)
 
 | Innovation | Description | Différenciant |
 |------------|-------------|---------------|
@@ -637,7 +637,7 @@ La veille technologique est un processus continu — non une activité ponctuell
 
 Le caractère innovant de la solution réside dans la combinaison de trois dimensions : l'unification du SI existant (Odoo, SharePoint, Power BI) en une source unique de vérité, l'automatisation du reporting par des algorithmes de génération documentaire, et l'intégration de l'intelligence artificielle via la **Claude API** pour l'analyse prédictive. Cette triplé innovation positionne Tech4Value au-delà des outils PPM traditionnels — non pas comme un simple agrégateur de données, mais comme un véritable co-pilote décisionnel pour les managers de portefeuilles projets.
 
-### 5.5 Politique de Veille CPIT (5 points)
+### 5.5 politique de veille CPIT (5 points)
 
 #### Veille Spécifique Chef de Projet IT
 
@@ -660,7 +660,7 @@ Le caractère innovant de la solution réside dans la combinaison de trois dimen
 
 La politique de veille CPIT est formalisée en un processus de **diffusion** structuré : chaque veille significative est synthétisée en une note de une page, partagée en réunion de sprint, et archivée dans le référentiel documentaire SharePoint de l'équipe. Les conférences sectorielles majeures — **DevOps Days** Pâris, **KubeCon** Europe, et les OSXP (Open Source Expérience) — font l'objet d'une participation active ou d'un suivi des talks publiés. Cette démarche de veille outrepasse l'exigence académique pour s'inscrire dans une pratique professionnelle durable de montée en compétences continue.
 
-### 5.6 Rigueur des Tests (5 points)
+### 5.6 rigueur des tests (5 points)
 
 #### Stratégie de Test
 
@@ -714,7 +714,7 @@ jobs:
       - run: # Deploy to Vercel + Railway
 ```
 
-### 5.7 Intégration GreenIT (2 points)
+### 5.7 intégration GreenIT (2 points)
 
 #### Principes d'Éco-Conception Appliqués
 
@@ -737,7 +737,7 @@ jobs:
 
 L'approche **GreenIT** adoptée pour Tech4Value n'est pas cosmétique — elle est structurelle. Le choix d'une architecture légère (React SPA + API REST) plutôt qu'une solution full-server-rendering réduit les allers-retours réseau. Le bundle JavaScript est analysé à chaque build (Vite bundle visualizer) et toute régression de taille > 10 % bloque le déploiement. Ces pratiques de numérique responsable sont documentées dans la politique **GreenIT** du projet et contribuent à la durabilité de la solution au-delà de la phase MVP.
 
-### 5.8 Normes et Obligations Réglementaires (5 points)
+### 5.8 normes et obligations réglementaires (5 points)
 
 #### RGPD (Règlement Général sur la Protection des Données)
 
@@ -779,7 +779,7 @@ Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 La conformité réglementaire est pilotée par un référent désigné (**CNIL** : obligation de désigner un délégué à la protection des données pour les organismes traitant des données sensibles à grande échelle). La déclaration RGPD est tenue à jour dans le registre des traitements et révisée à chaque évolution majeure de la plateforme. L'ensemble de ces mesures constitue un niveau de conformité adapté au contexte de l'entreprise fictive Tech4Value.
 
-### 5.9 Accessibilité (2 points)
+### 5.9 accessibilité (2 points)
 
 #### Conformité WCAG 2.1 AA
 
@@ -800,7 +800,7 @@ La conformité réglementaire est pilotée par un référent désigné (**CNIL**
 
 L'**accessibilité** n'est pas traitée comme un ajout de dernière minute mais comme une contrainte de conception intégrée dès les wireframes (Section Annexe E). La charte graphique a été validée pour les ratios de contraste avant toute implémentation. Les composants Shadcn/UI, utilisés pour la bibliothèque de composants, sont conformes ARIA par défaut, réduisant le risque de régressions d'**accessibilité** lors de l'ajout de nouvelles fonctionnalités. Le score Lighthouse cible (≥ 90) est vérifié à chaque déploiement en environnement de staging via la CI GitHub Actions. Ces dispositions répondent au critère D-19 de la grillé de notation et témoignent d'une prise en compte sérieuse des utilisateurs en situation de handicap parmi les 185 collaborateurs de l'entreprise.
 
-### 5.10 Qualité des Schémas Techniques (5 points)
+### 5.10 qualité des schémas techniques (5 points)
 
 Les schémas techniques suivants sont fournis dans le dossier :
 
@@ -815,7 +815,7 @@ Les schémas techniques suivants sont fournis dans le dossier :
 
 Chaque schéma respecte les conventions de notation standard : les diagrammes d'architecture utilisent la notation C4 (Context, Container, Component), les diagrammes de séquence respectent UML 2.5, et les wireframes suivent les conventions de maquettage Figma (frames, composants, variants). La qualité des schémas est évaluée sur leur lisibilité, leur complétude et leur cohérence avec le code implémenté — un schéma qui décrit une architecture différente du code déployé n'a pas de valeur documentaire. Tous les schémas ont été réalisés avec des outils de diagramming vectoriels (FigJam, draw.io, Mermaid.js) et exportés en SVG haute résolution pour garantir leur clarté à toutes les échelles d'impression. Le critère D-20 de la grillé d'évaluation exige des schémas techniques de qualité professionnelle intégrés au livrable final — cette exigence est pleinement satisfaite.
 
-### 5.11 Analyse Critique des Limites (5 points)
+### 5.11 analyse critique des limites (5 points)
 
 #### Limites Techniques Identifiées
 
@@ -839,7 +839,7 @@ Chaque schéma respecte les conventions de notation standard : les diagrammes d'
 
 Ces limites sont assumées et documentées avec transparence. La **dette technique** accumulée pendant la phase MVP — notamment l'absence de WebSocket, le mock Azure AD et la couverture de tests E2E partielle — est consignée dans un registre dédié et sera résorbée lors des itérations V1.1 et V1.2. La question de la **scalabilité** a fait l'objet d'une décision explicite : le free tier des plateformes choisies (Vercel, Railway, Supabase) supporte jusqu'à 500 utilisateurs simultanés, ce qui est amplement suffisant pour les 185 collaborateurs de Tech4Value. La migration vers des offres payantes est prévue et budgétée dès que le taux d'adoption dépasse 80 % des effectifs. Cette approche de scalabilité progressive est cohérente avec la philosophie de sobriété budgétaire retenue (P3 de la constitution projet).
 
-### 5.12 Documentation Utilisateur (10 points)
+### 5.12 documentation utilisateur (10 points)
 
 #### Structure de la Documentation
 
@@ -875,7 +875,7 @@ Ces limites sont assumées et documentées avec transparence. La **dette techniq
 
 La **prise en main** de la plateforme a été conçue pour être autonome en moins de 30 minutes. Chaque profil utilisateur dispose d'un parcours d'intégration guidé (onboarding wizard) qui s'affiche à la première connexion et présente les fonctionnalités clés selon le rôle. Le **guide utilisateur** complet est accessible depuis l'interface (bouton « ? » en haut à droite) et depuis le portail de formation. Une **FAQ** évolutive recense les 20 questions les plus fréquentes, alimentée par les tickets support et mise à jour à chaque sprint. La documentation est versionnée en parallèle du code dans le dépôt GitHub, garantissant sa cohérence avec l'application déployée. La clarté et l'exhaustivité de cette documentation répondent directement au critère D-22 de la grillé d'évaluation.
 
-### 5.13 Gouvernance et Vision d'Évolution (10 points)
+### 5.13 gouvernance et vision d'évolution (10 points)
 
 #### Modèle de Gouvernance Post-Déploiement
 
@@ -930,7 +930,7 @@ Le **SLA** de 99,5 % autorise moins de 3,6 heures d'indisponibilité par mois, c
 
 ---
 
-## 6. Conduite du Changement
+## 6. conduite du changement
 
 La conduite du changement est le facteur différenciant entre un déploiement technique réussi et une adoption réelle par les utilisateurs. Cette section détaille le programme complet mis en œuvre pour accompagner les 185 collaborateurs de Tech4Value dans la transition vers la nouvelle plateforme de pilotage. Le programme s'appuie sur le modèle **ADKAR** (Awareness, Désiré, Knowledge, Ability, Reinforcement) qui structure l'accompagnement à l'échelle individuelle et collective. L'identification et la gestion des **résistances** au changement constituent le cœur de la démarche : toute résistance non adressée se traduit en taux d'adoption insuffisant, rendant caduc l'investissement technique. La cartographie des **parties prenantes** (réalisée en S1) a permis de segmenter les 185 collaborateurs en 4 groupes selon leur niveau d'impact et d'adhésion attendu, calibrant ainsi l'intensité de l'accompagnement par segment.
 
@@ -946,7 +946,7 @@ La conduite du changement est le facteur différenciant entre un déploiement te
 
 **Indicateurs d'adoption et de succès.** Le succès de la conduite du changement est mesuré par quatre indicateurs clés : le taux d'activation (pourcentage de comptes activés par rapport aux comptes créés), le taux d'utilisation hebdomadaire (pourcentage d'utilisateurs actifs sur 7 jours), le NPS interné (Net Promoter Score mesuré par enquête trimestrielle), et le taux de résolution autonome des incidents (sans recours au support IT). Ces indicateurs sont suivis en temps réel dans le tableau de bord de pilotage projet (section 4.2) et présentés au comité de pilotage mensuel. Un taux d'activation inférieur à 60 % à S18 déclencherait automatiquement un plan de rattrapage avec renforcement de l'accompagnement pour les segments les moins avancés.
 
-### 6.1 Stratégie Globale
+### 6.1 stratégie globale
 
 La transformation numérique impacte **185 collaborateurs** répartis sur **3 sites**. La stratégie de conduite du changement s'articule autour de 4 piliers, structurés selon le modèle **ADKAR** (Awareness → Désiré → Knowledge → Ability → Reinforcement). La cartographie des **parties prenantes** segmente les collaborateurs en 4 groupes selon leur niveau d'impact et leur propension au changement : les sponsors actifs (Direction, DSI), les relais métier (PMO, Chefs de projet), les utilisateurs courants (pôles opérationnels) et les utilisateurs périphériques (Fonctions Support). Les **résistances** anticipées — notamment chez les chefs de projet habitués à Excel et les managers IT craignant la perte d'autonomie sur leurs outils — sont traitées dès la phase de communication par une approche de co-construction : les utilisateurs résistants sont invités à participer au programme early adopters pour transformer leur résistance en contribution. Cette approche inclusive et participative réduit le risque d'adoption partielle et garantit un déploiement progressif réussi sur les 24 semaines du projet.
 
@@ -957,7 +957,7 @@ La transformation numérique impacte **185 collaborateurs** répartis sur **3 si
 | **Accompagnement** | Soutenir l'adoption | Champions par pôle, help desk dédié, FAQ évolutive |
 | **Mesure** | Piloter l'adoption | NPS trimestriel, taux d'usagé, satisfaction formation |
 
-### 6.2 Plan de Communication
+### 6.2 plan de communication
 
 | Phase | Message | Canal | Cible | Timing | **Fréquence** |
 |-------|---------|-------|-------|--------|---------------|
@@ -969,7 +969,7 @@ La transformation numérique impacte **185 collaborateurs** répartis sur **3 si
 
 Le plan de **communication** est piloté par Jules Courtin avec une **fréquence** adaptée à chaque phase. Le **message clé** central — « Tech4Value vous libère des tâches administratives pour vous concentrer sur la valeur ajoutée » — est décliné par segment : pour la Direction, l'accent est mis sur la visibilité et la prise de décision ; pour les chefs de projet, sur le gain de temps de reporting ; pour les équipes opérationnelles, sur la simplification de la saisie. Cette personnalisation des messages par audience est un facteur déterminant de l'adhésion. La **communication** s'appuie sur des canaux existants (Teams, newsletter interné, réunions de pôles) pour minimiser la friction et maximiser la portée.
 
-### 6.3 Programme de Formation
+### 6.3 programme de formation
 
 | Module | **Profil** Cible | Format (présentiel / **distanciel**) | Durée | Contenu |
 |--------|--------|--------|-------|---------|
@@ -980,7 +980,7 @@ Le plan de **communication** est piloté par Jules Courtin avec une **fréquence
 
 Le programme de formation est conçu pour s'adapter à chaque **profil** utilisateur, en combinant des formats **présentiel** pour les groupes prioritaires (Direction, PMO) et **distanciel** (e-learning asynchrone) pour les utilisateurs opérationnels dispersés sur 3 sites. Le module **distanciel** est hébergé sur la plateforme LMS interné (SharePoint Learning) et accessible en replay permanent. Chaque module se termine par une évaluation des acquis (QCM + exercice pratique) permettant de valider la montée en compétences et d'adapter le dispositif. Le budget formation est intégré au poste « Formation & Change » du budget prévisionnel (40k€ en année 1).
 
-### 6.4 Programme Early Adopters
+### 6.4 programme early adopters
 
 - **Sélection** : 2-3 champions par pôle (18-27 personnes au total), choisis parmi les collaborateurs moteurs du changement ou volontaires
 - **Rôle d'ambassadeur** : Testeurs bêta, **ambassadeurs** internes, relais de **feedback** vers l'équipe produit
@@ -989,7 +989,7 @@ Le programme de formation est conçu pour s'adapter à chaque **profil** utilisa
 
 Les **ambassadeurs** constituent le levier le plus puissant d'adoption organique : un pair convaincu est infiniment plus persuasif qu'une communication top-down. Leur rôle de **feedback** est formalisé par des sessions de retour bi-hebdomadaires avec l'équipe produit (Jules Courtin), permettant d'intégrer les remontées terrain dans les sprints suivants. Chaque **ambassadeur** reçoit une formation approfondie de 6 heures (vs 2h pour les utilisateurs standard) et dispose d'un accès direct à Jules pour escalader tout blocage. Le programme early adopters cible délibérément les 9 pôles de l'entreprise pour garantir une représentation transverse et éviter les effets de silo dans le déploiement.
 
-### 6.5 KPI de la Conduite du Changement
+### 6.5 KPI de la conduite du changement
 
 | Indicateur | Baseline | Cible S6 | Cible S12 | Cible S24 |
 |------------|----------|----------|-----------|-----------|
@@ -1005,7 +1005,7 @@ Le **taux d'utilisation** à **J+30** (30 jours après le déploiement pour chaq
 
 ---
 
-## 7. Respect du Cadre & Bonus
+## 7. respect du cadre & bonus
 
 > **Section évaluée : 15 points** (Professionnalisme livrable : 10 | Aller au-delà : 5)
 
@@ -1017,7 +1017,7 @@ Le critère D-29 (Aller au-delà des demandes) valorise les initiatives qui dép
 
 Sur le plan de la présentation, le dossier adopté une structure hiérarchique claire avec huit sections numérotées, une table des matières détaillée avec ancres, un système de renvois entre sections et annexes, et un bandeau récapitulatif des critères de notation en tête de chaque section majeure. Cette architecture documentaire facilité la navigation pour un jury devant évaluer 220 points sur un document dense. La palette typographique — tableaux comparatifs, listes à puces, citations en bloc, encadrés de synthèse — varie les formats pour maintenir la lisibilité sans sacrifier la rigueur académique. Le respect des conventions françaises (guillemets « », espaces insécables avant les signes de ponctuation doubles, minuscules aux articles des titres) est appliqué de manière cohérente sur l'ensemble du document, conformément aux attendus d'un livrable professionnel destiné à un comité de pilotage.
 
-### 7.1 Professionnalisme du Livrable (10 points)
+### 7.1 professionnalisme du livrable (10 points)
 
 - **Structure claire** : Table des matières, numérotation cohérente, navigation facilitée
 - **Visuels professionnels** : Schémas d'architecture, diagrammes, tableaux formatés
@@ -1027,7 +1027,7 @@ Sur le plan de la présentation, le dossier adopté une structure hiérarchique 
 
 Le professionnalisme du livrable final se manifeste à travers plusieurs dimensions complémentaires. La **table des matières** numérotée permet une navigation directe vers chaque section ; chaque **annexe** est référencée dans le corps du texte avec un renvoi explicite (ex. : « cf. Annexe A — Diagramme de Gantt »). Les **annexes** A à H regroupent les livrables techniques et stratégiques trop détaillés pour figurer dans le corps du dossier sans en alourdir la lecture. La mise en page suit les conventions du Mastère CPIT : titres hiérarchisés en H1/H2/H3, tableaux pour les comparatifs et matrices, blocs de code pour les extraits techniques, et légendes pour tous les schémas. Le registre de langué est celui d'une présentation Copil : voix active, formulations assertives, chiffres systématiques, absence de jargon non justifié. Ce niveau de soin rédactionnel reflète la maturité professionnelle de l'équipe et respecte l'exigence D-28 de la grillé de notation (10 points — professionnalisme du livrable final).
 
-### 7.2 Aller au-delà des Attentes (5 points)
+### 7.2 aller au-delà des attentes (5 points)
 
 | Élément Bonus | Description |
 |---------------|-------------|
@@ -1045,47 +1045,47 @@ L'intégration de la **Claude API** constitue l'élément bonus le plus structur
 
 ---
 
-## 8. Annexes
+## 8. annexes
 
 Les annexes ci-dessous regroupent l'ensemble des livrables techniques et stratégiques produits au cours du projet. Chaque annexe est référencée dans le corps du dossier par un renvoi explicite. Elles constituent des documents à part entière, complémentaires à la lecture du dossier principal, et permettent d'approfondir les aspects techniques ou stratégiques sans alourdir le corps du texte. L'ensemble des **24 semaines** de projet sont couvertes par les plannings et schémas ci-dessous.
 
 Les 8 annexes couvrent l'intégralité des dimensions du projet : planification (Annexe A — Gantt), modèle de données (Annexe B — Prisma Schéma), intégrations (Annexe C — Diagramme de séquence Odoo), déploiement (Annexe D — Architecture réseau), UX (Annexe E — Wireframes et user flows), gouvernance (Annexe F — Matrice RACI complète), modèle économique (Annexe G — Business Model Canvas) et analyse organisationnelle (Annexe H — McKinsey 7S). Ces documents sont produits conformément aux exigences du critère D-20 (qualité des schémas techniques) et constituent le socle documentaire sur lequel s'appuie l'argumentation technique du présent dossier. Leur disponibilité dans ce dossier garantit que le jury dispose de toutes les pièces justificatives nécessaires à l'évaluation de la cohérence et de la complétude de la solution proposée. Chaque annexe a été réalisée avec un niveau de détail professionnel adapté à une présentation devant un comité de pilotage d'entreprise, respectant ainsi les standards attendus par le critère D-28.
 
-### Annexe A : Diagramme de Gantt Détaillé
+### annexe a : diagramme de gantt détaillé
 
 Le diagramme de Gantt couvre les **24 semaines** complètes du projet Tech4Value, de S1 (1er octobre 2025) à S24 (31 mars 2026). Il intègre les 30 tâches principales décomposées en 4 phases (Cadrage, Développement MVP, Consolidation, Livrables académiques), avec les dates de début et de fin de chaque tâche, les dépendances inter-tâches (liens Finish-to-Start et Start-to-Start), et le chemin critique surligné en rouge (T1.6 → T2.1 → T2.3 → T2.2 → T2.5 → T3.2 → T4.2 → T4.6). Les 8 jalons majeurs (M1 à M8) sont matérialisés par des losanges. Deux buffers de 2 semaines chacun sont intégrés aux phases 3 et 4 pour absorber les aléas. Le Gantt est généré via GanttPRO et exporté en PDF dans le dossier de livrables du projet (repository GitHub — dossier `/docs/planning/`).
 
-### Annexe B : Modèle de Données (Prisma Schéma)
+### annexe b : modèle de données (Prisma schéma)
 
 Le schéma Prisma définit le modèle de données complet de la plateforme Tech4Value. Il comprend les entités principales suivantes : `User` (id, email, rôle, poleId), `Pole` (id, name, headCount), `Project` (id, name, status, budget, startDate, endDate, priority), `ProjectAssignment` (userId, projectId, allocationPercent), `Timesheet` (id, userId, projectId, date, hours), `Milestone` (id, projectId, name, dueDate, completed), `Risk` (id, projectId, description, probability, impact, mitigation), `Document` (id, projectId, url, type), et `Report` (id, projectId, generatedAt, content). Les relations sont de type 1-N (Pôle → Users, Project → Milestones) et N-N (Users ↔ Projects via ProjectAssignment). Row Level Security PostgreSQL est configuré pour isoler les données par rôle (DG, PMO, ChefProjet, Collaborateur).
 
-### Annexe C : Diagramme de Séquence - Intégration Odoo
+### annexe c : diagramme de séquence - intégration Odoo
 
 Le diagramme de séquence documente les échanges entre les composants lors d'une synchronisation Odoo. Séquence complète : (1) Le scheduler interné (cron toutes les 15 min) déclenche `OdooAdapter.sync()` ; (2) L'adaptateur appelle l'**API** JSON-RPC Odoo v15 endpoint `/web/dataset/call_kw` avec les paramètres `project.project` et `project.task` ; (3) Odoo retourne la liste des projets avec budgets, responsables et statuts ; (4) L'adaptateur transforme la réponse en format interné et appelle `ProjectService.upsert()` ; (5) Prisma exécute un `upsert` PostgreSQL (INSERT OR UPDATE) sur la table `Project` ; (6) Le dashboard frontend reçoit une notification de mise à jour via polling (toutes les 30s). En cas d'indisponibilité de l'**API** Odoo, l'adaptateur bascule sur le mode dégradé (dernières données connues affichées avec horodatage de fraîcheur).
 
-### Annexe D : Architecture Réseau / Déploiement
+### annexe d : architecture réseau / déploiement
 
 L'infrastructure de déploiement de Tech4Value repose sur trois plateformes cloud en free tier pour la phase MVP. Le frontend React est déployé sur **Vercel** (CDN global, edge functions, déploiement automatique sur push main). Le backend Node.js/Express est déployé sur **Railway** (conteneur Docker, scaling automatique, PostgreSQL managé via add-on Railway). La base de données PostgreSQL 15 est hébergée sur **Supabase** (backups automatiques quotidiens, Row Level Security activé, API REST auto-générée). Le flux réseau suit le chemin HTTPS : utilisateur → **CDN** Vercel (edge) → API Railway (TLS 1.3) → PostgreSQL Supabase (connexion chiffrée). Azure AD assuré l'authentification SSO via le protocole OAuth 2.0 / OIDC. Les certificats TLS sont provisionnés automatiquement par Vercel et Railway (Let's Encrypt). Le **CDN** Vercel assuré une latence inférieure à 50ms pour les assets statiques sur l'ensemble du territoire français.
 
-### Annexe E : Wireframes / User Flows
+### annexe e : wireframes / user flows
 
 Les **wireframes** basse fidélité et les **user flows** documentent les 3 parcours utilisateurs critiques de la plateforme. **Parcours 1 — PM (Chef de Projet)** : Connexion → Dashboard projet → Saisie timesheet → Création milestone → Génération rapport PDF (7 écrans). **Parcours 2 — DG (Direction Générale)** : Connexion → Dashboard exécutif portefeuille → Drill-down projet → Export KPI Excel (4 écrans). **Parcours 3 — Admin (IT)** : Connexion → Administration utilisateurs → Configuration RBAC → Paramètres intégrations (5 écrans). Chaque **wireframe** illustré la disposition des composants clés (navigation, KPI cards, tableaux, filtres), sans imposer de choix visuels définitifs. Les **user flows** identifient les points de décision (redirections conditionnelles selon le rôle) et les états d'erreur (session expirée, accès refusé, données indisponibles). Les **wireframes** complets sont disponibles dans le fichier Figma du projet (`/design/wireframes-v1.fig`).
 
-### Annexe F : Matrice RACI Complète
+### annexe f : matrice RACI complète
 
 La matrice RACI complète détaille la répartition des **responsabilités** pour l'ensemble des activités du projet Tech4Value. Les 4 niveaux : **R** (Responsible — exécute), **A** (Accountable — valide et rend compte), **C** (Consulted — sollicité pour avis), **I** (Informed — ténu informé). Les colonnes représentent les parties prenantes : Jules Courtin (PM), Léo Brival (Tech Lead), Direction Générale, DSI, Copil, et représentants des 9 pôles. Les lignes couvrent les 30 tâches du WBS, les 8 jalons, les 5 livrables académiques et les 4 instances de gouvernance. Cette matrice garantit qu'aucune activité n'est sans **responsable** désigné (pas de case R vide) et qu'aucune partie prenante n'est accountable sur plus de 3 activités simultanées (prévention de la surcharge décisionnelle). La matrice est mise à jour en début de chaque phase et présentée au Copil mensuel.
 
-### Annexe G : Business Model Canvas
+### annexe g : Business Model Canvas
 
 Le **Business Model Canvas** de la solution Tech4Value structure la proposition de valeur et le modèle économique selon les 9 blocs d'Osterwalder. **Segments clients** : PME ETI (50-500 collaborateurs) en transformation digitale, DSI et PMO de sociétés de services numériques. **Proposition de valeur** : Pilotage unifié du portefeuille projets avec réduction de 30 % du temps de reporting et visibilité temps-réel. **Canaux** : Démonstration directe, partenariats intégrateurs SI, marketplace Odoo. **Relations clients** : SaaS avec support inclus, onboarding assisté, communauté utilisateurs. **Sources de revenus** : Abonnement SaaS (150-500€/mois selon taille), implémentation (forfait), formation. **Ressources clés** : Stack TypeScript, intégrations Odoo/SharePoint, Claude API. **Activités clés** : Développement produit, intégrations SI, support client. **Partenaires** : Odoo, Microsoft (Azure AD/SharePoint), Anthropic (Claude API). **Structure de coûts** : Infrastructure cloud (20 %), RH développement (65 %), marketing (15 %). La **proposition de valeur** centrale — « Un seul écran pour piloter tous vos projets » — est validée par les 5 projets pilotes déployés dans le cadre académique.
 
-### Annexe H : Matrice McKinsey 7S
+### annexe h : matrice McKinsey 7s
 
 L'analyse **McKinsey 7S** appliquée à Tech4Value évalue la cohérence des 7 dimensions organisationnelles avant et après déploiement de la solution. **Strategy** : Transformation digitale axée données, réduction des silos décisionnels — alignement fort avec la vision DG. **Structure** : Organisation matricielle 9 pôles maintenue, rôle PMO renforcé par la plateforme. **Systems** : Passage de 7 outils hétérogènes à 1 plateforme unifiée — impact maximal sur cette dimension. **Shared Values** : Culture de la transparence et de la décision data-driven à installer progressivement (horizon 12 mois). **Skills** : Montée en compétences requise sur l'analyse de données et le reporting digital (programme de formation Section 6.3). **Style** : Management par les KPI remplace le management par l'intuition — nécessite accompagnement des managers intermédiaires. **Staff** : 185 collaborateurs concernés, 78 ETP sur les 5 projets stratégiques — population cible principale du changement. L'analyse **McKinsey 7S** révèle que les dimensions **Strategy** et **Structure** sont déjà alignées avec la transformation visée ; les dimensions **Shared Values** et **Skills** représentent les principaux facteurs de risque d'adoption, justifiant l'investissement dans le programme de conduite du changement (Section 6).
 
 ---
 
-## Section Individuelle : Analyse Dynamique Projet
+## section individuelle : analyse dynamique projet
 
 > **Section évaluée : 8 points** (Défis : 2 | Forces/Faiblesses : 2 | Compétences : 2 | Axes amélioration : 2)
 >
@@ -1103,7 +1103,7 @@ Cette section individuelle constitue le volet réflexif du dossier technique. El
 
 **Méthode de rédaction recommandée.** Pour chaque critère (D-24 à D-27), la démarche consiste à : (1) identifier 2 à 3 expériences concrètes du projet qui illustrent le critère, (2) les analyser avec recul plutôt que de les décrire factuellement, (3) en tirer une leçon ou une recommandation transférable à d'autres contextes. Cette structure en trois temps — expérience, analyse, généralisation — est celle qui produit les analyses les plus convaincantes et les mieux notées. Elle démontre une maturité réflexive qui distingue un praticien capable d'apprendre de ses expériences d'un exécutant qui les subit.
 
-### Template - Analyse Individuelle (à remplir par chaque membré)
+### template - analyse individuelle (à remplir par chaque membré)
 
 _Ce template structure l'analyse individuelle pour chaque membré de l'équipe. Il couvre les quatre dimensions évaluées par la grillé de notation (D-24 à D-27) : défis rencontrés, forces et faiblesses, compétences développées, et axes d'amélioration. Chaque dimension est illustrée avec des exemples concrets issus du projet Tech4Value._
 
@@ -1115,7 +1115,7 @@ _Ce template structure l'analyse individuelle pour chaque membré de l'équipe. 
 
 **D-27 — Axes d'amélioration (2 points)** : Proposer 2 à 3 axes d'amélioration concrets et actionnables pour de futurs projets similaires. Ces propositions doivent découler de l'analyse des défis et faiblesses identifiés — elles démontrent la capacité à tirer des leçons et à progresser.
 
-### Léo Brival — Tech Lead / Architecte Solution
+### Léo Brival — tech lead / architecte solution
 
 #### 1. Réflexion sur les Défis Rencontrés (2 points)
 

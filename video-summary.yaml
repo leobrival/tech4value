@@ -8,6 +8,7 @@
 # - All members must speak in the video
 
 file: deliverables/video/script.md
+deck_file: deliverables/group-file/presentation-notion-tech4value.md
 words_per_minute: 145
 min_minutes: 20
 target_minutes: 25
@@ -17,52 +18,105 @@ required_speakers:
   - "Jules"
   - "Léo"
 
+slide_alignment:
+  source_deck: "deliverables/group-file/presentation-notion-tech4value.md"
+  main_slides: 24
+  appendix_slides: 4
+  rule: "Le script vidéo doit suivre les slides Notion 1 à 24 dans l'ordre narratif, avec les annexes utilisées comme support optionnel."
+  mapping:
+    - section: "1. introduction et structure de la vidéo"
+      slides:
+        - "Page titre"
+        - "Slide 1 — Thèse"
+    - section: "2. contexte et objectifs du projet"
+      slides:
+        - "Slide 2 — Contexte entreprise"
+        - "Slide 3 — Portefeuille stratégique"
+        - "Slide 4 — Problème central"
+        - "Slide 5 — Besoin et North Star Metric"
+        - "Slide 6 — Objectifs stratégiques"
+    - section: "3. problématique et axes choisis"
+      slides:
+        - "Slide 7 — Proposition de valeur"
+        - "Slide 8 — Solution cible"
+        - "Annexe B — Fonctionnalités MVP core"
+    - section: "4. démonstration du MVP"
+      slides:
+        - "Slide 9 — Architecture fonctionnelle"
+        - "Slide 10 — Stack technique retenue"
+        - "Slide 11 — Intégrations SI critiques"
+        - "Slide 12 — Sécurité, conformité et qualité"
+    - section: "5. qualité visuelle et technique"
+      slides:
+        - "Slide 13 — Management de projet"
+        - "Slide 14 — Roadmap Now-Next-Later"
+        - "Slide 15 — Jalons majeurs"
+    - section: "6. originalité et dépassement des attentes"
+      slides:
+        - "Slide 17 — Business model potentiel"
+        - "Slide 18 — Diagnostic 7S McKinsey"
+        - "Slide 21 — Différenciation et innovation"
+    - section: "7. impact potentiel du MVP"
+      slides:
+        - "Slide 16 — Budget et ROI"
+        - "Slide 19 — Conduite du changement"
+        - "Slide 20 — Risques et mitigations"
+        - "Slide 23 — Impact attendu"
+    - section: "8. conclusion convaincante"
+      slides:
+        - "Slide 22 — Livrables académiques et conformité"
+        - "Slide 24 — Ask / décision attendue"
+
 sections:
-  - heading: "1. Introduction et Structure de la Vidéo"
+  - heading: "1. introduction et structure de la vidéo"
     min_words: 300
     max_words: 520
     criteria: "V-01"
     points: 5
     priority: "P1"
-    description: "Annonce du plan, répartition des prises de parole et promesse de la vidéo."
+    description: "Annonce du plan, répartition des prises de parole et promesse de la vidéo, alignée sur la page titre et la Slide 1."
     keywords:
       - "Tech4Value"
       - "20 à 30 minutes"
       - "MVP"
+      - "présentation Notion"
+      - "Slide 1"
 
-  - heading: "2. Contexte et Objectifs du Projet"
-    min_words: 550
-    max_words: 850
+  - heading: "2. contexte et objectifs du projet"
+    min_words: 520
+    max_words: 1050
     criteria: "V-02"
     points: 10
     priority: "P0"
-    description: "Compréhension globale du contexte, des enjeux et des objectifs choisis."
+    description: "Compréhension globale du contexte, du portefeuille, du problème et des objectifs SMART des Slides 2 à 6."
     keywords:
       - "185 collaborateurs"
       - "5 projets stratégiques"
       - "78 ETP"
       - "30 %"
+      - "North Star Metric"
 
-  - heading: "3. Problématique et Axes Choisis"
-    min_words: 420
-    max_words: 680
+  - heading: "3. problématique et axes choisis"
+    min_words: 350
+    max_words: 850
     criteria: "V-02, V-09"
     points: 5
     priority: "P0"
-    description: "Explication des irritants, du besoin métier et du périmètre retenu."
+    description: "Explication des irritants, de la proposition de valeur et du périmètre MVP, alignée sur les Slides 7 et 8."
     keywords:
       - "reporting"
       - "silos"
       - "pilotage"
       - "décision"
+      - "proposition de valeur"
 
-  - heading: "4. Démonstration du MVP"
-    min_words: 940
-    max_words: 1400
+  - heading: "4. démonstration du MVP"
+    min_words: 650
+    max_words: 1700
     criteria: "V-03"
     points: 10
     priority: "P0"
-    description: "Démonstration des fonctionnalités opérationnelles et adéquation aux attentes."
+    description: "Démonstration des fonctionnalités opérationnelles, architecture, stack, intégrations et sécurité des Slides 9 à 12."
     keywords:
       - "dashboard"
       - "Odoo"
@@ -70,54 +124,63 @@ sections:
       - "Power BI"
       - "Azure AD"
       - "risques"
+      - "architecture"
+      - "TypeScript"
 
-  - heading: "5. Qualité Visuelle et Technique"
-    min_words: 280
-    max_words: 560
+  - heading: "5. qualité visuelle et technique"
+    min_words: 240
+    max_words: 700
     criteria: "V-04"
     points: 5
     priority: "P1"
-    description: "Intentions de réalisation vidéo, lisibilité visuelle et cohérence du discours."
+    description: "Intentions de réalisation vidéo, lisibilité visuelle, rythme narratif et appui sur les Slides 13 à 15."
     keywords:
       - "captures"
       - "schéma"
       - "lisibilité"
+      - "roadmap"
+      - "jalons"
 
-  - heading: "6. Originalité et Dépassement des Attentes"
-    min_words: 330
-    max_words: 650
+  - heading: "6. originalité et dépassement des attentes"
+    min_words: 240
+    max_words: 760
     criteria: "V-05, V-07"
     points: 4
     priority: "P2"
-    description: "Innovation du MVP et éléments allant au-delà du minimum attendu."
+    description: "Innovation, différenciation, IA, business model potentiel et diagnostic 7S, alignés sur les Slides 17, 18 et 21."
     keywords:
       - "Claude API"
       - "CI/CD"
       - "Green IT"
       - "accessibilité"
+      - "7S McKinsey"
+      - "SaaS"
 
-  - heading: "7. Impact Potentiel du MVP"
-    min_words: 360
-    max_words: 760
+  - heading: "7. impact potentiel du MVP"
+    min_words: 340
+    max_words: 1050
     criteria: "V-06"
     points: 10
     priority: "P0"
-    description: "Valeur utilisateur, gains attendus et capacité à convaincre les utilisateurs finaux."
+    description: "Valeur utilisateur, ROI, adoption, conduite du changement, risques et impact attendu, alignés sur les Slides 16, 19, 20 et 23."
     keywords:
       - "utilisateurs finaux"
       - "ROI"
       - "COPIL"
       - "adoption"
+      - "ADKAR"
+      - "1,06 million"
 
-  - heading: "8. Conclusion Convaincante"
-    min_words: 250
-    max_words: 560
+  - heading: "8. conclusion convaincante"
+    min_words: 180
+    max_words: 620
     criteria: "V-08, V-09, V-10, V-11"
     points: 15
     priority: "P0"
-    description: "Conclusion fluide, pertinente, engageante et convaincante."
+    description: "Conclusion fluide, pertinente, engageante et convaincante, alignée sur les Slides 22 et 24."
     keywords:
       - "convaincre"
       - "pertinence"
       - "prochaine étape"
       - "merci"
+      - "Ask"
