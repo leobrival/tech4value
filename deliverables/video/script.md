@@ -18,7 +18,7 @@ Nous construisons la vidéo comme un récit. Nous partons d'abord du contexte de
 **Intervenant : Léo**
 **Slides à afficher : Slide 1, puis aperçu rapide des Slides 2 à 8**
 
-La structure de la vidéo suit également la grille d'évaluation. Nous couvrirons le contexte, les objectifs, la qualité de la démonstration, la qualité technique, l'originalité, l'impact potentiel et la capacité à convaincre. Jules portera principalement la vision projet, les enjeux métier, la conduite du changement et les bénéfices pour les utilisateurs. Je porterai davantage la solution technique, les intégrations SI, l'architecture, la sécurité et la démonstration fonctionnelle.
+La structure de la vidéo suit également les attendus de la soutenance. Nous couvrirons le contexte, les objectifs, la qualité de la démonstration, la qualité technique, l'originalité, l'impact potentiel et la capacité à convaincre. Jules portera principalement la vision projet, les enjeux métier, la conduite du changement et les bénéfices pour les utilisateurs. Je porterai davantage la solution technique, les intégrations SI, l'architecture, la sécurité et la démonstration fonctionnelle.
 
 Le fil conducteur : pourquoi ce projet existe, ce que nous avons choisi de construire, comment le MVP fonctionne, et pourquoi cette trajectoire reste crédible pour une ETI numérique. À la fin de la vidéo, vous devez retenir trois messages : le besoin est réel, le MVP apporte une preuve de valeur, et la suite du projet est gouvernable grâce à une roadmap, des jalons, des risques identifiés et des indicateurs mesurables.
 

@@ -524,7 +524,7 @@ La gamification sert de levier d’engagement éthique avec reconnaissance, prog
 
 ### Message clé
 
-Le projet est aligné sur les 220 points de la grille d’évaluation.
+Le projet est aligné avec les attendus académiques.
 
 ### À retenir
 
@@ -586,7 +586,7 @@ Décision recommandée : lancer le MVP cadré, avec reporting PMO automatisé co
 
 ### Notes / détails
 
-Pour une soutenance, cette slide sert de conclusion : elle transforme l’analyse en décision claire et rappelle pourquoi le MVP est réaliste, mesurable et aligné avec la grille d’évaluation.
+Pour une soutenance, cette slide sert de conclusion : elle transforme l’analyse en décision claire et rappelle pourquoi le MVP est réaliste, mesurable et aligné avec les attendus académiques.
 
 ---
 
@@ -650,7 +650,7 @@ La vision long terme dépasse le MVP académique sans le surcharger.
 
 Cette présentation consolide les documents d’annexe sans supprimer les détails utiles.
 
-- `dossier-technique-draft.md` : dossier principal et grille d’évaluation.
+- `dossier-technique-draft.md` : dossier principal.
 - `architecture/architecture-technique.md` : stack, architecture, sécurité, CI/CD.
 - `business-model-canvas.md` : segments, proposition de valeur, coûts, revenus, SWOT.
 - `matrice-7s-mckinsey.md` : diagnostic organisationnel et plan d’action.
