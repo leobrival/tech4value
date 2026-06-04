@@ -136,6 +136,7 @@ La solution connecte une plateforme web de pilotage stratégique aux briques SI 
 - Suivi budgétaire et ressources.
 - Reporting PDF/Excel automatisé.
 - Intégrations Odoo, SharePoint, Power BI, Azure AD.
+- Données de démo alignées : 5 projets, 78 ETP, 350 k€ de budgets Odoo.
 
 ```txt
 Odoo / SharePoint / Power BI / Azure AD
@@ -203,6 +204,8 @@ Les intégrations sont priorisées selon leur impact sur le reporting et la gouv
 | HubSpot    | P2       | contexte commercial optionnel    |
 
 Stratégie d’intégration : API REST dédiée quand fiable, export CSV/XLSX comme fallback. La synchronisation Odoo quotidienne est une cible S8, puis temps réel dans la roadmap long terme.
+
+Données Odoo visibles en démo : projets stratégiques, tâches d’activité, feuilles de temps, documents COPIL et demandes d’approbation.
 
 ---
 

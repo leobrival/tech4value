@@ -3,3 +3,7 @@ node_modules/
 .pi-lens/
 .DS_Store
 remotion/out/
+
+.DS_Store
+*.mp4
+*.zip

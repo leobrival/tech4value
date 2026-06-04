@@ -73,7 +73,11 @@ La solution cible est une plateforme web de pilotage stratégique connectée aux
 
 **Interfaces à afficher : plateforme Tech4Value, dashboard exécutif**
 
-Dans cette première démonstration, on affiche le dashboard exécutif. On y retrouve les 5 projets stratégiques, leur avancement, leur budget, leur charge ETP, leur niveau de risque et leurs jalons proches. L'objectif est de montrer immédiatement la promesse du MVP : passer d'une consolidation manuelle à une lecture portefeuille exploitable en quelques secondes.
+Dans cette première démonstration, on affiche le dashboard exécutif avec les mêmes données que celles préparées dans Odoo. La vue doit faire apparaître les 5 projets stratégiques de la slide 3 : Mise en conformité RGPD, Déploiement ERP Finance et Supply Chain, Plateforme Data Lake et BI Groupe, Programme Green IT Cloud Durable et Portail RH Unifié.
+
+Pour rendre l'alignement explicite, on montre les charges ETP utilisées dans la présentation : 13 ETP pour le RGPD, 19 pour l'ERP, 18 pour le Data Lake, 11 pour Green IT et 17 pour le Portail RH. On peut aussi afficher les budgets de démonstration issus d'Odoo : 45 k€ pour le RGPD, 110 k€ pour l'ERP, 85 k€ pour le Data Lake, 40 k€ pour Green IT et 70 k€ pour le Portail RH. Le total reste cohérent avec le portefeuille de 78 ETP.
+
+Le message à faire passer est simple : les chiffres visibles dans la slide ne sont pas décoratifs, ils correspondent aux enregistrements de démo. Le dashboard Tech4Value consolide les projets, les budgets, les risques, les jalons et la charge pour produire une lecture portefeuille exploitable en quelques secondes.
 
 ---
 
@@ -103,17 +107,17 @@ Les intégrations sont le cœur de la valeur. Odoo est prioritaire pour les proj
 
 **Interfaces à afficher : Odoo Apps, Project, Timesheets, Planning, Documents, Dashboards, Approvals**
 
-Nous ouvrons Odoo pour montrer la source opérationnelle des données. Sur l'écran Apps, nous mettons en avant Project, Timesheets, Planning, Documents, Dashboards et Approvals. Ces modules représentent les informations que le PMO manipule déjà, mais qui restent difficiles à consolider manuellement.
+Nous ouvrons Odoo pour montrer la source opérationnelle des données. Sur l'écran Apps, nous mettons en avant Project, Timesheets, Planning, Documents, Dashboards et Approvals. Ces modules correspondent directement à la slide 11 : Odoo fournit les projets, les budgets, les ressources et les temps passés.
 
-Dans Project, nous affichons les 5 projets stratégiques : RGPD, ERP Finance et Supply Chain, Data Lake et BI Groupe, Green IT Cloud Durable et Portail RH Unifié. Nous ouvrons ensuite un projet, par exemple ERP Finance, pour montrer les tâches, les jalons, les responsables, le statut et les points de risque.
+Dans Project, nous affichons les 5 projets créés dans Odoo avec les mêmes noms que dans la présentation : Mise en conformité RGPD, Déploiement ERP Finance et Supply Chain, Plateforme Data Lake et BI Groupe, Programme Green IT Cloud Durable et Portail RH Unifié. Nous ouvrons ensuite le projet ERP Finance pour montrer les tâches de démonstration, notamment « [Démo activité] Arbitrage budget lot finance » et « [Démo activité] Recette flux approvisionnement ». Le lien avec la présentation est direct : l'ERP est un projet critique, donc on montre les points de risque, les jalons et les arbitrages associés.
 
-Dans Timesheets et Planning, nous montrons la charge réelle et l'allocation des ressources. C'est ici que l'on relie concrètement les 78 ETP aux données projet : temps passé, capacité disponible, surcharge IT ou sous-utilisation Data.
+Dans Timesheets et Planning, nous montrons les feuilles de temps factices créées pour simuler l'activité réelle : préparation d'arbitrage conformité par Jules Courtin, analyse des écarts budget ERP par Nadia Finance, revue architecture data par Léo Brival, tests Power BI par Inès Data, mesure capacité cloud par Marc Infrastructure et atelier adoption Portail RH par Clara RH. Cette séquence relie les 78 ETP de la slide 3 à des traces opérationnelles : qui travaille, sur quel projet, à quelle date et pendant combien d'heures.
 
-Dans Documents, nous montrons les pièces projet : cahier des charges, compte rendu de Copil, registre des risques, support de formation ou document de recette. Le point clé est la traçabilité : un arbitrage doit pouvoir être relié à un document, à une version et à un projet.
+Dans Documents, nous montrons les pièces projet ajoutées pour la démo : « [Démo activité] Compte rendu COPIL portefeuille S23 », « [Démo activité] Synthèse arbitrage ERP Finance », « [Démo activité] Plan adoption Portail RH J+30 », « [Démo activité] Rapport risques Data Lake » et « [Démo activité] Note Green IT capacité cloud ». Ces documents rendent visible le rôle de SharePoint dans la slide 11 : le référentiel documentaire reste séparé, mais Tech4Value doit pouvoir rattacher chaque preuve à un projet et à une décision.
 
-Dans Dashboards, nous montrons la valeur de synthèse côté Odoo : projets actifs, budget consommé, avancement, risques et indicateurs de charge. Puis nous revenons à Tech4Value pour montrer la différence : Odoo reste le système source, Tech4Value consolide et présente les indicateurs dans une lecture Copil plus directe.
+Dans Dashboards, nous montrons la synthèse côté Odoo : projets actifs, budgets, charge, risques et activité récente. Puis nous revenons à Tech4Value pour montrer la différence : Odoo reste le système source, tandis que Tech4Value consolide et reformate les indicateurs dans une lecture Copil plus directe.
 
-Dans Approvals, nous montrons un arbitrage : validation d'un budget ERP, approbation d'un jalon Data Lake ou demande de changement sur le Portail RH. Cette dernière interface montre le passage de l'information à la décision.
+Dans Approvals, nous montrons les demandes d'arbitrage créées dans Odoo : « [Démo activité] Validation budget correctif ERP », « [Démo activité] Go jalon ingestion Data Lake », « [Démo activité] Approbation plan pilotes Portail RH » et « [Démo activité] Arbitrage capacité IT Green Cloud ». Cette dernière interface montre le passage de l'information à la décision : les données viennent d'Odoo, les documents justifient l'arbitrage, puis Tech4Value rend la décision lisible au niveau portefeuille.
 
 ---
 
