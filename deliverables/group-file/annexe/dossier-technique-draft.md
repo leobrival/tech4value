@@ -490,27 +490,27 @@ Le schéma directeur ci-dessous synthétise la cible Tech4Value sous forme de gr
 
 ```text
 ┌────────────────────────────────────────────────────────────┐
-│                    DIRECTION / COMEX                        │
-│      Arbitrages stratégiques · budget · priorités           │
+│                    DIRECTION / COMEX                       │
+│      Arbitrages stratégiques · budget · priorités          │
 └───────────────────────────┬────────────────────────────────┘
                             │ décisions / validations
                             ▼
 ┌────────────────────────────────────────────────────────────┐
-│                    COMITÉ DE PILOTAGE                       │
-│       PMO · DSI · Finance · RH · représentants pôles        │
+│                    COMITÉ DE PILOTAGE                      │
+│       PMO · DSI · Finance · RH · représentants pôles       │
 └───────────────────────────┬────────────────────────────────┘
                             │ cadrage / suivi / escalades
                             ▼
 ┌────────────────────────────────────────────────────────────┐
-│              ÉQUIPE PROJET INTERNE TECH4VALUE               │
-│  Jules Courtin : PM / Product Manager                       │
-│  Léo Brival   : Tech Lead / Architecte Solution             │
+│              ÉQUIPE PROJET INTERNE TECH4VALUE              │
+│  Jules Courtin : PM / Product Manager                      │
+│  Léo Brival   : Tech Lead / Architecte Solution            │
 └───────────────────────────┬────────────────────────────────┘
                             │ livraison MVP / amélioration
                             ▼
 ┌────────────────────────────────────────────────────────────┐
-│                  UTILISATEURS PILOTES                       │
-│      Direction · PMO · Chefs de projet · équipes            │
+│                  UTILISATEURS PILOTES                      │
+│      Direction · PMO · Chefs de projet · équipes           │
 └────────────────────────────────────────────────────────────┘
 ```
 
@@ -518,29 +518,29 @@ Le schéma directeur ci-dessous synthétise la cible Tech4Value sous forme de gr
 
 ```text
 ┌────────────────────────────────────────────────────────────┐
-│                SYSTÈMES SOURCES EXISTANTS                   │
-│  Odoo ERP      SharePoint      Azure AD      Power BI        │
-│  Projets       Documents       Identités     Restitution     │
-│  Budgets       PV / livrables  SSO / rôles   Analyses        │
-└───────────────┬───────────────┬─────────────┬───────────────┘
+│                SYSTÈMES SOURCES EXISTANTS                  │
+│  Odoo ERP      SharePoint      Azure AD      Power BI      │
+│  Projets       Documents       Identités     Restitution   │
+│  Budgets       PV / livrables  SSO / rôles   Analyses      │
+└───────────────┬───────────────┬─────────────┬──────────────┘
                 │               │             │
                 └───────────────┼─────────────┘
                                 ▼
 ┌────────────────────────────────────────────────────────────┐
 │               COUCHE D'INTÉGRATION TECH4VALUE              │
-│   Adaptateurs API · exports CSV · normalisation données     │
-│   Contrôles qualité · logs de synchronisation · fallback    │
+│   Adaptateurs API · exports CSV · normalisation données    │
+│   Contrôles qualité · logs de synchronisation · fallback   │
 └───────────────────────────┬────────────────────────────────┘
                             ▼
 ┌────────────────────────────────────────────────────────────┐
 │                 PLATEFORME WEB NEXT.JS                     │
-│  Dashboard portefeuille · reporting · risques · ressources  │
-│  Vues par rôle : Direction / PMO / Chef de projet / Admin   │
+│  Dashboard portefeuille · reporting · risques · ressources │
+│  Vues par rôle : Direction / PMO / Chef de projet / Admin  │
 └───────────────────────────┬────────────────────────────────┘
                             ▼
 ┌────────────────────────────────────────────────────────────┐
-│                 DÉCISION ET PILOTAGE                        │
-│  Arbitrages Copil · alertes · exports · plans d'action      │
+│                 DÉCISION ET PILOTAGE                       │
+│  Arbitrages Copil · alertes · exports · plans d'action     │
 └────────────────────────────────────────────────────────────┘
 ```
 
@@ -548,9 +548,9 @@ Le schéma directeur ci-dessous synthétise la cible Tech4Value sous forme de gr
 
 ```text
 ┌──────────────┐      API JSON-RPC       ┌──────────────────┐
-│    Odoo      │ ──────────────────────▶ │  Odoo Adapter    │
+│    Odoo      │ ──────────────────────▶ │  Odoo Adapter   │
 │ Projets      │                         │  Normalisation   │
-│ Budgets      │ ◀──── erreurs/logs ──── │  Validation      │
+│ Budgets      │ ◀──── erreurs/logs ──── │  Validation     │
 │ Ressources   │                         └────────┬─────────┘
 └──────────────┘                                  │
                                                   ▼
@@ -572,14 +572,14 @@ Le schéma directeur ci-dessous synthétise la cible Tech4Value sous forme de gr
 
 ```text
 ╔════════════════════════════════════════════════════════════╗
-║              TECH4VALUE · PILOTAGE PORTEFEUILLE           ║
+║              TECH4VALUE · PILOTAGE PORTEFEUILLE            ║
 ╠════════════════════════════════════════════════════════════╣
-║ Avancement global     ███████░░░ 72%                     ║
-║ Budget consommé       ██████░░░░ 61%                     ║
-║ Reporting PMO         30h → 21h / semaine                ║
-║ Projets à risque      2 critiques · 1 élevé · 2 maîtrisés ║
+║ Avancement global     ███████░░░ 72%                       ║
+║ Budget consommé       ██████░░░░ 61%                       ║
+║ Reporting PMO         30h → 21h / semaine                  ║
+║ Projets à risque      2 critiques · 1 élevé · 2 maîtrisés  ║
 ╠════════════════════════════════════════════════════════════╣
-║ Projet                         Santé   Budget   Échéance  ║
+║ Projet                         Santé   Budget   Échéance   ║
 ║ RGPD                           ROUGE    82%      S+3       ║
 ║ ERP Finance / Supply Chain     ORANGE   65%      S+6       ║
 ║ Data Lake & BI Groupe          VERT     48%      S+9       ║
@@ -598,47 +598,47 @@ La solution repose sur une architecture **trois-tiers** (Présentation / Applica
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                    UTILISATEURS (185)                         │
+│                    UTILISATEURS (185)                        │
 │          PMO · Chefs de Projet · Direction · Équipes         │
 └─────────────────────────┬────────────────────────────────────┘
                           │ HTTPS (443)
                           ▼
 ┌──────────────────────────────────────────────────────────────┐
-│               COUCHE PRÉSENTATION (Vercel)                    │
-│  React 18 · TypeScript · Tailwind CSS · Zustand · Recharts  │
-│  [Dashboard] [Projets] [Reporting] [Timesheets] [Admin]     │
+│               COUCHE PRÉSENTATION (Vercel)                   │
+│  React 18 · TypeScript · Tailwind CSS · Zustand · Recharts   │
+│  [Dashboard] [Projets] [Reporting] [Timesheets] [Admin]      │
 └─────────────────────────┬────────────────────────────────────┘
                           │ REST API (JSON)
                           ▼
 ┌──────────────────────────────────────────────────────────────┐
-│               COUCHE APPLICATION (Railway)                    │
-│  Node.js 18 · Express · TypeScript · Prisma ORM             │
-│  ┌─────────┐ ┌────────┐ ┌──────────┐ ┌─────────────────┐   │
-│  │ Auth MW │ │ RBAC   │ │ Rate     │ │ Error Handler   │   │
-│  │ (JWT)   │ │        │ │ Limiter  │ │                 │   │
-│  └─────────┘ └────────┘ └──────────┘ └─────────────────┘   │
-│  ┌───────────┐ ┌───────────┐ ┌──────────┐ ┌────────────┐   │
-│  │ Projects  │ │   Users   │ │Reporting │ │ Timesheets │   │
-│  │ Service   │ │  Service  │ │ Service  │ │  Service   │   │
-│  └───────────┘ └───────────┘ └──────────┘ └────────────┘   │
-│  ┌──────────┐ ┌────────────┐ ┌──────────┐                   │
-│  │  Odoo    │ │ SharePoint │ │ Power BI │  Adapters         │
-│  │ Adapter  │ │  Adapter   │ │ Adapter  │                   │
-│  └──────────┘ └────────────┘ └──────────┘                   │
+│               COUCHE APPLICATION (Railway)                   │
+│  Node.js 18 · Express · TypeScript · Prisma ORM              │
+│  ┌─────────┐ ┌────────┐ ┌──────────┐ ┌─────────────────┐     │
+│  │ Auth MW │ │ RBAC   │ │ Rate     │ │ Error Handler   │     │
+│  │ (JWT)   │ │        │ │ Limiter  │ │                 │     │
+│  └─────────┘ └────────┘ └──────────┘ └─────────────────┘     │
+│  ┌───────────┐ ┌───────────┐ ┌──────────┐ ┌────────────┐     │
+│  │ Projects  │ │   Users   │ │Reporting │ │ Timesheets │     │
+│  │ Service   │ │  Service  │ │ Service  │ │  Service   │     │
+│  └───────────┘ └───────────┘ └──────────┘ └────────────┘     │
+│  ┌──────────┐ ┌────────────┐ ┌──────────┐                    │
+│  │  Odoo    │ │ SharePoint │ │ Power BI │  Adapters          │
+│  │ Adapter  │ │  Adapter   │ │ Adapter  │                    │
+│  └──────────┘ └────────────┘ └──────────┘                    │
 └─────────────────────────┬────────────────────────────────────┘
                           │ SQL (Prisma)
                           ▼
 ┌──────────────────────────────────────────────────────────────┐
-│              COUCHE DONNÉES (Supabase)                        │
+│              COUCHE DONNÉES (Supabase)                       │
 │  PostgreSQL 15 · Row Level Security · Backups automatiques   │
-│  [Users] [Projects] [Timesheets] [Milestones] [Documents]   │
+│  [Users] [Projects] [Timesheets] [Milestones] [Documents]    │
 └──────────────────────────────────────────────────────────────┘
                           │
                           ▼
 ┌──────────────────────────────────────────────────────────────┐
-│                  SYSTÈMES EXTERNES                            │
-│  Odoo v15 (ERP)  ·  SharePoint Online  ·  Power BI  ·      │
-│  Azure AD (SSO)  ·  HubSpot (CRM, optionnel)               │
+│                  SYSTÈMES EXTERNES                           │
+│  Odoo v15 (ERP)  ·  SharePoint Online  ·  Power BI  ·        │
+│  Azure AD (SSO)  ·  HubSpot (CRM, optionnel)                 │
 └──────────────────────────────────────────────────────────────┘
 ```
 
