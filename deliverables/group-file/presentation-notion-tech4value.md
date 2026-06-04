@@ -590,7 +590,7 @@ Pour une soutenance, cette slide sert de conclusion : elle transforme l’analys
 
 ---
 
-## Annexe A : Répartition des pôles
+## Annexe A : répartition des pôles
 
 ### Message clé
 
@@ -610,7 +610,7 @@ La compréhension des pôles permet d’expliquer la complexité d’allocation.
 
 ---
 
-## Annexe B : Fonctionnalités MVP core
+## Annexe B : fonctionnalités MVP core
 
 ### Message clé
 
@@ -644,7 +644,7 @@ La vision long terme dépasse le MVP académique sans le surcharger.
 
 ---
 
-## Annexe D : Sources consolidées
+## Annexe D : sources consolidées
 
 ### Message clé
 

@@ -1,4 +1,4 @@
-# Script Vidéo MVP : Tech4Value
+# Script vidéo MVP : Tech4Value
 
 **Format visé** : vidéo finale de 20 à 30 minutes, avec une cible de 25 minutes. Le déroulé est aligné sur la présentation Notion `deliverables/group-file/presentation-notion-tech4value.md`. Les slides 1 à 24 constituent le fil principal ; les annexes A à D servent de support de secours pendant les questions ou pour enrichir certains plans de coupe.
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 1. introduction et structure de la vidéo
+## 1. Introduction et structure de la vidéo
 
 **Intervenant : Jules**
 **Slides à afficher : page titre puis Slide 1 : Thèse**
@@ -24,7 +24,7 @@ Le fil conducteur : pourquoi ce projet existe, ce que nous avons choisi de const
 
 ---
 
-## 2. contexte et objectifs du projet
+## 2. Contexte et objectifs du projet
 
 **Intervenant : Jules**
 **Slides à afficher : Slide 2 : Contexte entreprise**
@@ -56,7 +56,7 @@ Les autres objectifs sont également mesurables : améliorer la livraison à tem
 
 ---
 
-## 3. problématique et axes choisis
+## 3. Problématique et axes choisis
 
 **Intervenant : Jules**
 **Slides à afficher : Slide 4 : Problème central, puis Slide 7 : Proposition de valeur**
@@ -79,7 +79,7 @@ Ce périmètre protège la preuve de valeur. Le MVP se concentre sur cette preuv
 
 ---
 
-## 4. démonstration du MVP
+## 4. Démonstration du MVP
 
 **Intervenant : Léo**
 **Slides à afficher : Slide 9 : Architecture fonctionnelle**
@@ -118,7 +118,7 @@ La qualité logicielle est également intégrée : tests unitaires, tests d'int�
 
 ---
 
-## 5. qualité visuelle et technique
+## 5. Qualité visuelle et technique
 
 **Intervenant : Léo**
 **Slides à afficher : Slide 9, Slide 10, Slide 12, puis exemples de captures annotées**
@@ -136,7 +136,7 @@ Cette partie contribue à la qualité globale de la vidéo, car elle montre le p
 
 ---
 
-## 6. originalité et dépassement des attentes
+## 6. Originalité et dépassement des attentes
 
 **Intervenant : Léo**
 **Slides à afficher : Slide 21 : Différenciation et innovation**
@@ -154,7 +154,7 @@ Ce double niveau, produit et organisation, renforce la crédibilité du projet. 
 
 ---
 
-## 7. impact potentiel du MVP
+## 7. Impact potentiel du MVP
 
 **Intervenant : Jules**
 **Slides à afficher : Slide 16 : Budget et ROI, puis Slide 23 : Impact attendu**
@@ -179,7 +179,7 @@ Le MVP résout un problème immédiat et ouvre une trajectoire vers un cockpit d
 
 ---
 
-## 8. conclusion convaincante
+## 8. Conclusion convaincante
 
 **Intervenant : Léo**
 **Slides à afficher : Slide 22 : Livrables académiques et conformité**
