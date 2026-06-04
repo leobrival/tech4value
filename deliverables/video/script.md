@@ -129,7 +129,7 @@ La solution est pensée comme une application professionnelle. L'authentificatio
 
 **Intervenant : Jules**
 
-La méthode retenue est Agile Hybride. Le cadrage initial reprend la rigueur du Waterfall : besoin, périmètre, planning, budget, risques. L'exécution utilise ensuite des sprints courts pour absorber les découvertes techniques, notamment sur Odoo, Azure AD et SharePoint. Cette méthode est adaptée à une équipe de deux personnes : elle garde une vision long terme tout en permettant d'ajuster le MVP.
+La méthode retenue est Agile Hybride. Le cadrage initial reprend la rigueur du Waterfall : besoin, périmètre, planning, budget, risques. L'exécution utilise ensuite des sprints courts pour absorber les découvertes techniques, notamment sur Odoo, Azure AD et SharePoint. La dernière phase porte sur le déploiement progressif, l'adoption et la stabilisation du MVP. Cette méthode est adaptée à une équipe de deux personnes : elle garde une vision long terme tout en permettant d'ajuster le MVP.
 
 ---
 
@@ -137,7 +137,7 @@ La méthode retenue est Agile Hybride. Le cadrage initial reprend la rigueur du 
 
 **Intervenant : Jules**
 
-La roadmap Now-Next-Later permet de protéger le MVP contre le scope creep. Le Now couvre le cadrage et les fondations. Le Next couvre l'architecture, les intégrations et le MVP Alpha. Le Later couvre la consolidation, les tests utilisateurs, les retours d'expérience et les évolutions post-MVP. Cette approche évite de promettre trop tôt des fonctionnalités non critiques.
+La roadmap Now-Next-Later permet de protéger le MVP contre le scope creep. Le Now couvre le cadrage et les fondations. Le Next couvre l'architecture, les intégrations et le MVP Alpha. Le Later couvre la consolidation, les tests utilisateurs, l'adoption et les évolutions post-MVP. Cette approche évite de promettre trop tôt des fonctionnalités non critiques.
 
 ---
 
@@ -145,7 +145,7 @@ La roadmap Now-Next-Later permet de protéger le MVP contre le scope creep. Le N
 
 **Intervenant : Jules**
 
-Le projet est piloté par 8 jalons vérifiables. Les premiers jalons sécurisent le cadrage, l'infrastructure et l'authentification. Les jalons intermédiaires valident l'intégration Odoo, le MVP Alpha puis la bêta stable. Les derniers jalons couvrent la vidéo, le dossier projet et les retours d'expérience. Cette logique permet au Copil de suivre l'avancement avec des critères de validation concrets.
+Le projet est piloté par 8 jalons vérifiables. Les premiers jalons sécurisent le cadrage, l'infrastructure et l'authentification. Les jalons intermédiaires valident l'intégration Odoo, le MVP Alpha puis la bêta stable. Les derniers jalons portent sur le déploiement progressif, l'accompagnement des pilotes, la mesure d'adoption et la préparation du backlog V2. Cette logique permet au Copil de suivre l'avancement avec des critères de validation concrets.
 
 ---
 
@@ -217,7 +217,7 @@ L'impact attendu est direct : moins de temps passé à consolider, des décision
 
 **Intervenant : Jules**
 
-La décision attendue est de valider le cadrage MVP et de concentrer l'exécution sur les intégrations prioritaires : Odoo, Power BI, SharePoint et Azure AD. La recommandation est de lancer un MVP cadré, avec le reporting PMO automatisé comme premier cas d'usage démontrable. Cela permet de prouver vite la valeur, de mesurer l'adoption et de préparer les évolutions.
+La décision attendue est de valider le cadrage MVP et de concentrer l'exécution sur les intégrations prioritaires : Odoo, Power BI, SharePoint et Azure AD. La recommandation est de lancer un MVP cadré, avec le reporting PMO automatisé comme premier cas d'usage démontrable, puis de piloter l'adoption à J+30 et J+90. Cela permet de prouver vite la valeur, de mesurer l'usage réel et de préparer les évolutions.
 
 ---
 
