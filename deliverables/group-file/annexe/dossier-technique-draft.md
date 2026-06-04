@@ -183,9 +183,9 @@ Le management de projet est la discipline qui détermine si une solution techniq
 | **Consulting & Design** | Non applicable | €50k | €30k |
 | **Formation & Change** | Non applicable | €40k | €25k |
 | **Recrutement Initial** | Non applicable | €95k | Non applicable |
-| **TOTAL** | **~€2 500** | **€1 235k** | **€1 100k** |
+| **TOTAL** | **~€200,5k** | **€1 235k** | **€1 100k** |
 
-> **Note** : Les coûts RH de la phase MVP correspondent à l'effort interne estimé de Jules et Léo. Le budget ci-dessus projette ensuite les coûts réels pour un déploiement production.
+> **Note** : Les coûts RH de la phase MVP correspondent à l'effort interne estimé de Jules et Léo. Les **2 500 €** de dépenses directes MVP correspondent uniquement à l'infrastructure cloud et aux licences/services, hors effort interne. Le budget ci-dessus projette ensuite les coûts réels pour un déploiement production.
 
 #### 3.1.2 Analyse ROI
 
@@ -204,7 +204,7 @@ Le management de projet est la discipline qui détermine si une solution techniq
 - **Indicateurs suivis** : Budget réel vs prévisionnel, burn rate, ETC (Estimate to Complete)
 - **Gouvernance** : Tout dépassement > 15% nécessite validation Comex
 
-L'enveloppe budgétaire totale du programme est fixée à **350 000 €**, répartie sur **24 semaines** de réalisation. Ce cadrage financier a été respecté grâce à une stratégie de sobriété technologique délibérée : utilisation systématique des offres gratuites (Vercel, Railway, Supabase free tier) pour la phase MVP, et recours massif à l'assistance par l'intelligence artificielle, **52 % des heures de développement** ont bénéficié de l'accélération apportée par Claude Code (Anthropic), réduisant mécaniquement le coût en jours-homme. Cette approche a permis de livrer un MVP fonctionnel avec un investissement infrastructure de seulement **2 500 €** sur la phase initiale, démontrant la faisabilité économique d'un tel programme pour une ETI. Le budget prévisionnel de déploiement production (1 235 k€ en année 1) intègre les coûts RH réels, les licences et la mise à l'échelle de l'infrastructure, en restant dans des ordres de grandeur cohérents avec le secteur.
+L'enveloppe budgétaire totale du programme est fixée à **350 000 €**, répartie sur **24 semaines** de réalisation. Ce cadrage financier a été respecté grâce à une stratégie de sobriété technologique délibérée : utilisation systématique des offres gratuites (Vercel, Railway, Supabase free tier) pour la phase MVP, et recours massif à l'assistance par l'intelligence artificielle, **52 % des heures de développement** ont bénéficié de l'accélération apportée par Claude Code (Anthropic), réduisant mécaniquement le coût en jours-homme. Cette approche a permis de livrer un MVP fonctionnel avec seulement **2 500 €** de dépenses directes d'infrastructure et de licences sur la phase initiale, en complément de l'effort interne valorisé de Jules et Léo. Elle démontre la faisabilité économique d'un tel programme pour une ETI. Le budget prévisionnel de déploiement production (1 235 k€ en année 1) intègre les coûts RH réels, les licences et la mise à l'échelle de l'infrastructure, en restant dans des ordres de grandeur cohérents avec le secteur.
 
 ### 3.2 Justification de la méthodologie
 
