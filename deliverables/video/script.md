@@ -11,7 +11,7 @@
 **Intervenant : Jules**
 **Slides à afficher : page titre puis Slide 1 : Thèse**
 
-Bonjour, nous sommes Jules Courtin et Léo Brival, et nous vous présentons Tech4Value, notre projet interne de pilotage stratégique. Cette vidéo suit la présentation Notion préparée pour expliquer le projet avec un déroulé progressif et convaincant. Notre objectif est simple : montrer comment Tech4Value peut passer d'un pilotage fragmenté de ses projets stratégiques à une plateforme unifiée, capable de consolider les données, de réduire le reporting manuel et d'accélérer les décisions.
+Bonjour, nous sommes Jules Courtin et Léo Brival, et nous vous présentons Tech4Value, notre projet interne de pilotage stratégique. Notre objectif est simple : montrer comment Tech4Value peut passer d'un pilotage fragmenté de ses projets stratégiques à une plateforme unifiée, capable de consolider les données, de réduire le reporting manuel et d'accélérer les décisions.
 
 Nous construisons la vidéo comme un récit. Nous partons d'abord du contexte de l'entreprise : 185 collaborateurs, 9 pôles, 3 sites et 5 projets stratégiques mobilisant 78 ETP. Ensuite, nous présentons le problème central : les données sont dispersées dans plusieurs outils et le PMO consacre encore trop de temps à consolider manuellement les informations. Puis nous montrons la solution cible, son architecture, ses choix techniques, sa roadmap et son impact attendu.
 
@@ -84,7 +84,7 @@ Ce périmètre protège la preuve de valeur. Le MVP se concentre sur cette preuv
 **Intervenant : Léo**
 **Slides à afficher : Slide 9 : Architecture fonctionnelle**
 
-Passons maintenant à la démonstration du MVP et à sa logique de fonctionnement. La plateforme suit une architecture en trois couches. La première couche est le frontend React et TypeScript, qui porte les écrans de dashboard, de projets, de reporting et de consultation. La deuxième couche est le backend Node.js et Express, qui gère l'API, les règles métier, l'authentification, les rôles et les connecteurs. La troisième couche est la base PostgreSQL, qui centralise les projets, les utilisateurs, les temps, les jalons, les documents, les risques et les rapports.
+Passons maintenant à la démonstration du MVP et à sa logique de fonctionnement. La plateforme suit une architecture en trois couches. La première couche est le frontend Next.js, basé sur React et TypeScript, qui porte les écrans de dashboard, de projets, de reporting et de consultation. La deuxième couche est le backend Node.js et Express, qui gère l'API, les règles métier, l'authentification, les rôles et les connecteurs. La troisième couche est la base PostgreSQL, qui centralise les projets, les utilisateurs, les temps, les jalons, les documents, les risques et les rapports.
 
 Dans la démonstration, l'utilisateur commence par une connexion simulant Azure AD. Selon son rôle, Direction, PMO ou chef de projet, il accède à une vue adaptée. L'objectif est de montrer que le même socle de données peut produire plusieurs lectures : une lecture stratégique pour la Direction, une lecture portefeuille pour le PMO, et une lecture opérationnelle pour les chefs de projet.
 
@@ -98,14 +98,14 @@ Prenons un cas d'usage. Le COPIL ouvre la plateforme et voit immédiatement que 
 **Intervenant : Léo**
 **Slides à afficher : Slide 10 : Stack technique retenue**
 
-Techniquement, nous avons retenu une stack TypeScript full-stack : React 18, TypeScript, Tailwind et Zustand côté frontend ; Node.js, Express, TypeScript, Prisma et PostgreSQL côté backend ; GitHub Actions pour la CI/CD ; Vercel, Railway et Néon pour le déploiement. Cette stack convient à une équipe réduite : elle utilise le même langage sur toute la chaîne, réduit les frictions et maintient une base de code lisible.
+Techniquement, nous avons retenu une stack TypeScript full-stack : Next.js 14, React 18, TypeScript, Tailwind et Zustand côté frontend ; Node.js, Express, TypeScript, Prisma et PostgreSQL côté backend ; GitHub Actions pour la CI/CD ; Vercel, Railway et Néon pour le déploiement. Cette stack convient à une équipe réduite : elle utilise le même langage sur toute la chaîne, réduit les frictions et maintient une base de code lisible.
 
 Les alternatives comme Java Spring, Python Django ou une architecture microservices complète ont été étudiées, mais elles auraient ajouté de la complexité pour un MVP de 24 semaines. Notre choix privilégie la cohérence, la rapidité de développement, la maintenabilité et la capacité à déployer rapidement une preuve de valeur.
 
 **Intervenant : Léo**
 **Slides à afficher : Slide 11 : Intégrations SI critiques, puis captures Odoo / SharePoint / Power BI**
 
-Les intégrations sont le cœur de la démonstration. Odoo est prioritaire pour les budgets, les temps passés et les ressources. SharePoint sert de référentiel documentaire : cahiers des charges, comptes rendus de COPIL, documents de recette, supports de formation. Power BI reste l'outil de restitution avancée, mais la plateforme prépare des exports propres pour l'alimenter. Azure AD structure l'authentification, le SSO, la MFA et le RBAC.
+Les intégrations sont le cœur de la démonstration. Odoo est prioritaire pour les budgets, les temps passés et les ressources. SharePoint sert de référentiel documentaire : cahiers des charges, comptes rendus de COPIL, documents de recette, supports de formation. Power BI reste l'outil de restitution avancée, alimenté par une API REST dédiée lorsque le connecteur est fiable, avec export CSV ou XLSX comme fallback. Azure AD structure l'authentification, le SSO, la MFA et le RBAC.
 
 Dans la version MVP, certaines intégrations peuvent être simulées ou alimentées par des données structurées. Nous devons prouver le flux cible : les données opérationnelles entrent dans la plateforme, elles sont normalisées, puis restituées sous forme de KPI, de rapports ou d'exports.
 
@@ -143,7 +143,7 @@ Cette partie contribue à la qualité globale de la vidéo, car elle montre le p
 
 L'originalité du projet tient d'abord à son positionnement. Tech4Value ajoute une couche de pilotage stratégique connectée au SI existant. La plateforme orchestre Odoo, SharePoint, Power BI et Azure AD pour produire une vision consolidée et utile à la décision.
 
-Le deuxième élément de différenciation est l'usage contrôlé de l'IA. La roadmap prévoit la possibilité d'utiliser Claude API pour générer des synthèses de risques, préparer des comptes rendus de COPIL ou proposer des points d'arbitrage. Cette IA n'a pas vocation à décider à la place du comité ; elle aide à préparer la décision en résumant les écarts et en mettant en avant les signaux faibles.
+Le deuxième élément de différenciation est l'usage contrôlé de l'IA. La solution documente l'intégration de Claude API pour générer des synthèses de risques, préparer des comptes rendus de COPIL et proposer des points d'arbitrage. Cette IA n'a pas vocation à décider à la place du comité ; elle aide à préparer la décision en résumant les écarts et en mettant en avant les signaux faibles.
 
 **Intervenant : Jules**
 **Slides à afficher : Slide 17 : Business model potentiel, Slide 18 : Diagnostic 7S McKinsey**

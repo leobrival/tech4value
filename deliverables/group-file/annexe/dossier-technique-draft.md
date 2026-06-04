@@ -362,7 +362,7 @@ La décomposition du projet suit une structure **WBS (Work Breakdown Structure)*
 S1  S2  S3  S4  S5  S6  S7  S8  S9  S10 S11 S12 S13 S14 S15 S16 S17 S18 S19 S20 S21 S22 S23 S24
 |---PHASE 1 : CADRAGE---|------- PHASE 2 : DÉVELOPPEMENT MVP ---------|--- PHASE 3 : CONSOLIDATION ---|--- PHASE 4 : LIVRABLES ---|
                         △                          △                                    △                              △
-                     Cahier              MVP Alpha                              MVP Beta                        Soumission
+                     Cahier              MVP Alpha                              MVP Beta                        Validation
                    des charges           déployé                                stable                           finale
 ```
 
@@ -436,7 +436,7 @@ Le choix de GitHub Projects comme outil de planification opérationnelle est coh
 | **M5 : MVP Alpha**                     | S12     | 6 features core déployées, 3 projets pilotes      | MVP fonctionnel    |
 | **M6 : Bêta stable**                   | S18     | Tests OK, performance validée, formations lancées | MVP optimisé       |
 | **M7 : Vidéo finalisée**               | S22     | 15-20 min, tous les membres présents              | Fichier MP4        |
-| **M8 : Validation finale**             | S24     | Dossier projet + individuels complets             | dossier final      |
+| **M8 : Validation finale**             | S24     | Dossier projet + retours d’expérience séparés     | dossier final      |
 
 Chaque jalon fait l'objet d'une procédure de **recette** formalisée : les conditions de validation sont définies avant le début de la phase, vérifiées à la date prévue et documentées dans un procès-verbal de recette signé par Jules (PM) et présenté au Copil. Le jalon M5 (MVP Alpha, S12) constitue le point de **déploiement** critique. À ce moment, les 3 projets pilotes basculent sur la plateforme et les premières mesures d'adoption sont collectées. Un jalon non atteint déclenche automatiquement l'activation du buffer de deux semaines et une révision du scope (méthode MoSCoW) pour garantir la livraison finale à S24.
 
